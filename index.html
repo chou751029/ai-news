@@ -2,112 +2,317 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>國內製造業AI新聞分享 (0616-0630)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製造業 AI 雙週新聞資料庫</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
+            --bg-color: #111111;
+            --panel-bg: #18181b;
+            --panel-soft: #202124;
+            --card-bg: #242629;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --accent-color: #38bdf8;
-            --border-color: #334155;
+            --accent-strong: #0ea5e9;
+            --accent-soft: rgba(14, 165, 233, 0.14);
+            --border-color: #3f3f46;
             --tag-bg: #0369a1;
             --tag-text: #e0f2fe;
+            --alert-bg: #1e1b4b;
+            --alert-text: #c084fc;
+            --surface-light: #f3f4f6;
+            --surface-light-active: #d1d5db;
+            --disabled-bg: #e5e7eb;
+            --disabled-text: #111827;
         }
+
+        * { box-sizing: border-box; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
+            background: linear-gradient(135deg, #111111 0%, #18181b 56%, #0f172a 100%);
             color: var(--text-main);
             line-height: 1.6;
             margin: 0;
-            padding: 16px;
             -webkit-font-smoothing: antialiased;
         }
 
+        .layout {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background: var(--surface-light);
+            color: var(--disabled-text);
+            border-right: 1px solid #d1d5db;
+            padding: 10px 0;
+        }
+
+        .sidebar-title {
+            padding: 10px 12px;
+            font-weight: 800;
+            color: #111827;
+            letter-spacing: 0.03em;
+        }
+
+        .sidebar-subtitle {
+            padding: 0 12px 10px;
+            color: #64748b;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+
+        .period-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .period-button {
+            appearance: none;
+            border: 0;
+            border-bottom: 1px solid #e5e7eb;
+            background: transparent;
+            color: #111827;
+            cursor: pointer;
+            font-size: 0.95rem;
+            padding: 11px 12px;
+            text-align: left;
+            transition: background-color 0.2s, color 0.2s;
+            width: 100%;
+        }
+
+        .period-button:hover,
+        .period-button.active {
+            background: var(--surface-light-active);
+            font-weight: 700;
+        }
+
+        .period-meta {
+            color: #64748b;
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .main {
+            padding: 28px 18px 48px;
+        }
+
         .container {
-            max-width: 680px;
+            max-width: 960px;
             margin: 0 auto;
         }
 
         header {
-            text-align: center;
-            margin-bottom: 24px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 22px;
+            padding: 24px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: rgba(24, 24, 27, 0.82);
+            box-shadow: 0 14px 44px rgba(2, 6, 23, 0.24);
         }
 
         header h1 {
             color: var(--accent-color);
-            margin: 0 0 8px 0;
-            font-size: 1.5rem;
+            margin: 0 0 8px;
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
             letter-spacing: 0.5px;
         }
 
         .meta-info {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.96rem;
         }
 
-        .search-container {
-            margin-bottom: 20px;
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
         }
 
-        #searchInput {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
+        .quick-links a {
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            color: var(--text-main);
+            font-size: 0.86rem;
+            font-weight: 700;
+            padding: 7px 11px;
+            text-decoration: none;
+        }
+
+        .quick-links a:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .toolbar {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .search-container input,
+        .view-tabs button {
+            border-radius: 999px;
             border: 1px solid var(--border-color);
             background-color: var(--card-bg);
             color: var(--text-main);
             font-size: 1rem;
-            box-sizing: border-box;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 13px 16px;
             outline: none;
         }
 
-        #searchInput:focus {
+        #searchInput:focus { border-color: var(--accent-color); }
+
+        .view-tabs {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .view-tabs button {
+            cursor: pointer;
+            padding: 10px 15px;
+            font-weight: 700;
+        }
+
+        .view-tabs button.active {
+            background: var(--accent-strong);
             border-color: var(--accent-color);
+            color: white;
+        }
+
+        .database-panel {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .overview-grid {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .overview-card,
+        .period-summary,
+        .keyword-panel {
+            background: rgba(24, 24, 27, 0.86);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px;
+        }
+
+        .overview-label {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            margin-bottom: 4px;
+        }
+
+        .overview-value {
+            color: var(--text-main);
+            font-size: 1.45rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .period-summary {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .keyword-panel {
+            display: none;
+            margin-bottom: 18px;
+        }
+
+        .keyword-panel.active { display: block; }
+
+        .keyword-panel h2 {
+            font-size: 1rem;
+            margin: 0 0 10px;
+        }
+
+        .keyword-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 18px;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .stat-pill {
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            background: rgba(36, 38, 41, 0.78);
+            padding: 5px 10px;
         }
 
         .news-grid {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 16px;
         }
 
         .news-card {
-            background: var(--card-bg);
+            background: rgba(36, 38, 41, 0.94);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 20px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
-        .news-card:active {
-            transform: scale(0.99);
+        .news-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(56, 189, 248, 0.7);
         }
 
         .card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 8px;
             margin-bottom: 10px;
         }
 
-        .source-tag {
+        .source-tag,
+        .region-tag {
             background-color: #334155;
             color: var(--text-muted);
             font-size: 0.75rem;
             padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
+            border-radius: 999px;
+            font-weight: 600;
         }
 
+        .region-tag { color: #bae6fd; }
+
         .news-card h2 {
-            margin: 0 0 12px 0;
-            font-size: 1.15rem;
-            line-height: 1.4;
+            margin: 0 0 12px;
+            font-size: 1.08rem;
+            line-height: 1.45;
         }
 
         .news-card h2 a {
@@ -116,14 +321,20 @@
             display: block;
         }
 
-        .news-card h2 a:hover {
-            color: var(--accent-color);
+        .news-card h2 a:hover { color: var(--accent-color); }
+
+        .en-title {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: normal;
         }
 
         .news-desc {
             color: #cbd5e1;
             font-size: 0.95rem;
-            margin: 0 0 16px 0;
+            margin: 0 0 16px;
             text-align: justify;
         }
 
@@ -137,14 +348,25 @@
             background-color: var(--tag-bg);
             color: var(--tag-text);
             font-size: 0.75rem;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-weight: 600;
             cursor: pointer;
         }
 
-        .tech-tag:hover {
-            opacity: 0.9;
+        .tech-tag.infrastructure-gap {
+            background-color: var(--alert-bg);
+            color: var(--alert-text);
+        }
+
+        .empty-state {
+            display: none;
+            border: 1px dashed var(--border-color);
+            border-radius: 8px;
+            padding: 28px;
+            text-align: center;
+            color: var(--text-muted);
+            background: rgba(24, 24, 27, 0.58);
         }
 
         .footer {
@@ -160,140 +382,496 @@
             margin-top: 4px;
             display: block;
         }
+
+        @media (max-width: 780px) {
+            .layout { grid-template-columns: 1fr; }
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: 0;
+                border-bottom: 1px solid #d1d5db;
+            }
+            .period-nav { flex-direction: row; overflow-x: auto; }
+            .period-button { white-space: nowrap; border-right: 1px solid #e5e7eb; }
+            .period-meta { display: none; }
+            .toolbar { grid-template-columns: 1fr; }
+            .view-tabs { justify-content: stretch; }
+            .view-tabs button { flex: 1; }
+            .main { padding: 18px 12px 36px; }
+            .overview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 480px) {
+            .overview-grid { grid-template-columns: 1fr; }
+            .news-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
+<div class="layout">
+    <aside class="sidebar" aria-label="雙週期別導覽">
+        <div class="sidebar-title">雙週新聞</div>
+        <div class="sidebar-subtitle">每一期都是可分享的靜態頁面連結；待匯入期別會先保留位置。</div>
+        <nav class="period-nav" id="periodNav"></nav>
+    </aside>
 
-<div class="container">
-    <header>
-        <h1>國內製造業AI新聞分享</h1>
-        <div class="meta-info">期間：06/16 - 06/30</div>
-    </header>
+    <main class="main">
+        <div class="container">
+            <header>
+                <h1 id="pageTitle">製造業 AI 雙週新聞資料庫</h1>
+                <div class="meta-info" id="pageMeta">整合國內與國外製造業 AI 新聞，支援雙週頁面與全資料庫搜尋。</div>
+                <div class="quick-links" aria-label="快速連結">
+                    <a href="#/database">完整資料庫</a>
+                    <a href="#/domestic">國內新聞</a>
+                    <a href="#/global">國外新聞</a>
+                    <a href="#/keywords">關鍵字</a>
+                </div>
+            </header>
 
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="🔍 輸入關鍵字或技術標籤篩選...">
-    </div>
+            <section class="toolbar" aria-label="搜尋與檢視切換">
+                <div class="search-container">
+                    <input type="search" id="searchInput" placeholder="搜尋關鍵字、公司、技術標籤或來源...">
+                </div>
+                <div class="view-tabs" role="tablist" aria-label="資料範圍">
+                    <button type="button" class="active" data-view="period">本期雙週</button>
+                    <button type="button" data-view="database">完整資料庫</button>
+                    <button type="button" data-view="domestic">國內</button>
+                    <button type="button" data-view="global">國外</button>
+                    <button type="button" data-view="keywords">關鍵字</button>
+                </div>
+            </section>
 
-    <div class="news-grid" id="newsGrid">
+            <section class="database-panel" id="databasePanel" aria-label="資料庫概覽"></section>
+            <section class="keyword-panel" id="keywordPanel" aria-label="關鍵字清單">
+                <h2>雙週報關鍵字</h2>
+                <div class="keyword-cloud" id="keywordCloud"></div>
+            </section>
+            <section class="stats" id="stats" aria-live="polite"></section>
+            <section class="news-grid" id="newsGrid"></section>
+            <section class="empty-state" id="emptyState">目前沒有符合條件的新聞。可切換「完整資料庫」或清除搜尋關鍵字。</section>
 
-        <!-- 新聞 1 -->
-        <div class="news-card" data-keywords="杰倫智能 業成 GIS automl 模型複製 良率優化 規模化落地 網管人">
-            <div class="card-header">
-                <span class="source-tag">網管人 (6/18)</span>
-            </div>
-            <h2><a href="https://netadmin.com.tw/netadmin/zh-tw/snapshot/3C7FD42C808740B3BF63C231BF462CE6" target="_blank">1. [杰倫智能助力業成 GIS 製造 AI 落地] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">報導指出雙方已完成逾百項AI專案、建立超過1,500個模型，並把良率、品質與效率改善經驗往跨製程、跨廠複製。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">AutoML</span>
-                <span class="tech-tag">模型複製</span>
-                <span class="tech-tag">良率優化</span>
-            </div>
+            <div class="footer">MIRDC Industrial Research Division AI News Sharing</div>
         </div>
-
-        <!-- 新聞 2 -->
-        <div class="news-card" data-keywords="達明 東南亞 泰國 智慧製造 ai視覺 協作機器人 cobot 智慧檢測 包裝">
-            <div class="card-header">
-                <span class="source-tag">MonetDJ理財網 (6/18)</span>
-            </div>
-            <h2><a href="https://tw.stock.yahoo.com/news/%E9%81%94%E6%98%8E%E6%94%BB%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%99%BA%E6%85%A7%E8%A3%BD%E9%80%A0%E5%95%86%E6%A9%9F-%E7%A7%80ai%E5%8C%85%E8%A3%9D%E8%88%87%E6%AA%A2%E6%B8%AC%E6%96%B9%E6%A1%88-031600205.html" target="_blank">2. [達明攻東南亞智慧製造商機 秀AI包裝與檢測方案] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">達明在泰國智慧製造展展示AI包裝與檢測方案，鎖定電子、汽車零件、食品飲料等製造場域，方案結合協作機器人、AI視覺與靈巧手，原文稱可節省產線空間、縮短部署時間並提升包裝效率與穩定性。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">AI 視覺</span>
-                <span class="tech-tag">協作機器人</span>
-                <span class="tech-tag">智慧檢測</span>
-            </div>
-        </div>
-
-        <!-- 新聞 3 -->
-        <div class="news-card" data-keywords="資誠 esg 永續 數據治理 能源管理 供應鏈追溯 ithome">
-            <div class="card-header">
-                <span class="source-tag">iThome (6/18)</span>
-            </div>
-            <h2><a href="https://www.ithome.com.tw/news/176720" target="_blank">3. [AI驅動ESG轉型，資誠：數據治理成製造業強化永續競爭力的關鍵] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">資誠指出製造業AI驅動ESG轉型的三大應用為能源管理、碳盤查與供應鏈追溯，以及製程優化與資源效率提升，反映AI正從辦公室工具進一步走向工廠永續管理。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">數據治理</span>
-                <span class="tech-tag">ESG 永續</span>
-                <span class="tech-tag">能源管理</span>
-            </div>
-        </div>
-
-        <!-- 新聞 4 -->
-        <div class="news-card" data-keywords="研華 邊緣ai edge ai 原生工廠 ai agent 智慧代理 台視財經">
-            <div class="card-header">
-                <span class="source-tag">台視財經 (6/15)</span>
-            </div>
-            <h2><a href="https://www.ttv.com.tw/finance/view/06202615095529E22FB2C83B4FD995D2C81DF8F9639DEA13/587" target="_blank">4. [研華攻邊緣AI，擴醫療/智慧製造等多元應用] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">研華表示正以邊緣AI擴大醫療與智慧製造等應用，並提出AI原生工廠架構與AI Agent場景，顯示工業電腦廠正把AI能力往工廠端整合落地。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">邊緣運算</span>
-                <span class="tech-tag">AI 原生工廠</span>
-                <span class="tech-tag">AI Agent</span>
-            </div>
-        </div>
-
-        <!-- 新聞 5 -->
-        <div class="news-card" data-keywords="鴻海 vivatech ai factory 基礎設施 工業人形機器人 經濟日報">
-            <div class="card-header">
-                <span class="source-tag">經濟日報 (6/17)</span>
-            </div>
-            <h2><a href="https://money.udn.com/money/story/11162/9571955" target="_blank">5. [鴻海首次參展法VivaTech 秀AI智慧製造和電動車方案] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">鴻海首次參展法國VivaTech，展示AI基礎設施、AI Factory、智慧製造與工業人形機器人等方案，說明其正把AI製造解決方案帶向歐洲市場。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">AI Factory</span>
-                <span class="tech-tag">AI 基礎設施</span>
-                <span class="tech-tag">人形機器人</span>
-            </div>
-        </div>
-
-        <!-- 新聞 6 -->
-        <div class="news-card" data-keywords="廢棄物 競爭力 台灣鋼聯 立順興 明昌國際 iot 碳盤查 全球中央">
-            <div class="card-header">
-                <span class="source-tag">全球中央 (06/22)</span>
-            </div>
-            <h2><a href="https://www.cna.com.tw/newsworld/article/20260526n002/" target="_blank">6. [廢棄物也是競爭力 AI加速製造業綠色蛻變] <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
-            <p class="news-desc">說明台灣製造業（如台灣鋼聯、立順興、明昌國際）如何透過導入 AI 與 IoT 等數位工具，加速碳盤查與廢棄物再利用，成功克服綠色轉型痛點並落實 ESG 永續發展。</p>
-            <div class="tech-tags">
-                <span class="tech-tag">IoT 聯網</span>
-                <span class="tech-tag">綠色轉型</span>
-                <span class="tech-tag">碳盤查</span>
-            </div>
-        </div>
-
-    </div>
-    
-    <div class="footer">
-        MIRDC Industrial Research Division Team Sharing
-    </div>
+    </main>
 </div>
 
 <script>
+    const periods = [
+        { id: '0701-0715', label: '雙週報新聞 0701-0715', range: '07/01 - 07/15' },
+        { id: '0616-0630', label: '雙週報新聞 0616-0630', range: '06/16 - 06/30' },
+        { id: '0601-0615', label: '雙週報新聞 0601-0615', range: '06/01 - 06/15' },
+        { id: '0516-0531', label: '雙週報新聞 0516-0531', range: '05/16 - 05/31' },
+        { id: '0501-0515', label: '雙週報新聞 0501-0515', range: '05/01 - 05/15' },
+        { id: '0410-0430', label: '雙週報新聞 0410-0430', range: '04/10 - 04/30' },
+        { id: '0401-0409', label: '雙週報新聞 0401-0409', range: '04/01 - 04/09' },
+        { id: '0317-0331', label: '雙週報新聞 0317-0331', range: '03/17 - 03/31' },
+        { id: 'keywords', label: '雙週報關鍵字', type: 'keywords' },
+        { id: '0302-0317', label: '雙週報新聞 0302-0317', range: '03/02 - 03/17' }
+    ];
+
+    const newsItems = [
+        {
+            period: '0616-0630', region: '國內', source: '網管人', date: '6/18',
+            title: '[杰倫智能助力業成 GIS 製造 AI 落地]',
+            url: 'https://netadmin.com.tw/netadmin/zh-tw/snapshot/3C7FD42C808740B3BF63C231BF462CE6',
+            desc: '報導指出雙方已完成逾百項AI專案、建立超過1,500個模型，並把良率、品質與效率改善經驗往跨製程、跨廠複製。',
+            tags: ['AutoML', '模型複製', '良率優化'],
+            keywords: '杰倫智能 業成 GIS automl 模型複製 良率優化 規模化落地 網管人'
+        },
+        {
+            period: '0616-0630', region: '國內', source: 'MonetDJ理財網', date: '6/18',
+            title: '[達明攻東南亞智慧製造商機 秀AI包裝與檢測方案]',
+            url: 'https://tw.stock.yahoo.com/news/%E9%81%94%E6%98%8E%E6%94%BB%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%99%BA%E6%85%A7%E8%A3%BD%E9%80%A0%E5%95%86%E6%A9%9F-%E7%A7%80ai%E5%8C%85%E8%A3%9D%E8%88%87%E6%AA%A2%E6%B8%AC%E6%96%B9%E6%A1%88-031600205.html',
+            desc: '達明在泰國智慧製造展展示AI包裝與檢測方案，鎖定電子、汽車零件、食品飲料等製造場域，方案結合協作機器人、AI視覺與靈巧手，原文稱可節省產線空間、縮短部署時間並提升包裝效率與穩定性。',
+            tags: ['AI 視覺', '協作機器人', '智慧檢測'],
+            keywords: '達明 東南亞 泰國 智慧製造 ai視覺 協作機器人 cobot 智慧檢測 包裝'
+        },
+        {
+            period: '0616-0630', region: '國內', source: 'iThome', date: '6/18',
+            title: '[AI驅動ESG轉型，資誠：數據治理成製造業強化永續競爭力的關鍵]',
+            url: 'https://www.ithome.com.tw/news/176720',
+            desc: '資誠指出製造業AI驅動ESG轉型的三大應用為能源管理、碳盤查與供應鏈追溯，以及製程優化與資源效率提升，反映AI正從辦公室工具進一步走向工廠永續管理。',
+            tags: ['數據治理', 'ESG 永續', '能源管理'],
+            keywords: '資誠 esg 永續 數據治理 能源管理 供應鏈追溯 ithome'
+        },
+        {
+            period: '0616-0630', region: '國內', source: '台視財經', date: '6/15',
+            title: '[研華攻邊緣AI，擴醫療/智慧製造等多元應用]',
+            url: 'https://www.ttv.com.tw/finance/view/06202615095529E22FB2C83B4FD995D2C81DF8F9639DEA13/587',
+            desc: '研華表示正以邊緣AI擴大醫療與智慧製造等應用，並提出AI原生工廠架構與AI Agent場景，顯示工業電腦廠正把AI能力往工廠端整合落地。',
+            tags: ['邊緣運算', 'AI 原生工廠', 'AI Agent'],
+            keywords: '研華 邊緣ai edge ai 原生工廠 ai agent 智慧代理 台視財經'
+        },
+        {
+            period: '0616-0630', region: '國內', source: '經濟日報', date: '6/17',
+            title: '[鴻海首次參展法VivaTech 秀AI智慧製造和電動車方案]',
+            url: 'https://money.udn.com/money/story/11162/9571955',
+            desc: '鴻海首次參展法國VivaTech，展示AI基礎設施、AI Factory、智慧製造與工業人形機器人等方案，說明其正把AI製造解決方案帶向歐洲市場。',
+            tags: ['AI Factory', 'AI 基礎設施', '人形機器人'],
+            keywords: '鴻海 vivatech ai factory 基礎設施 工業人形機器人 經濟日報'
+        },
+        {
+            period: '0616-0630', region: '國內', source: '全球中央', date: '06/22',
+            title: '[廢棄物也是競爭力 AI加速製造業綠色蛻變]',
+            url: 'https://www.cna.com.tw/newsworld/article/20260526n002/',
+            desc: '說明台灣製造業（如台灣鋼聯、立順興、明昌國際）如何透過導入 AI 與 IoT 等數位工具，加速碳盤查與廢棄物再利用，成功克服綠色轉型痛點並落實 ESG 永續發展。',
+            tags: ['IoT 聯網', '綠色轉型', '碳盤查'],
+            keywords: '廢棄物 競爭力 台灣鋼聯 立順興 明昌國際 iot 碳盤查 全球中央'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'AP News', date: '6/16',
+            title: '英偉達執行長黃仁勳承諾人工智慧將促進製造業就業。一項測試將在德克薩斯州進行',
+            enTitle: '[Nvidia announces major upgrade to its AI infrastructure]',
+            url: 'https://apnews.com/article/nvidia-artificial-intelligence-infrastructure-9bf560fa2365e4d6b57804438cda579e',
+            desc: '美國Nvidia宣布與Coherent擴大合作，作為20億美元合作案的一部分升級AI基礎設施，並將德州視為檢驗AI能否帶動美國製造業與就業回流的重要場域。',
+            tags: ['AI 基礎設施', '製造業回流'],
+            keywords: '英偉達 黄仁勳 nvidia coherent ai基礎設施 就業回流 德州 ap news major upgrade to its ai infrastructure'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Los Angeles Times', date: '6/21',
+            title: '航空航太與國防製造業聚焦自動化',
+            enTitle: '[Aerospace and Defense Manufacturing Focus on Automation]',
+            url: 'https://www.latimes.com/b2b/ai-technology/story/2026-06-21/ai-defense-tech-manufacturing-automation',
+            desc: '洛杉磯時報報導，航太與國防製造正以AI工廠、機器人與軟體自動化壓縮製造時程，部分流程已從數月縮短到數日，反映高複雜製造的導入速度正在加快。',
+            tags: ['AI 工廠', '軟體自動化', '高複雜製造'],
+            keywords: '航空航太 國防 自動化 機器人 壓縮時程 洛杉磯時報 los angeles times aerospace and defense manufacturing focus on automation'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Microsoft', date: '6/18',
+            title: '面向工廠運作的智慧體人工智慧：從儀表板到決策',
+            enTitle: '[Agentic AI for plant operations: From dashboards to decisions]',
+            url: 'https://www.microsoft.com/en-us/microsoft-cloud/blog/manufacturing/2026/06/18/agentic-ai-for-plant-operations-from-dashboards-to-decisions/',
+            desc: 'Microsoft發布製造業案例文章，主打把代理式AI導入工廠營運決策，強調可改善現場判斷、降低停機時間，並擴大整體營運效率。',
+            tags: ['Agentic AI', '自主決策', '營運效率'],
+            keywords: '微軟 microsoft 代理式ai 智能體 agentic ai 工廠營運 降低停機時間 plant operations dashboards to decisions'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'IOM3', date: '6/19',
+            title: '人工智慧驅動的數位孿生技術革新了玻璃製造工藝',
+            enTitle: '[AI-driven digital twin innovates glass manufacturing]',
+            url: 'https://www.iom3.org/resource/ai-driven-digital-twin-innovates-glass-manufacturing.html',
+            desc: '英國Glass Futures導入AI驅動的數位分身，為其多燃料試驗玻璃爐建立沉浸式模型，用於玻璃製造驗證與優化，屬於較具體的製程數位化落地案例。',
+            tags: ['數位孿生 (Digital Twin)', '製程優化', '沉浸式模型'],
+            keywords: '英國 glass futures 數位孿生 數位分身 digital twin 玻璃製造 試驗爐 iom3 driven digital twin innovates glass manufacturing'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Yahoo Finance', date: '6/19',
+            title: 'RebuilderAI 在 VivaTech 2026 上首次推出設計到製造人工智慧代理 VRING:ON，揭示了由人形機器人驅動的「關燈工廠」願景。',
+            enTitle: '[RebuilderAI Debuts Design-to-Manufacturing AI Agent VRING:ON at VivaTech 2026, Unveiling Humanoid-Powered ‘Dark Factory’ Vision]',
+            url: 'https://finance.yahoo.com/technology/ai/articles/rebuilderai-debuts-design-manufacturing-ai-140000265.html',
+            desc: '南韓新創RebuilderAI在VivaTech 2026發表VRING:ON，主打把AI生成設計直接轉成可製造產品資料，並進一步提出以人形機器人驅動的「關燈工廠」構想。',
+            tags: ['生成式設計', '人形機器人', '關燈工廠'],
+            keywords: '南韓 rebuilderai vivatech vring:on 生成設計 人形機器人 關燈工廠 yahoo finance design to manufacturing ai agent vring on'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'PR Newswire', date: '6/16',
+            title: 'Rockwell Automation 與汽車研究中心共同發表白皮書 探討汽車產業智慧製造發展新階段',
+            url: 'https://www.prnewswire.com/apac/zh/news-releases/rockwell-automation---302801273.html',
+            desc: 'Rockwell Automation與汽車研究中心白皮書指出，AI、機器學習與自動化已在汽車、輪胎與電池製造出現可量化成效，部分場景的非計畫停機最多減少50%，整體設備效率提升約5%，產出提高5%至7%。',
+            tags: ['機器學習', '非計畫停機', '設備效率 (OEE)'],
+            keywords: 'rockwell 羅克韋爾 汽車研究中心 智慧製造 機器學習 設備效率 pr newswire'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Asia Today / UPI', date: '6/15',
+            title: '韓國造船廠採用人工智慧焊接機器',
+            enTitle: '[South Korean shipyard turns to AI-powered welding robots]',
+            url: 'https://www.upi.com/top_news/world-news/2026/06/15/hd-hyundai-heavy-industries-ai-powered-welding-robots/4781781567519',
+            desc: '南韓造船巨頭 HD 現代重工（HD Hyundai Heavy Industries） 全面導入 AI 自主焊接機器人以應對勞工短缺與中國競爭，成功讓日間產能大增 50% 並顯著提升作業安全性。',
+            tags: ['自主焊接機器人', '產能提升', '工業安全'],
+            keywords: '韓國 造船廠 hd現代重工 焊接機器人 缺工 產能 亞洲今日 asia today upi welding robots'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Robotics & Automation INSIDER', date: '6/24',
+            title: 'NVIDIA發佈業界首個針對實體人工智慧的全端安全系統',
+            enTitle: '[NVIDIA Announces Industry’s First Full-Stack Safety System for Physical AI]',
+            url: 'https://www.techbriefs.com/component/content/article/55408-nvidia-announces-industrys-first-full-stack-safety-system-for-physical-ai?utm_source=TB_Robotics_News&utm_medium=email&utm_campaign=20260624&oly_enc_id=2459D2968023G6W',
+            desc: 'NVIDIA 發佈業界首個針對實體人工智慧（Physical AI）的全端安全系統 Halos for Robotics，統一 AI 運算與安全架構，並已由人形機器人公司 Agility 搶先導入工廠與物流作業。',
+            tags: ['Physical AI', '功能安全架構', 'Halos for Robotics'],
+            keywords: 'nvidia 英偉達 實體人工智慧 physical ai 全端安全 halos for robotics 機器人 agility techbriefs'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Manufacturing Dive', date: '6/22',
+            title: '智能體人工智慧正在製造業大規模應用，但基礎設施方面仍有差距',
+            enTitle: '[Agentic AI is scaling in manufacturing, but infrastructure gaps remain]',
+            url: 'https://www.manufacturingdive.com/news/agentic-ai-manufacturing-adoption-data-gaps-evolution/822789/',
+            desc: '製造業正加速邁向能自主解決問題的 Agentic AI（代理型 AI）時代，然而多數企業因數據基礎建設嚴重脱節（僅 20% 具備合格數據模型），正面臨專案高夭折率與高出錯風險的嚴峻挑戰。',
+            tags: ['數據治理瓶頸', '基礎建設落差'],
+            alertTags: ['基礎建設落差'],
+            keywords: '智能體 智能代理 agentic ai 基礎建設 數據模型 夭折率 數據脫節 manufacturing dive infrastructure gaps remain'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Interesting Engineering', date: '6/19',
+            title: '美國公司部署漂浮式資料中心，利用海浪發電',
+            enTitle: '[US firm deploys floating data centers that generate electricity using ocean waves]',
+            url: 'https://interestingengineering.com/energy/us-firm-deploys-floating-data-centers-that-generate-electricity-using-ocean-waves',
+            desc: '美國新創打造出利用「海浪發電」與海水天然冷卻的 Panthalassa 漂浮式資料中心，直接在遠洋運行 AI 算力，完美破解陸地電網與水資源短缺的限制！',
+            tags: ['漂浮式資料中心', '海水冷卻', '綠色算力'],
+            keywords: '新創 漂浮式資料中心 海浪發電 海水冷卻 panthalassa 電網 算力 綠能 interesting engineering ocean waves'
+        },
+        {
+            period: '0616-0630', region: '國外', source: 'Implementation Engineers', date: '06/24',
+            title: '製造業人工智慧新聞：製造業人工智慧發展趨勢展望（2026）',
+            enTitle: '[Manufacturing AI News: Top AI Trends in Manufacturing (2026)]',
+            url: 'https://www.implementation.com/manufacturing-ai-news-top-ai-trends-in-manufacturing-2026/',
+            desc: '權威機構發布製造業 AI 最新發展報告，深度拆解 2026 年全球智慧製造的核心驅動趨勢、轉型路徑與技術整合要點。',
+            tags: ['2026 趨勢報告', '策略規劃'],
+            keywords: '趨勢展望 發展趨勢 2026 數位轉型 策略 implementation engineers top ai trends'
+        }
+    ];
+
+    let activePeriod = '0616-0630';
+    let activeView = 'period';
+
+    const periodNav = document.getElementById('periodNav');
+    const newsGrid = document.getElementById('newsGrid');
     const searchInput = document.getElementById('searchInput');
-    const cards = document.querySelectorAll('.news-card');
+    const stats = document.getElementById('stats');
+    const pageTitle = document.getElementById('pageTitle');
+    const pageMeta = document.getElementById('pageMeta');
+    const emptyState = document.getElementById('emptyState');
+    const databasePanel = document.getElementById('databasePanel');
+    const keywordPanel = document.getElementById('keywordPanel');
+    const keywordCloud = document.getElementById('keywordCloud');
 
-    searchInput.addEventListener('input', function(e) {
-        filterCards(e.target.value.toLowerCase());
-    });
+    function itemsForPeriod(periodId) {
+        return newsItems.filter(item => item.period === periodId);
+    }
 
-    const tags = document.querySelectorAll('.tech-tag');
-    tags.forEach(tag => {
-        tag.addEventListener('click', function() {
-            const tagText = this.innerText.toLowerCase();
-            searchInput.value = this.innerText;
-            filterCards(tagText);
-        });
-    });
+    function escapeHTML(value) {
+        return String(value).replace(/[&<>"']/g, char => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;'
+        }[char]));
+    }
 
-    function filterCards(query) {
-        cards.forEach(card => {
-            const keywords = card.getAttribute('data-keywords').toLowerCase();
-            if (keywords.includes(query)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
+    function routeFor(view, periodId = activePeriod) {
+        if (view === 'period') return `#/period/${periodId}`;
+        return `#/${view}`;
+    }
+
+    function syncHash() {
+        const nextHash = routeFor(activeView, activePeriod);
+        if (window.location.hash !== nextHash) {
+            history.pushState(null, '', nextHash);
+        }
+    }
+
+    function applyRouteFromHash() {
+        const hash = window.location.hash.replace(/^#\/?/, '');
+        const [route, value] = hash.split('/');
+
+        if (route === 'period' && periods.some(period => period.id === value && period.type !== 'keywords')) {
+            activeView = 'period';
+            activePeriod = value;
+            return;
+        }
+
+        if (['database', 'domestic', 'global', 'keywords'].includes(route)) {
+            activeView = route;
+            return;
+        }
+
+        if (route === 'keywords') {
+            activeView = 'keywords';
+        }
+    }
+
+    function renderPeriodNav() {
+        periodNav.innerHTML = periods.map(period => {
+            const count = period.type === 'keywords' ? uniqueTags().length : itemsForPeriod(period.id).length;
+            const isActive = period.type === 'keywords' ? activeView === 'keywords' : activeView === 'period' && period.id === activePeriod;
+            const meta = period.type === 'keywords' ? `${count} 個標籤` : count ? `${count} 則新聞` : '待匯入';
+
+            return `
+            <button type="button" class="period-button ${isActive ? 'active' : ''}" data-period="${period.id}" data-type="${period.type || 'period'}">
+                ${escapeHTML(period.label)}
+                <span class="period-meta">${escapeHTML(meta)}</span>
+            </button>`;
+        }).join('');
+    }
+
+    function uniqueTags() {
+        return [...new Set(newsItems.flatMap(item => item.tags))].sort((a, b) => a.localeCompare(b, 'zh-Hant'));
+    }
+
+    function renderOverview(items) {
+        const domesticTotal = newsItems.filter(item => item.region === '國內').length;
+        const globalTotal = newsItems.filter(item => item.region === '國外').length;
+        const filledPeriods = periods.filter(period => period.type !== 'keywords' && itemsForPeriod(period.id).length).length;
+        const activePeriodInfo = periods.find(period => period.id === activePeriod);
+
+        databasePanel.innerHTML = `
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-label">資料庫總量</div>
+                    <div class="overview-value">${newsItems.length}</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-label">國內新聞</div>
+                    <div class="overview-value">${domesticTotal}</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-label">國外新聞</div>
+                    <div class="overview-value">${globalTotal}</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-label">已匯入期別</div>
+                    <div class="overview-value">${filledPeriods}</div>
+                </div>
+            </div>
+            <div class="period-summary">
+                目前視圖顯示 ${items.length} 則；作用期別為 ${escapeHTML(activePeriodInfo?.label || activePeriod)}。之後匯入 3 月以來新聞時，只要新增到 newsItems 並指定 period，就會自動出現在對應雙週頁面與完整資料庫。
+            </div>
+        `;
+    }
+
+    function itemMatchesQuery(item, query) {
+        if (!query) return true;
+        const haystack = [
+            item.period, item.region, item.source, item.date, item.title, item.enTitle || '', item.desc,
+            item.tags.join(' '), item.keywords
+        ].join(' ').toLowerCase();
+        return haystack.includes(query);
+    }
+
+    function currentItems() {
+        const query = searchInput.value.trim().toLowerCase();
+        return newsItems.filter(item => {
+            const viewMatch = activeView === 'database'
+                || (activeView === 'period' && item.period === activePeriod)
+                || (activeView === 'domestic' && item.region === '國內')
+                || (activeView === 'global' && item.region === '國外')
+                || activeView === 'keywords';
+            return viewMatch && itemMatchesQuery(item, query);
         });
     }
+
+    function renderKeywords() {
+        const tags = uniqueTags();
+        keywordPanel.classList.toggle('active', activeView === 'keywords');
+        keywordCloud.innerHTML = tags.map(tag => `
+            <button type="button" class="tech-tag" data-tag="${escapeHTML(tag)}">${escapeHTML(tag)}</button>
+        `).join('');
+    }
+
+    function renderNews() {
+        const items = currentItems();
+        const activePeriodInfo = periods.find(period => period.id === activePeriod);
+        const domesticCount = items.filter(item => item.region === '國內').length;
+        const globalCount = items.filter(item => item.region === '國外').length;
+
+        if (activeView === 'database') {
+            pageTitle.textContent = '製造業 AI 新聞完整資料庫';
+            pageMeta.textContent = '跨期整合國內與國外新聞；未來匯入 3 月以來資料時，會自動納入此資料庫搜尋。';
+        } else if (activeView === 'domestic') {
+            pageTitle.textContent = '國內製造業 AI 新聞資料庫';
+            pageMeta.textContent = '聚焦台灣企業、供應鏈、ESG、智慧製造與邊緣 AI 應用。';
+        } else if (activeView === 'global') {
+            pageTitle.textContent = '國外製造業 AI 新聞資料庫';
+            pageMeta.textContent = '追蹤跨國技術趨勢、Agentic AI、機器人、數位孿生與 AI 基礎設施。';
+        } else if (activeView === 'keywords') {
+            pageTitle.textContent = '製造業 AI 雙週報關鍵字';
+            pageMeta.textContent = '點選任一標籤即可篩選完整資料庫，方便回頭整理主題趨勢。';
+        } else {
+            pageTitle.textContent = `製造業 AI 雙週新聞 ${activePeriod}`;
+            pageMeta.textContent = `期間：${activePeriodInfo?.range || activePeriod}｜保留單期雙週頁面，也可切換完整資料庫。`;
+        }
+
+        renderOverview(items);
+        renderKeywords();
+
+        stats.innerHTML = `
+            <span class="stat-pill">目前顯示：${items.length} 則</span>
+            <span class="stat-pill">國內：${domesticCount} 則</span>
+            <span class="stat-pill">國外：${globalCount} 則</span>
+            <span class="stat-pill">資料總量：${newsItems.length} 則</span>
+        `;
+
+        newsGrid.innerHTML = items.map((item, index) => `
+            <article class="news-card">
+                <div class="card-header">
+                    <span class="source-tag">${escapeHTML(item.source)} (${escapeHTML(item.date)})</span>
+                    <span class="region-tag">${escapeHTML(item.region)}｜${escapeHTML(item.period)}</span>
+                </div>
+                <h2>
+                    <a href="${escapeHTML(item.url)}" target="_blank" rel="noopener noreferrer">
+                        ${index + 1}. ${escapeHTML(item.title)}
+                        ${item.enTitle ? `<span class="en-title">${escapeHTML(item.enTitle)}</span>` : ''}
+                        <span class="click-hint">開啟原文</span>
+                    </a>
+                </h2>
+                <p class="news-desc">${escapeHTML(item.desc)}</p>
+                <div class="tech-tags">
+                    ${item.tags.map(tag => `<button type="button" class="tech-tag ${(item.alertTags || []).includes(tag) ? 'infrastructure-gap' : ''}" data-tag="${escapeHTML(tag)}">${escapeHTML(tag)}</button>`).join('')}
+                </div>
+            </article>
+        `).join('');
+
+        emptyState.textContent = activeView === 'period' && !itemsForPeriod(activePeriod).length
+            ? `「${activePeriodInfo?.label || activePeriod}」尚未匯入新聞。之後新增資料時，這個期別頁面會自動顯示內容。`
+            : '目前沒有符合條件的新聞。可切換「完整資料庫」或清除搜尋關鍵字。';
+        emptyState.style.display = items.length ? 'none' : 'block';
+        document.querySelectorAll('.view-tabs button').forEach(tab => tab.classList.toggle('active', tab.dataset.view === activeView));
+    }
+
+    periodNav.addEventListener('click', event => {
+        const button = event.target.closest('.period-button');
+        if (!button) return;
+        if (button.dataset.type === 'keywords') {
+            activeView = 'keywords';
+        } else {
+            activePeriod = button.dataset.period;
+            activeView = 'period';
+        }
+        syncHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    document.querySelector('.view-tabs').addEventListener('click', event => {
+        const button = event.target.closest('button');
+        if (!button) return;
+        activeView = button.dataset.view;
+        syncHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    searchInput.addEventListener('input', renderNews);
+
+    newsGrid.addEventListener('click', event => {
+        const tag = event.target.closest('.tech-tag');
+        if (!tag) return;
+        searchInput.value = tag.dataset.tag;
+        activeView = 'database';
+        syncHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    keywordCloud.addEventListener('click', event => {
+        const tag = event.target.closest('.tech-tag');
+        if (!tag) return;
+        searchInput.value = tag.dataset.tag;
+        activeView = 'database';
+        syncHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    window.addEventListener('popstate', () => {
+        applyRouteFromHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    applyRouteFromHash();
+    if (!window.location.hash) syncHash();
+    renderPeriodNav();
+    renderNews();
 </script>
 </body>
 </html>
