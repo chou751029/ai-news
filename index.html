@@ -22,6 +22,11 @@
             --alert-text: #c084fc;
             --surface-light: #f3f4f6;
             --surface-light-active: #d1d5db;
+            --sidebar-bg: #f8fafc;
+            --sidebar-ink: #111827;
+            --sidebar-muted: #64748b;
+            --sidebar-line: #e2e8f0;
+            --sidebar-active: #e0f2fe;
             --disabled-bg: #e5e7eb;
             --disabled-text: #111827;
         }
@@ -39,7 +44,7 @@
 
         .layout {
             display: grid;
-            grid-template-columns: 220px minmax(0, 1fr);
+            grid-template-columns: 286px minmax(0, 1fr);
             min-height: 100vh;
         }
 
@@ -48,57 +53,162 @@
             top: 0;
             height: 100vh;
             overflow-y: auto;
-            background: var(--surface-light);
-            color: var(--disabled-text);
-            border-right: 1px solid #d1d5db;
-            padding: 10px 0;
+            background: linear-gradient(180deg, #ffffff 0%, var(--sidebar-bg) 42%, #eef2f7 100%);
+            color: var(--sidebar-ink);
+            border-right: 1px solid var(--sidebar-line);
+            padding: 18px 14px;
+        }
+
+        .sidebar-brand {
+            border-bottom: 1px solid var(--sidebar-line);
+            padding: 0 4px 16px;
+            margin-bottom: 16px;
+        }
+
+        .brand-kicker {
+            color: var(--accent-strong);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            margin-bottom: 6px;
+            text-transform: uppercase;
         }
 
         .sidebar-title {
-            padding: 10px 12px;
             font-weight: 800;
-            color: #111827;
-            letter-spacing: 0.03em;
+            color: var(--sidebar-ink);
+            font-size: 1.18rem;
+            letter-spacing: 0;
+            line-height: 1.25;
         }
 
-        .sidebar-subtitle {
-            padding: 0 12px 10px;
-            color: #64748b;
+        .sidebar-meta {
+            color: var(--sidebar-muted);
             font-size: 0.78rem;
-            line-height: 1.4;
+            margin-top: 6px;
+        }
+
+        .sidebar-section {
+            margin-top: 16px;
+        }
+
+        .sidebar-heading {
+            color: var(--sidebar-muted);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            margin: 0 4px 8px;
+            text-transform: uppercase;
+        }
+
+        .main-nav {
+            display: grid;
+            gap: 6px;
         }
 
         .period-nav {
             display: flex;
             flex-direction: column;
+            gap: 6px;
         }
 
+        .nav-button,
         .period-button {
             appearance: none;
-            border: 0;
-            border-bottom: 1px solid #e5e7eb;
+            border: 1px solid transparent;
+            border-radius: 8px;
             background: transparent;
-            color: #111827;
+            color: var(--sidebar-ink);
             cursor: pointer;
-            font-size: 0.95rem;
-            padding: 11px 12px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            min-height: 42px;
+            padding: 10px 11px;
             text-align: left;
-            transition: background-color 0.2s, color 0.2s;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
             width: 100%;
         }
 
+        .nav-button {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-count {
+            background: #e2e8f0;
+            border-radius: 999px;
+            color: #475569;
+            font-size: 0.72rem;
+            padding: 2px 7px;
+        }
+
+        .period-button {
+            display: grid;
+            gap: 3px;
+            position: relative;
+        }
+
+        .period-button::before {
+            background: transparent;
+            border-radius: 999px;
+            bottom: 9px;
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 9px;
+            width: 3px;
+        }
+
+        .nav-button:hover,
         .period-button:hover,
+        .nav-button.active,
         .period-button.active {
-            background: var(--surface-light-active);
-            font-weight: 700;
+            background: var(--sidebar-active);
+            border-color: #bae6fd;
+            color: #075985;
+            transform: translateX(1px);
+        }
+
+        .period-button.active::before {
+            background: var(--accent-strong);
         }
 
         .period-meta {
-            color: #64748b;
+            color: var(--sidebar-muted);
             display: block;
             font-size: 0.72rem;
             font-weight: 600;
-            margin-top: 2px;
+        }
+
+        .period-button.active .period-meta,
+        .nav-button.active .nav-count {
+            color: #0369a1;
+        }
+
+        .period-status {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .status-dot {
+            border-radius: 999px;
+            flex: 0 0 auto;
+            height: 7px;
+            width: 7px;
+        }
+
+        .status-dot.ready { background: #10b981; }
+        .status-dot.empty { background: #cbd5e1; }
+
+        .sidebar-footer {
+            border-top: 1px solid var(--sidebar-line);
+            color: var(--sidebar-muted);
+            font-size: 0.75rem;
+            margin: 18px 4px 0;
+            padding-top: 12px;
         }
 
         .main {
@@ -390,9 +500,17 @@
                 height: auto;
                 border-right: 0;
                 border-bottom: 1px solid #d1d5db;
+                padding: 12px;
             }
-            .period-nav { flex-direction: row; overflow-x: auto; }
-            .period-button { white-space: nowrap; border-right: 1px solid #e5e7eb; }
+            .sidebar-brand,
+            .sidebar-footer { display: none; }
+            .sidebar-section { margin-top: 0; }
+            .sidebar-heading { display: none; }
+            .main-nav,
+            .period-nav { display: flex; flex-direction: row; overflow-x: auto; padding-bottom: 4px; }
+            .main-nav { margin-bottom: 8px; }
+            .nav-button,
+            .period-button { flex: 0 0 auto; white-space: nowrap; width: auto; }
             .period-meta { display: none; }
             .toolbar { grid-template-columns: 1fr; }
             .view-tabs { justify-content: stretch; }
@@ -410,9 +528,28 @@
 <body>
 <div class="layout">
     <aside class="sidebar" aria-label="雙週期別導覽">
-        <div class="sidebar-title">雙週新聞</div>
-        <div class="sidebar-subtitle">每一期都是可分享的靜態頁面連結；待匯入期別會先保留位置。</div>
-        <nav class="period-nav" id="periodNav"></nav>
+        <div class="sidebar-brand">
+            <div class="brand-kicker">AI News</div>
+            <div class="sidebar-title">製造業 AI 新聞資料庫</div>
+            <div class="sidebar-meta">雙週觀測｜國內外趨勢</div>
+        </div>
+
+        <section class="sidebar-section" aria-label="資料視圖">
+            <div class="sidebar-heading">資料範圍</div>
+            <nav class="main-nav" id="mainNav">
+                <button type="button" class="nav-button" data-view="database">完整資料庫 <span class="nav-count" data-count="database"></span></button>
+                <button type="button" class="nav-button" data-view="domestic">國內新聞 <span class="nav-count" data-count="domestic"></span></button>
+                <button type="button" class="nav-button" data-view="global">國外新聞 <span class="nav-count" data-count="global"></span></button>
+                <button type="button" class="nav-button" data-view="keywords">關鍵字 <span class="nav-count" data-count="keywords"></span></button>
+            </nav>
+        </section>
+
+        <section class="sidebar-section" aria-label="雙週期別">
+            <div class="sidebar-heading">雙週期別</div>
+            <nav class="period-nav" id="periodNav"></nav>
+        </section>
+
+        <div class="sidebar-footer">MIRDC Industrial Research Division</div>
     </aside>
 
     <main class="main">
@@ -623,6 +760,7 @@
     let activeView = 'period';
 
     const periodNav = document.getElementById('periodNav');
+    const mainNav = document.getElementById('mainNav');
     const newsGrid = document.getElementById('newsGrid');
     const searchInput = document.getElementById('searchInput');
     const stats = document.getElementById('stats');
@@ -683,14 +821,33 @@
         periodNav.innerHTML = periods.map(period => {
             const count = period.type === 'keywords' ? uniqueTags().length : itemsForPeriod(period.id).length;
             const isActive = period.type === 'keywords' ? activeView === 'keywords' : activeView === 'period' && period.id === activePeriod;
-            const meta = period.type === 'keywords' ? `${count} 個標籤` : count ? `${count} 則新聞` : '待匯入';
+            const meta = period.type === 'keywords' ? `${count} 個標籤` : count ? `${count} 則新聞` : '尚無資料';
+            const dotClass = count ? 'ready' : 'empty';
 
             return `
             <button type="button" class="period-button ${isActive ? 'active' : ''}" data-period="${period.id}" data-type="${period.type || 'period'}">
                 ${escapeHTML(period.label)}
-                <span class="period-meta">${escapeHTML(meta)}</span>
+                <span class="period-status">
+                    <span class="period-meta">${escapeHTML(meta)}</span>
+                    <span class="status-dot ${dotClass}" aria-hidden="true"></span>
+                </span>
             </button>`;
         }).join('');
+    }
+
+    function renderMainNav() {
+        const counts = {
+            database: newsItems.length,
+            domestic: newsItems.filter(item => item.region === '國內').length,
+            global: newsItems.filter(item => item.region === '國外').length,
+            keywords: uniqueTags().length
+        };
+
+        mainNav.querySelectorAll('.nav-button').forEach(button => {
+            const view = button.dataset.view;
+            button.classList.toggle('active', activeView === view);
+            button.querySelector('.nav-count').textContent = counts[view];
+        });
     }
 
     function uniqueTags() {
@@ -718,12 +875,12 @@
                     <div class="overview-value">${globalTotal}</div>
                 </div>
                 <div class="overview-card">
-                    <div class="overview-label">已匯入期別</div>
+                    <div class="overview-label">有資料期別</div>
                     <div class="overview-value">${filledPeriods}</div>
                 </div>
             </div>
             <div class="period-summary">
-                目前視圖顯示 ${items.length} 則；作用期別為 ${escapeHTML(activePeriodInfo?.label || activePeriod)}。之後匯入 3 月以來新聞時，只要新增到 newsItems 並指定 period，就會自動出現在對應雙週頁面與完整資料庫。
+                目前視圖顯示 ${items.length} 則；作用期別為 ${escapeHTML(activePeriodInfo?.label || activePeriod)}。
             </div>
         `;
     }
@@ -765,7 +922,7 @@
 
         if (activeView === 'database') {
             pageTitle.textContent = '製造業 AI 新聞完整資料庫';
-            pageMeta.textContent = '跨期整合國內與國外新聞；未來匯入 3 月以來資料時，會自動納入此資料庫搜尋。';
+            pageMeta.textContent = '跨期整合國內與國外新聞，支援關鍵字、來源、公司與技術標籤搜尋。';
         } else if (activeView === 'domestic') {
             pageTitle.textContent = '國內製造業 AI 新聞資料庫';
             pageMeta.textContent = '聚焦台灣企業、供應鏈、ESG、智慧製造與邊緣 AI 應用。';
@@ -777,11 +934,12 @@
             pageMeta.textContent = '點選任一標籤即可篩選完整資料庫，方便回頭整理主題趨勢。';
         } else {
             pageTitle.textContent = `製造業 AI 雙週新聞 ${activePeriod}`;
-            pageMeta.textContent = `期間：${activePeriodInfo?.range || activePeriod}｜保留單期雙週頁面，也可切換完整資料庫。`;
+            pageMeta.textContent = `期間：${activePeriodInfo?.range || activePeriod}｜國內外製造業 AI 動態整理。`;
         }
 
         renderOverview(items);
         renderKeywords();
+        renderMainNav();
 
         stats.innerHTML = `
             <span class="stat-pill">目前顯示：${items.length} 則</span>
@@ -811,7 +969,7 @@
         `).join('');
 
         emptyState.textContent = activeView === 'period' && !itemsForPeriod(activePeriod).length
-            ? `「${activePeriodInfo?.label || activePeriod}」尚未匯入新聞。之後新增資料時，這個期別頁面會自動顯示內容。`
+            ? `「${activePeriodInfo?.label || activePeriod}」尚無新聞資料。`
             : '目前沒有符合條件的新聞。可切換「完整資料庫」或清除搜尋關鍵字。';
         emptyState.style.display = items.length ? 'none' : 'block';
         document.querySelectorAll('.view-tabs button').forEach(tab => tab.classList.toggle('active', tab.dataset.view === activeView));
@@ -833,6 +991,15 @@
 
     document.querySelector('.view-tabs').addEventListener('click', event => {
         const button = event.target.closest('button');
+        if (!button) return;
+        activeView = button.dataset.view;
+        syncHash();
+        renderPeriodNav();
+        renderNews();
+    });
+
+    mainNav.addEventListener('click', event => {
+        const button = event.target.closest('.nav-button');
         if (!button) return;
         activeView = button.dataset.view;
         syncHash();
