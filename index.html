@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>國內製造業 AI 新聞分享 (0616-0630)</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+            --tag-bg: #0369a1;
+            --tag-text: #e0f2fe;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            color: var(--accent-color);
+            margin: 0 0 8px 0;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            font-size: 1rem;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        #searchInput:focus {
+            border-color: var(--accent-color);
+        }
+
+        .news-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .news-card:active {
+            transform: scale(0.99);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .source-tag {
+            background-color: #334155;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .news-card h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.15rem;
+            line-height: 1.4;
+        }
+
+        .news-card h2 a {
+            color: var(--text-main);
+            text-decoration: none;
+            display: block; /* 擴大手機點擊範圍 */
+        }
+
+        .news-card h2 a:hover {
+            color: var(--accent-color);
+        }
+
+        .news-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            margin: 0 0 16px 0;
+            text-align: justify;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tech-tag {
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .tech-tag:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* 專門針對 LINE 內建瀏覽器調整的點擊提示 */
+        .click-hint {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            margin-top: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>製造業 AI 新聞雙週報</h1>
+        <div class="meta-info">期間：06/16 - 06/30</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 輸入關鍵字或技術標籤篩選...">
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+
+        <div class="news-card" data-keywords="杰倫智能 業成 GIS automl 模型複製 良率優化 規模化落地 網管人">
+            <div class="card-header">
+                <span class="source-tag">網管人 (6/18)</span>
+            </div>
+            <h2><a href="https://netadmin.com.tw/netadmin/zh-tw/snapshot/3C7FD42C808740B3BF63C231BF462CE6" target="_blank">1. 杰倫智能助力業成 GIS 製造 AI 落地 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">雙方已完成逾百項 AI 專案、建立超過 1,500 個模型，並把良率、品質與效率改善經驗往跨製程、跨廠複製。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">AutoML</span>
+                <span class="tech-tag">模型複製</span>
+                <span class="tech-tag">良率優化</span>
+            </div>
+        </div>
+
+        <div class="news-card" data-keywords="達明 東南亞 泰國 智慧製造 ai視覺 協作機器人 cobot 智慧檢測 包裝">
+            <div class="card-header">
+                <span class="source-tag">MonetDJ理財網 (6/18)</span>
+            </div>
+            <h2><a href="https://tw.stock.yahoo.com/news/%E9%81%94%E6%98%8E%E6%94%BB%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%99%BA%E6%85%A7%E8%A3%BD%E9%80%A0%E5%95%86%E6%A9%9F-%E7%A7%80ai%E5%8C%85%E8%A3%9D%E8%88%87%E6%AA%A2%E6%B8%AC%E6%96%B9%E6%A1%88-031600205.html" target="_blank">2. 達明攻東南亞智慧製造商機 秀 AI 包裝與檢測方案 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">在泰國智慧製造展展示 AI 包裝與檢測方案，鎖定電子、汽車零件、食品飲料等場域。結合協作機器人、AI 視覺與靈巧手，可節省空間並縮短部署時間。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">AI 視覺</span>
+                <span class="tech-tag">協作機器人</span>
+                <span class="tech-tag">智慧檢測</span>
+            </div>
+        </div>
+
+        <div class="news-card" data-keywords="資誠 esg 永續 數據治理 能源管理 供應鏈追溯 ithome">
+            <div class="card-header">
+                <span class="source-tag">iThome (6/18)</span>
+            </div>
+            <h2><a href="https://www.ithome.com.tw/news/176720" target="_blank">3. AI 驅動 ESG 轉型，資誠：數據治理成製造業關鍵 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">指出製造業 AI 驅動 ESG 轉型的三大應用為能源管理、碳盤查與供應鏈追溯，以及製程優化與資源效率提升，反映 AI 正走向工廠永續管理。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">數據治理</span>
+                <span class="tech-tag">ESG 永續</span>
+                <span class="tech-tag">能源管理</span>
+            </div>
+        </div>
+
+        <div class="news-card" data-keywords="研華 邊緣ai edge ai 原生工廠 ai agent 智慧代理 台視財經">
+            <div class="card-header">
+                <span class="source-tag">台視財經 (6/15)</span>
+            </div>
+            <h2><a href="https://www.ttv.com.tw/finance/view/06202615095529E22FB2C83B4FD995D2C81DF8F9639DEA13/587" target="_blank">4. 研華攻邊緣 AI，擴醫療/智慧製造等多元應用 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">研華正以邊緣 AI 擴大醫療與智慧製造等應用，並提出 AI 原生工廠架構與 AI Agent 場景，顯示工業電腦廠正把 AI 能力往工廠端整合落地。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">邊緣運算</span>
+                <span class="tech-tag">AI 原生工廠</span>
+                <span class="tech-tag">AI Agent</span>
+            </div>
+        </div>
+
+        <div class="news-card" data-keywords="鴻海 vivatech ai factory 基礎設施 工業人形機器人 經濟日報">
+            <div class="card-header">
+                <span class="source-tag">經濟日報 (6/17)</span>
+            </div>
+            <h2><a href="https://money.udn.com/money/story/11162/9571955" target="_blank">5. 鴻海首次參展法 VivaTech 秀 AI 智慧製造方案 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">展示 AI 基礎設施、AI Factory、智慧製造與工業人形機器人等方案，說明其正把 AI 製造解決方案帶向歐洲市場。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">AI Factory</span>
+                <span class="tech-tag">AI 基礎設施</span>
+                <span class="tech-tag">人形機器人</span>
+            </div>
+        </div>
+
+        <div class="news-card" data-keywords="廢棄物 競爭力 台灣鋼聯 立順興 明昌國際 iot 碳盤查 全球中央">
+            <div class="card-header">
+                <span class="source-tag">全球中央 (06/22)</span>
+            </div>
+            <h2><a href="https://www.cna.com.tw/newsworld/article/20260526n002/" target="_blank">6. 廢棄物也是競爭力 AI 加速製造業綠色蛻變 <span class="click-hint">🔗 點擊閱讀原文</span></a></h2>
+            <p class="news-desc">說明台灣製造業如何透過導入 AI 與 IoT 等數位工具，加速碳盤查與廢棄物再利用，成功克服綠色轉型痛點並落實 ESG 永續發展。</p>
+            <div class="tech-tags">
+                <span class="tech-tag">IoT 聯網</span>
+                <span class="tech-tag">綠色轉型</span>
+                <span class="tech-tag">碳盤查</span>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        MIRDC Industrial Research Division Team Sharing
+    </div>
+</div>
+
+<script>
+    // 搜尋功能
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.news-card');
+
+    searchInput.addEventListener('input', function(e) {
+        filterCards(e.target.value.toLowerCase());
+    });
+
+    // 點擊標籤直接篩選
+    const tags = document.querySelectorAll('.tech-tag');
+    tags.forEach(tag => {
+        tag.addEventListener('click', function() {
+            const tagText = this.innerText.toLowerCase();
+            searchInput.value = this.innerText;
+            filterCards(tagText);
+        });
+    });
+
+    function filterCards(query) {
+        cards.forEach(card => {
+            const keywords = card.getAttribute('data-keywords').toLowerCase();
+            if (keywords.includes(query)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
+</body>
+</html>
