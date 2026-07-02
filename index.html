@@ -6,27 +6,27 @@
     <title>製造業 AI 雙週新聞資料庫</title>
     <style>
         :root {
-            --bg-color: #111111;
-            --panel-bg: #18181b;
-            --panel-soft: #202124;
-            --card-bg: #242629;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-color: #38bdf8;
-            --accent-strong: #0ea5e9;
-            --accent-soft: rgba(14, 165, 233, 0.14);
-            --border-color: #3f3f46;
-            --tag-bg: #0369a1;
-            --tag-text: #e0f2fe;
-            --alert-bg: #1e1b4b;
-            --alert-text: #c084fc;
+            --bg-color: #ffffff;
+            --panel-bg: #ffffff;
+            --panel-soft: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --accent-color: #2563eb;
+            --accent-strong: #1d4ed8;
+            --accent-soft: #eff6ff;
+            --border-color: #e5e7eb;
+            --tag-bg: #eef2ff;
+            --tag-text: #3730a3;
+            --alert-bg: #fff7ed;
+            --alert-text: #9a3412;
             --surface-light: #f3f4f6;
             --surface-light-active: #d1d5db;
-            --sidebar-bg: #f8fafc;
+            --sidebar-bg: #fbfbfb;
             --sidebar-ink: #111827;
             --sidebar-muted: #64748b;
             --sidebar-line: #e2e8f0;
-            --sidebar-active: #e0f2fe;
+            --sidebar-active: #eff6ff;
             --disabled-bg: #e5e7eb;
             --disabled-text: #111827;
         }
@@ -35,7 +35,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #111111 0%, #18181b 56%, #0f172a 100%);
+            background: var(--bg-color);
             color: var(--text-main);
             line-height: 1.6;
             margin: 0;
@@ -44,7 +44,7 @@
 
         .layout {
             display: grid;
-            grid-template-columns: 286px minmax(0, 1fr);
+            grid-template-columns: 292px minmax(0, 1fr);
             min-height: 100vh;
         }
 
@@ -53,7 +53,7 @@
             top: 0;
             height: 100vh;
             overflow-y: auto;
-            background: linear-gradient(180deg, #ffffff 0%, var(--sidebar-bg) 42%, #eef2f7 100%);
+            background: var(--sidebar-bg);
             color: var(--sidebar-ink);
             border-right: 1px solid var(--sidebar-line);
             padding: 18px 14px;
@@ -101,17 +101,19 @@
             text-transform: uppercase;
         }
 
+        .sidebar-links,
         .main-nav {
             display: grid;
-            gap: 6px;
+            gap: 4px;
         }
 
         .period-nav {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 16px;
         }
 
+        .side-link,
         .nav-button,
         .period-button {
             appearance: none;
@@ -127,6 +129,46 @@
             text-align: left;
             transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
             width: 100%;
+        }
+
+        .side-link {
+            display: block;
+            min-height: auto;
+            padding: 9px 10px;
+            text-decoration: none;
+        }
+
+        .side-link.primary {
+            background: #111827;
+            border-color: #111827;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .side-link.primary:hover,
+        .side-link.primary.active {
+            background: #1f2937;
+            border-color: #1f2937;
+            color: #ffffff;
+        }
+
+        .period-group {
+            display: grid;
+            gap: 6px;
+        }
+
+        .period-label {
+            color: var(--sidebar-muted);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            padding: 0 4px;
+        }
+
+        .period-link-row {
+            display: grid;
+            gap: 6px;
+            grid-template-columns: 1fr 1fr;
         }
 
         .nav-button {
@@ -160,14 +202,23 @@
             width: 3px;
         }
 
+        .side-link:hover,
+        .side-link.active,
         .nav-button:hover,
         .period-button:hover,
         .nav-button.active,
         .period-button.active {
             background: var(--sidebar-active);
-            border-color: #bae6fd;
-            color: #075985;
+            border-color: #bfdbfe;
+            color: var(--accent-strong);
             transform: translateX(1px);
+        }
+
+        .side-link.primary.active,
+        .side-link.primary:hover {
+            background: #1f2937;
+            border-color: #1f2937;
+            color: #ffffff;
         }
 
         .period-button.active::before {
@@ -225,12 +276,12 @@
             padding: 24px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            background: rgba(24, 24, 27, 0.82);
-            box-shadow: 0 14px 44px rgba(2, 6, 23, 0.24);
+            background: #ffffff;
+            box-shadow: none;
         }
 
         header h1 {
-            color: var(--accent-color);
+            color: var(--text-main);
             margin: 0 0 8px;
             font-size: clamp(1.6rem, 4vw, 2.4rem);
             letter-spacing: 0.5px;
@@ -322,7 +373,7 @@
         .overview-card,
         .period-summary,
         .keyword-panel {
-            background: rgba(24, 24, 27, 0.86);
+            background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 14px;
@@ -376,7 +427,7 @@
         .stat-pill {
             border: 1px solid var(--border-color);
             border-radius: 999px;
-            background: rgba(36, 38, 41, 0.78);
+            background: #f8fafc;
             padding: 5px 10px;
         }
 
@@ -387,7 +438,7 @@
         }
 
         .news-card {
-            background: rgba(36, 38, 41, 0.94);
+            background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 20px;
@@ -409,15 +460,15 @@
 
         .source-tag,
         .region-tag {
-            background-color: #334155;
-            color: var(--text-muted);
+            background-color: #f3f4f6;
+            color: #4b5563;
             font-size: 0.75rem;
             padding: 2px 8px;
             border-radius: 999px;
             font-weight: 600;
         }
 
-        .region-tag { color: #bae6fd; }
+        .region-tag { color: var(--accent-strong); }
 
         .news-card h2 {
             margin: 0 0 12px;
@@ -442,7 +493,7 @@
         }
 
         .news-desc {
-            color: #cbd5e1;
+            color: #4b5563;
             font-size: 0.95rem;
             margin: 0 0 16px;
             text-align: justify;
@@ -476,7 +527,7 @@
             padding: 28px;
             text-align: center;
             color: var(--text-muted);
-            background: rgba(24, 24, 27, 0.58);
+            background: #f8fafc;
         }
 
         .footer {
@@ -506,9 +557,11 @@
             .sidebar-footer { display: none; }
             .sidebar-section { margin-top: 0; }
             .sidebar-heading { display: none; }
-            .main-nav,
+            .sidebar-links,
             .period-nav { display: flex; flex-direction: row; overflow-x: auto; padding-bottom: 4px; }
-            .main-nav { margin-bottom: 8px; }
+            .sidebar-links { margin-bottom: 8px; }
+            .period-group { flex: 0 0 auto; min-width: 128px; }
+            .side-link,
             .nav-button,
             .period-button { flex: 0 0 auto; white-space: nowrap; width: auto; }
             .period-meta { display: none; }
@@ -535,12 +588,8 @@
         </div>
 
         <section class="sidebar-section" aria-label="資料視圖">
-            <div class="sidebar-heading">資料範圍</div>
-            <nav class="main-nav" id="mainNav">
-                <button type="button" class="nav-button" data-view="database">完整資料庫 <span class="nav-count" data-count="database"></span></button>
-                <button type="button" class="nav-button" data-view="domestic">國內新聞 <span class="nav-count" data-count="domestic"></span></button>
-                <button type="button" class="nav-button" data-view="global">國外新聞 <span class="nav-count" data-count="global"></span></button>
-                <button type="button" class="nav-button" data-view="keywords">關鍵字 <span class="nav-count" data-count="keywords"></span></button>
+            <nav class="sidebar-links" id="mainNav">
+                <a class="side-link primary" href="#/database" data-view="database">完整資料庫</a>
             </nav>
         </section>
 
@@ -758,6 +807,7 @@
 
     let activePeriod = '0616-0630';
     let activeView = 'period';
+    let activeRegion = 'all';
 
     const periodNav = document.getElementById('periodNav');
     const mainNav = document.getElementById('mainNav');
@@ -785,8 +835,12 @@
         }[char]));
     }
 
-    function routeFor(view, periodId = activePeriod) {
-        if (view === 'period') return `#/period/${periodId}`;
+    function routeFor(view, periodId = activePeriod, region = activeRegion) {
+        if (view === 'period') {
+            return region === 'domestic' || region === 'global'
+                ? `#/period/${periodId}/${region}`
+                : `#/period/${periodId}`;
+        }
         return `#/${view}`;
     }
 
@@ -799,16 +853,18 @@
 
     function applyRouteFromHash() {
         const hash = window.location.hash.replace(/^#\/?/, '');
-        const [route, value] = hash.split('/');
+        const [route, value, region] = hash.split('/');
 
         if (route === 'period' && periods.some(period => period.id === value && period.type !== 'keywords')) {
             activeView = 'period';
             activePeriod = value;
+            activeRegion = region === 'domestic' || region === 'global' ? region : 'all';
             return;
         }
 
         if (['database', 'domestic', 'global', 'keywords'].includes(route)) {
             activeView = route;
+            activeRegion = 'all';
             return;
         }
 
@@ -818,35 +874,25 @@
     }
 
     function renderPeriodNav() {
-        periodNav.innerHTML = periods.map(period => {
-            const count = period.type === 'keywords' ? uniqueTags().length : itemsForPeriod(period.id).length;
-            const isActive = period.type === 'keywords' ? activeView === 'keywords' : activeView === 'period' && period.id === activePeriod;
-            const meta = period.type === 'keywords' ? `${count} 個標籤` : count ? `${count} 則新聞` : '尚無資料';
-            const dotClass = count ? 'ready' : 'empty';
+        const issuePeriods = periods.filter(period => period.type !== 'keywords');
 
+        periodNav.innerHTML = issuePeriods.map(period => {
+            const domesticActive = activeView === 'period' && period.id === activePeriod && activeRegion === 'domestic';
+            const globalActive = activeView === 'period' && period.id === activePeriod && activeRegion === 'global';
             return `
-            <button type="button" class="period-button ${isActive ? 'active' : ''}" data-period="${period.id}" data-type="${period.type || 'period'}">
-                ${escapeHTML(period.label)}
-                <span class="period-status">
-                    <span class="period-meta">${escapeHTML(meta)}</span>
-                    <span class="status-dot ${dotClass}" aria-hidden="true"></span>
-                </span>
-            </button>`;
+            <div class="period-group">
+                <div class="period-label">${escapeHTML(period.label.replace('雙週報新聞 ', ''))}</div>
+                <div class="period-link-row">
+                    <a class="side-link ${domesticActive ? 'active' : ''}" href="#/period/${period.id}/domestic" data-period="${period.id}" data-region="domestic">國內</a>
+                    <a class="side-link ${globalActive ? 'active' : ''}" href="#/period/${period.id}/global" data-period="${period.id}" data-region="global">國外</a>
+                </div>
+            </div>`;
         }).join('');
     }
 
     function renderMainNav() {
-        const counts = {
-            database: newsItems.length,
-            domestic: newsItems.filter(item => item.region === '國內').length,
-            global: newsItems.filter(item => item.region === '國外').length,
-            keywords: uniqueTags().length
-        };
-
-        mainNav.querySelectorAll('.nav-button').forEach(button => {
-            const view = button.dataset.view;
-            button.classList.toggle('active', activeView === view);
-            button.querySelector('.nav-count').textContent = counts[view];
+        mainNav.querySelectorAll('.side-link').forEach(link => {
+            link.classList.toggle('active', activeView === link.dataset.view);
         });
     }
 
@@ -898,7 +944,11 @@
         const query = searchInput.value.trim().toLowerCase();
         return newsItems.filter(item => {
             const viewMatch = activeView === 'database'
-                || (activeView === 'period' && item.period === activePeriod)
+                || (activeView === 'period' && item.period === activePeriod && (
+                    activeRegion === 'all'
+                    || (activeRegion === 'domestic' && item.region === '國內')
+                    || (activeRegion === 'global' && item.region === '國外')
+                ))
                 || (activeView === 'domestic' && item.region === '國內')
                 || (activeView === 'global' && item.region === '國外')
                 || activeView === 'keywords';
@@ -933,8 +983,9 @@
             pageTitle.textContent = '製造業 AI 雙週報關鍵字';
             pageMeta.textContent = '點選任一標籤即可篩選完整資料庫，方便回頭整理主題趨勢。';
         } else {
-            pageTitle.textContent = `製造業 AI 雙週新聞 ${activePeriod}`;
-            pageMeta.textContent = `期間：${activePeriodInfo?.range || activePeriod}｜國內外製造業 AI 動態整理。`;
+            const regionText = activeRegion === 'domestic' ? '國內' : activeRegion === 'global' ? '國外' : '國內外';
+            pageTitle.textContent = `製造業 AI 雙週新聞 ${activePeriod}｜${regionText}`;
+            pageMeta.textContent = `期間：${activePeriodInfo?.range || activePeriod}｜${regionText}製造業 AI 動態整理。`;
         }
 
         renderOverview(items);
@@ -968,22 +1019,19 @@
             </article>
         `).join('');
 
-        emptyState.textContent = activeView === 'period' && !itemsForPeriod(activePeriod).length
-            ? `「${activePeriodInfo?.label || activePeriod}」尚無新聞資料。`
+        emptyState.textContent = activeView === 'period'
+            ? `「${activePeriodInfo?.label || activePeriod}」目前尚無符合此分類的新聞資料。`
             : '目前沒有符合條件的新聞。可切換「完整資料庫」或清除搜尋關鍵字。';
         emptyState.style.display = items.length ? 'none' : 'block';
         document.querySelectorAll('.view-tabs button').forEach(tab => tab.classList.toggle('active', tab.dataset.view === activeView));
     }
 
     periodNav.addEventListener('click', event => {
-        const button = event.target.closest('.period-button');
-        if (!button) return;
-        if (button.dataset.type === 'keywords') {
-            activeView = 'keywords';
-        } else {
-            activePeriod = button.dataset.period;
-            activeView = 'period';
-        }
+        const link = event.target.closest('.side-link');
+        if (!link) return;
+        activePeriod = link.dataset.period;
+        activeRegion = link.dataset.region;
+        activeView = 'period';
         syncHash();
         renderPeriodNav();
         renderNews();
@@ -993,15 +1041,17 @@
         const button = event.target.closest('button');
         if (!button) return;
         activeView = button.dataset.view;
+        activeRegion = 'all';
         syncHash();
         renderPeriodNav();
         renderNews();
     });
 
     mainNav.addEventListener('click', event => {
-        const button = event.target.closest('.nav-button');
-        if (!button) return;
-        activeView = button.dataset.view;
+        const link = event.target.closest('.side-link');
+        if (!link) return;
+        activeView = link.dataset.view;
+        activeRegion = 'all';
         syncHash();
         renderPeriodNav();
         renderNews();
@@ -1014,6 +1064,7 @@
         if (!tag) return;
         searchInput.value = tag.dataset.tag;
         activeView = 'database';
+        activeRegion = 'all';
         syncHash();
         renderPeriodNav();
         renderNews();
@@ -1024,6 +1075,7 @@
         if (!tag) return;
         searchInput.value = tag.dataset.tag;
         activeView = 'database';
+        activeRegion = 'all';
         syncHash();
         renderPeriodNav();
         renderNews();
