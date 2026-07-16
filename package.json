@@ -1,0 +1,7 @@
+{
+  "name": "ai-news",
+  "private": true,
+  "scripts": {
+    "news:apply": "node scripts/upsert-period.mjs"
+  }
+}

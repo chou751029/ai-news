@@ -1,0 +1,232 @@
+{
+  "id": "p_0701",
+  "label": "07/01 - 07/15",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "Yahoo財經／鉅亨網",
+      "date": "7/3",
+      "title": "緯創在台美廠區導入 Omniverse 數位雙生推進智慧工廠",
+      "url": "https://hk.finance.yahoo.com/news/%E7%B7%AF%E5%89%B5%E6%96%B0%E7%AB%B9-%E7%BE%8E%E5%9C%8B%E5%BB%A0%E5%8D%80%E5%B0%8E%E5%85%A5%E8%BC%9D%E9%81%94nvdia-omniverse-dsx-%E6%8E%A8%E5%8B%95ai%E6%99%BA%E6%85%A7%E5%B7%A5%E5%BB%A0-014431295.html",
+      "summary": "緯創在新竹與美國廠區導入 NVIDIA Omniverse DSX Blueprint 與 Physical AI，建立智慧工廠數位雙生，以縮短跨廠布局分析與驗證時間，並提前發現產線與散熱瓶頸。",
+      "tags": ["數位雙生", "智慧工廠", "AI伺服器"]
+    },
+    {
+      "source": "工商時報",
+      "date": "7/4",
+      "title": "宜鼎以 Edge AI 視覺鎖定工具機與精密機械聚落",
+      "url": "https://www.ctee.com.tw/news/20260704700370-431203",
+      "summary": "宜鼎與系統整合商合作推 Edge AI 與 AI 視覺辨識，鎖定中台灣工具機、精密機械零組件、手工具、水五金與鑄造聚落，主打分階段導入、無須一次全面汰換既有設備。",
+      "tags": ["工具機", "精密機械", "機器視覺"]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/6",
+      "title": "昕力以主權 AI 架構推動製造業 Agentic AI 落地",
+      "url": "https://money.udn.com/money/story/11162/9602740",
+      "summary": "昕力指出製造業導入 Agentic AI 常卡在系統整合、知識治理與信任機制，因此推出主權 AI 架構，主打模型運算與資料處理全程不離廠、100% 物理隔離。",
+      "tags": ["Agentic AI", "主權AI", "資料治理"]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/7",
+      "title": "思偉達把異常偵測能力轉成工廠「AI 員工」",
+      "url": "https://money.udn.com/money/story/5950/9610813",
+      "summary": "思偉達把原本用於異常偵測與即時情資的能力切入製造現場，主打把工廠異常從層層回報改成即時偵測與預判；報導並引述案例數據稱新人上線時間可由 3 個月縮至 3 週。",
+      "tags": ["AI員工", "異常偵測", "工廠管理"]
+    },
+    {
+      "source": "聯合報",
+      "date": "7/7",
+      "title": "金屬製品與扣件等製造業加大 AI 與智慧工廠投入",
+      "url": "https://udn.com/news/story/7241/9613438",
+      "summary": "聯合報指出，台灣金屬製品、扣件、手工具到機械設備等中小型製造業正加大智慧工廠、自動化與 AI 投入，但也提醒企業須避免過度依賴歷史資料與演算法。",
+      "tags": ["扣件", "金屬製品", "智慧工廠"]
+    },
+    {
+      "source": "TechOrange",
+      "date": "7/8",
+      "title": "華碩將 AI 排程與視覺檢測整合進製造場域",
+      "url": "https://techorange.com/2026/07/08/asus-industrial-ai-aiehs-aisoda-aisvision-aissens-aisphm-aisdetector/",
+      "summary": "華碩把 AISODA 智慧排程、AI 視覺檢測、設備健康預測與預防保養整合進工廠場景；報導指出其排程系統可把生產能見度拉長到 30 至 60 天，插單時 5 到 10 分鐘內完成重排。",
+      "tags": ["智慧排程", "機器視覺", "設備維護"]
+    },
+    {
+      "source": "MoneyDJ",
+      "date": "7/8",
+      "title": "川湖在美國新廠導入自研智慧製造與 AI 品質管制",
+      "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=ac8d6c69-fb2b-4a9a-a3ed-ef1d17fed904",
+      "summary": "川湖表示已在美國廠導入自研智慧化生產系統、自動物流與 AI 品質控管辨識，並把 AI 智能化滑軌先用於工具櫃管理，以降低人工負擔並支援 24 小時生產。",
+      "tags": ["自動物流", "品質管理", "智慧製造"]
+    },
+    {
+      "source": "CTIMES",
+      "date": "7/9",
+      "title": "台灣製造業 AI 普及率升至 38.5%",
+      "url": "https://www.ctimes.com.tw/DispArt/tw/2607092019VH.shtml",
+      "summary": "CTIMES 引述經濟部跨部會 AI 輔導成果指出，台灣製造業 AI 普及率已由 2024 年的 12.3% 升至 2026 年的 38.5%；案例包括盈錫精密以 AI 智慧品質管理強化扣件製造，以及千里眼精密以 AI 視覺支援生產與出貨流程。",
+      "tags": ["AI普及率", "扣件", "品質管理"]
+    },
+    {
+      "source": "TechOrange",
+      "date": "7/10",
+      "title": "高雄串連鴻海與華碩推動在地 AI 智慧製造",
+      "url": "https://techorange.com/2026/07/10/2026-smart-manufacturing-foxconn-asus-mirdc-goodlinker/",
+      "summary": "高雄市經發局串連鴻海、華碩與金屬中心等資源，應用場景涵蓋智慧排程、視覺檢測、預測維護與老師傅 know-how 數位化，目標是把單點案例串成在地產業網。",
+      "tags": ["高雄", "智慧製造", "產業網"]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/12",
+      "title": "AI 需求帶動台灣製造業營收與獲利成長",
+      "url": "https://money.udn.com/money/story/10869/9623036?from=edn_newest_index",
+      "summary": "經濟部統計顯示，受 AI、高效能運算與雲端需求帶動，2024 年台灣製造業營收達 21.9 兆元、年增 7.6%，營業利益 2.2 兆元、年增 29.5%。",
+      "tags": ["產業數據", "AI需求", "高效能運算"]
+    },
+    {
+      "source": "MoneyDJ",
+      "date": "7/13",
+      "title": "慧友以 AI NVR 與巡檢機器人切入工廠應用",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=583c0edf-619a-43ed-8100-0e0cdd095e9b",
+      "summary": "慧友展示以 NVIDIA 平台打造的 AI NVR 與智慧工廠巡檢移動機器人，並指出 AI 製造相關應用已成其營收主力之一；報導提到 AI 製造比重約 35% 至 40%。",
+      "tags": ["巡檢機器人", "工廠安全", "AI影像"]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/14",
+      "title": "台灣海洋大學用 AI 做壓鑄缺陷預測與模具優化",
+      "url": "https://money.udn.com/money/story/5723/9624813",
+      "summary": "台灣海洋大學以智慧壓鑄與模具最佳化冷卻系統為核心，結合 CAE 與 AI 做壓鑄缺陷預測、散熱設計與製程改善，主打縮短週期、延長模具壽命與降低能耗。",
+      "tags": ["壓鑄", "模具", "製程優化"]
+    },
+    {
+      "source": "Taiwan News",
+      "date": "7/15",
+      "title": "台灣製造廠以 AI 加速 AI 伺服器量產",
+      "url": "https://www.taiwannews.com.tw/en/news/6401505",
+      "summary": "台灣伺服器供應鏈正把 AI 導入產線。鴻海以 AI 即時分析感測與製造資料，產線產能與效率提升 50%、故障診斷準確率達 90%；緯創則用 AI 生成瑕疵樣本，檢測準確率提升 5% 至 20%。",
+      "tags": ["AI伺服器", "智慧製造", "品質檢測"]
+    }
+  ],
+  "international": [
+    {
+      "source": "Reuters",
+      "date": "7/1",
+      "title": "全球 AI 熱潮帶動亞洲工廠接單回升",
+      "url": "https://www.reuters.com/world/china/global-economy-global-ai-wave-revs-up-asian-factories-offsetting-war-induced-2026-07-01/",
+      "summary": "Reuters 指出，全球 AI 需求正撐住亞洲工廠活動，讓中國、日本、南韓等製造體系在貿易壓力下仍獲得半導體、電子與設備新訂單。",
+      "tags": ["亞洲製造", "半導體", "產業趨勢"]
+    },
+    {
+      "source": "China Daily",
+      "date": "7/2",
+      "title": "青海以 AI 與 5G 大幅縮短貨運列車檢測時間",
+      "url": "https://www.chinadaily.com.cn/a/202607/02/WS6a45bb3ca310986e2b4630f0.html",
+      "summary": "中國青海西寧東車輛段把 AI 與 5G 用在貨運列車檢測，單次檢查時間由 25 分鐘降到 3 至 5 分鐘、工作量降 70%，缺陷辨識準確率逾 98%。",
+      "tags": ["軌道運輸", "品質檢測", "5G"]
+    },
+    {
+      "source": "The Elec",
+      "date": "7/5",
+      "title": "LG Display 以 AI 改善 OLED 製造與研發效率",
+      "url": "https://www.thelec.net/news/articleView.html?idxno=11959",
+      "summary": "LG Display 表示已把 AI 用於 OLED 產線製造與研發，包含虛擬開發工程與製程品質改善；其中部分品質改善作業時間由 3 週縮短到 2 天，年節省效益逾 2,000 億韓元。",
+      "tags": ["面板", "OLED", "製程優化"]
+    },
+    {
+      "source": "The Korea Times",
+      "date": "7/8",
+      "title": "Naver Cloud 與 Mistral AI 合作切入製造業 AI",
+      "url": "https://www.koreatimes.co.kr/business/companies/20260708/naver-cloud-mistral-ai-sign-partnership-to-target-manufacturing-ai",
+      "summary": "韓國 Naver Cloud 與法國 Mistral AI 合作，首波鎖定韓國工廠即時品質異常檢測，並由現場工程師到廠支援導入，主打製造場域的主權 AI 應用。",
+      "tags": ["主權AI", "品質檢測", "韓國製造"]
+    },
+    {
+      "source": "People's Daily",
+      "date": "7/8",
+      "title": "TCL 華星以 3D 視覺與 AI 提升面板檢測良率",
+      "url": "http://en.people.cn/n3/2026/0708/c90000-20475400.html",
+      "summary": "TCL 華星光電把 3D 視覺與 AI 用於面板品質檢測，原本需 4 人、每人 2 分鐘的工序，現可在 6 秒內完成，檢測準確率達 99.8%。",
+      "tags": ["面板", "3D視覺", "品質檢測"]
+    },
+    {
+      "source": "MarketScale",
+      "date": "7/11",
+      "title": "南韓擴大投入 AI 自主製造與智慧工廠園區",
+      "url": "https://www.marketscale.com/industries/engineering-and-construction/south-korea-commits-75-billion-to-ai-autonomous-manufacturing-as-smart-factory-count-hits-30000",
+      "summary": "南韓政府擴大推動 AI 自主製造，現有約 3 萬座智慧工廠，並規劃在 2030 年前建置 100 個 AI 製造園區，同時培訓 4 萬名全自動工廠技術人員。",
+      "tags": ["智慧工廠", "產業政策", "韓國製造"]
+    },
+    {
+      "source": "Robotics & Automation News",
+      "date": "7/9",
+      "title": "AI 視覺機器人首度自動化 Serrano 火腿貼標",
+      "url": "https://roboticsandautomationnews.com/2026/07/09/ai-powered-robot-automates-serrano-ham-labeling-for-the-first-time/103208/",
+      "summary": "西班牙系統整合商以 AI 視覺判斷火腿貼標位置，再由 SCARA 機器人執行貼標，產線常態速度 750 件/小時、峰值 900 件/小時，兼顧追溯與減少人工負擔。",
+      "tags": ["食品製造", "機器人", "機器視覺"]
+    },
+    {
+      "source": "Forbes",
+      "date": "7/9",
+      "title": "製造業 AI 效率提升已現但 ROI 仍待驗證",
+      "url": "https://www.forbes.com/sites/robertszczerba/2026/07/09/manufacturers-rushed-into-ai-the-returns-arent-showing-up/",
+      "summary": "Grant Thornton 調查的 100 位製造業主管中，64% 認為 AI 已提升效率，但尚無受訪者回報顯著營收成長或成本明顯下降，顯示製造業正從試點走向 ROI 驗證期。",
+      "tags": ["產業調查", "ROI", "製造管理"]
+    },
+    {
+      "source": "MarketScale",
+      "date": "7/11",
+      "title": "Standard Bots 指出 physical AI 正降低工廠自動化門檻",
+      "url": "https://www.marketscale.com/industries/industrial-iot/standard-bots-ceo-physical-ai-is-closing-the-gap-between-what-manufacturers-want-to-automate-and-what-they-can",
+      "summary": "Standard Bots 認為 physical AI 讓工廠能以示教取代重度編程來訓練機器人，正在縮小「想自動化的工序」與「目前做得到的工序」之間的落差。",
+      "tags": ["Physical AI", "機器人", "自動化"]
+    },
+    {
+      "source": "新浪財經",
+      "date": "7/12",
+      "title": "佛山模具廠以 AI 將沖壓模具設計壓縮到數小時",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-07-12/doc-inihpuec2915897.shtml",
+      "summary": "中國佛山模具廠大捷智能把 AI 用於沖壓模具設計，報導稱原本 10 多天、約 40 萬次滑鼠操作的流程，可壓縮到數小時完成，聚焦模具設計自動化。",
+      "tags": ["模具", "沖壓", "設計自動化"]
+    },
+    {
+      "source": "Metrology News",
+      "date": "7/13",
+      "title": "EyeVision 以 AI 視覺完成 100% 螺紋在線檢測",
+      "url": "https://metrology.news/eyevision-automates-100-in-line-thread-inspection-for-reliable-quality-control/",
+      "summary": "EyeVision 將 AI 視覺導入產線螺紋檢測，標榜可在不接觸工件的情況下完成 100% 在線檢查，對扣件、金屬零件與組裝品質控管特別相關。",
+      "tags": ["扣件", "機器視覺", "品質檢測"]
+    },
+    {
+      "source": "A3",
+      "date": "7/14",
+      "title": "A3 彙整工業領導者分享 AI 製造落地條件",
+      "url": "https://www.automate.org/ai/blogs/3-industrial-leaders-share-whats-possible-with-ai",
+      "summary": "A3 整理三位工業領導者對製造導入 AI 的觀點，重點放在資料基礎、基礎設施與工程決策如何決定 AI 是否能形成可量化價值。",
+      "tags": ["工業AI", "導入策略", "智慧製造"]
+    },
+    {
+      "source": "Anthropic",
+      "date": "7/15",
+      "title": "UST 導入 Claude 加速半導體與裝置驗證",
+      "url": "https://www.anthropic.com/news/ust-claude",
+      "summary": "UST 將 Claude 用於半導體與連網裝置工程驗證，把部分驗證週期由 4 天縮短到 48 小時，整體工程作業時間約減少 50% 至 70%。",
+      "tags": ["半導體", "工程驗證", "生成式AI"]
+    }
+  ],
+  "origTitles": {
+    "https://www.reuters.com/world/china/global-economy-global-ai-wave-revs-up-asian-factories-offsetting-war-induced-2026-07-01/": "Global AI wave revs up Asian factories, offsetting war-induced pain",
+    "https://www.chinadaily.com.cn/a/202607/02/WS6a45bb3ca310986e2b4630f0.html": "AI and 5G slash train inspection time by 80 percent in Qinghai",
+    "https://www.thelec.net/news/articleView.html?idxno=11959": "LG Display Says AI-Driven Manufacturing and R&D Save More Than 200 Billion Won Annually",
+    "https://www.koreatimes.co.kr/business/companies/20260708/naver-cloud-mistral-ai-sign-partnership-to-target-manufacturing-ai": "Naver Cloud, Mistral AI sign partnership to target manufacturing AI",
+    "http://en.people.cn/n3/2026/0708/c90000-20475400.html": "Inside China's factories, computing power is reshaping manufacturing",
+    "https://www.marketscale.com/industries/engineering-and-construction/south-korea-commits-75-billion-to-ai-autonomous-manufacturing-as-smart-factory-count-hits-30000": "South Korea commits $7.5 billion to AI-autonomous manufacturing as smart factory count hits 30,000",
+    "https://roboticsandautomationnews.com/2026/07/09/ai-powered-robot-automates-serrano-ham-labeling-for-the-first-time/103208/": "AI-powered robot automates Serrano ham labeling for the first time",
+    "https://www.forbes.com/sites/robertszczerba/2026/07/09/manufacturers-rushed-into-ai-the-returns-arent-showing-up/": "Manufacturers Rushed Into AI. The Returns Aren't Showing Up",
+    "https://www.marketscale.com/industries/industrial-iot/standard-bots-ceo-physical-ai-is-closing-the-gap-between-what-manufacturers-want-to-automate-and-what-they-can": "Standard Bots CEO: physical AI is closing the gap between what manufacturers want to automate and what they can",
+    "https://finance.sina.com.cn/tech/roll/2026-07-12/doc-inihpuec2915897.shtml": "目前“没有竞争对手”！自研AI杀入模具设计，国产工业软件这回争气了",
+    "https://metrology.news/eyevision-automates-100-in-line-thread-inspection-for-reliable-quality-control/": "EyeVision Automates 100% In-Line Thread Inspection for Reliable Quality Control",
+    "https://www.automate.org/ai/blogs/3-industrial-leaders-share-whats-possible-with-ai": "Making AI Work in Manufacturing: 3 Industrial Leaders Share What's Possible",
+    "https://www.anthropic.com/news/ust-claude": "UST is bringing Claude to physical AI"
+  }
+}
