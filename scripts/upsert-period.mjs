@@ -77,7 +77,7 @@ function upsertOrigTitlesBlock(source, data) {
   const block =
     `${markerStart}\\n` +
     entries
-      .map(([url, title]) => `      ${JSON.stringify(url)}: ${JSON.stringify(title)},`)
+      .map(([url, title]) => `      ${toSingleQuoted(url)}: ${toSingleQuoted(title)},`)
       .join("\\n") +
     `\\n      ${markerEnd}`;
 
@@ -183,13 +183,37 @@ function findMatchingBrace(source, start) {
 }
 
 function toJsPeriod(data) {
-  const payload = {
-    id: data.id,
-    label: data.label,
-    year: data.year,
-    domestic: data.domestic,
-    international: data.international,
-  };
+  const lines = [
+    "{",
+    `  id: ${toSingleQuoted(data.id)},`,
+    `  label: ${toSingleQuoted(data.label)},`,
+    `  year: ${data.year},`,
+    `  domestic: ${toJsValue(data.domestic)},`,
+    `  international: ${toJsValue(data.international)},`,
+    "}",
+  ];
 
-  return JSON.stringify(payload, null, 2).replace(/\n/g, "\\n      ");
+  return lines.join("\\n      ");
+}
+
+function toJsValue(value) {
+  if (Array.isArray(value)) {
+    if (value.length === 0) return "[]";
+    return `[${value.map(item => toJsValue(item)).join(", ")}]`;
+  }
+
+  if (value && typeof value === "object") {
+    const entries = Object.entries(value).map(([key, entryValue]) => `${key}: ${toJsValue(entryValue)}`);
+    return `{ ${entries.join(", ")} }`;
+  }
+
+  if (typeof value === "string") return toSingleQuoted(value);
+  if (typeof value === "number" || typeof value === "boolean") return String(value);
+  if (value === null) return "null";
+
+  throw new Error(`Unsupported value type in period payload: ${typeof value}`);
+}
+
+function toSingleQuoted(value) {
+  return `'${String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}'`;
 }
