@@ -28,6 +28,13 @@ npm run news:apply -- periods/2026-07-16_2026-07-31.json --set-default
 - Active period: `p_0716`
 - Label: `07/16 - 07/31`
 - JSON: `periods/2026-07-16_2026-07-31.json`
+- Homepage default period: `p_0701`
+
+首頁規則：
+
+- 新一期開始後，先在背景累積新聞到 active period。
+- 首頁仍停在上一個「已完成」期別。
+- 等該期結束後，再把首頁預設切到新一期。
 
 建議在這一期內至少更新 3 次：
 
