@@ -13,12 +13,23 @@
    `git commit -m "Update <period-id> manufacturing AI roundup"`
    `git push origin main`
 
+## 固定搜尋來源
+
+每週掃 Gmail 與補新聞時，除了既有新聞快訊與外部連結，也要固定納入下列來源：
+
+- Gmail：搜尋 `AI Ready 電子報`
+- Gmail 帳號：`chou751029@gmail.com`
+- 外部來源：`CNBC`
+- 外部來源：`TechOrange`
+
+若信件內或外部來源提到製造業 AI、physical AI、機器人、工廠自動化、品質檢測、製程優化、工具機、模具、金屬加工等場景，優先列入候選清單再做去重與篩選。
+
 ## 手動補新聞
 
 當你額外提供新聞時，不需要重做整站。只要把同一期的 JSON 補上新條目，重新執行：
 
 ```bash
-npm run news:apply -- periods/2026-07-16_2026-07-31.json --set-default
+npm run news:apply -- periods/2026-07-16_2026-07-31.json
 ```
 
 之後再 commit / push 即可。

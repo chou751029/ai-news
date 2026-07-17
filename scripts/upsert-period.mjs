@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { publishStaticSite } from "./publish-static.mjs";
 
 const [, , inputPathArg, ...restArgs] = process.argv;
 
@@ -11,7 +12,8 @@ if (!inputPathArg) {
 const setDefault = restArgs.includes("--set-default");
 const inputPath = path.resolve(process.cwd(), inputPathArg);
 const repoRoot = process.cwd();
-const indexPath = path.join(repoRoot, "index.html");
+const bundlePath = path.join(repoRoot, "index.bundle.html");
+const indexPath = fs.existsSync(bundlePath) ? bundlePath : path.join(repoRoot, "index.html");
 
 const raw = fs.readFileSync(inputPath, "utf8");
 const period = JSON.parse(raw);
@@ -29,6 +31,7 @@ if (setDefault) {
 }
 
 fs.writeFileSync(indexPath, next);
+publishStaticSite({ repoRoot });
 console.log(`Updated ${path.basename(indexPath)} with ${period.id}`);
 
 function validatePeriod(data) {

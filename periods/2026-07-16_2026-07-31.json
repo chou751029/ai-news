@@ -3,6 +3,25 @@
   "label": "07/16 - 07/31",
   "year": 2026,
   "domestic": [],
-  "international": [],
-  "origTitles": {}
+  "international": [
+    {
+      "source": "CNBC",
+      "date": "7/16",
+      "title": "輝達在日本發布新一代 physical AI 模型 Cosmos 3 Edge，並擴大與富士通及日本機器人製造商的合作，鎖定工廠、醫院與居家場域的自主機器人應用。",
+      "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html",
+      "summary": "日本方面由富士通串連 Fanuc、安川電機與川崎重工等業者推進 physical AI，聚焦讓可自主行動的機器人在製造等真實場域安全運作，反映日本正把 AI 與機器人製造生態系加速整合。",
+      "tags": ["Physical AI", "機器人", "智慧製造", "日本"]
+    },
+    {
+      "source": "TechOrange",
+      "date": "7/16",
+      "title": "美國人形機器人新創 Apptronik 啟用「Robot Park」資料工廠，以遙控、模擬與真實操作累積 physical AI 訓練資料，並已把 Apollo 導入賓士等場域做搬運與備料試點。",
+      "url": "https://techorange.com/2026/07/16/apptronik/",
+      "summary": "Apptronik 以近九萬平方英尺訓練場反覆收集真實作業資料，支援人形機器人在物流與製造場景的模型迭代；報導並指出賓士已在工廠使用 Apollo 執行零件搬運等任務。",
+      "tags": ["人形機器人", "資料工廠", "物流搬運", "製造試點"]
+    }
+  ],
+  "origTitles": {
+    "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem"
+  }
 }

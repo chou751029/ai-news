@@ -2,6 +2,7 @@
   "name": "ai-news",
   "private": true,
   "scripts": {
-    "news:apply": "node scripts/upsert-period.mjs"
+    "news:apply": "node scripts/upsert-period.mjs",
+    "news:publish": "node scripts/publish-static.mjs"
   }
 }
