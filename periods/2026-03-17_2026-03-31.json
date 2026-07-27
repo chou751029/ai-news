@@ -1,0 +1,182 @@
+{
+  "id": "p_0317",
+  "label": "03/17 - 03/31",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "meet創業新聞",
+      "date": "3/19",
+      "title": "Profet AI 與 Zentera Systems 合作，為製造業 Agentic AI 提供零信任安全防護",
+      "url": "https://meet.bnext.com.tw/blog/view/30779",
+      "summary": "Profet AI 與 Zentera Systems 攜手合作，為製造業導入 Agentic AI 提供零信任安全防護。",
+      "tags": [
+        "Agentic AI",
+        "零信任",
+        "資安"
+      ]
+    },
+    {
+      "source": "PackagingDive",
+      "date": "3/20",
+      "title": "AI 平台旨在加快包裝聊天與銷售速度",
+      "url": "https://www.packagingdive.com/news/forest-ai-packaging-platform-launch-matthew-wright/814839/",
+      "summary": "新推出的 AI 平台以自然語言介面加快包裝業的詢問、報價與銷售流程。",
+      "tags": [
+        "生成式AI",
+        "包裝",
+        "銷售自動化"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "3/25",
+      "title": "工具機展聚焦 AI 跨域整合，超過 400 家廠商參展",
+      "url": "https://money.udn.com/money/story/5612/9401737",
+      "summary": "工具機展聚焦 AI 跨域整合，吸引超過 400 家廠商參展展示智慧製造方案。",
+      "tags": [
+        "工具機",
+        "跨域整合",
+        "展會"
+      ]
+    },
+    {
+      "source": "yam蕃薯藤",
+      "date": "3/26",
+      "title": "台灣螺絲廠友鋮靠 AI 突圍，打進特斯拉、賓士供應鏈",
+      "url": "https://n.yam.com/Article/20260326561678",
+      "summary": "台灣螺絲廠友鋮靠人工智慧突圍，成功打進特斯拉、賓士供應鏈。",
+      "tags": [
+        "智慧製造",
+        "扣件製程",
+        "供應鏈"
+      ]
+    },
+    {
+      "source": "科技報橘",
+      "date": "3/24",
+      "title": "從賣機台到賣一站式服務：工具機公會揭產業 AI 轉型與生態系整合關鍵",
+      "url": "https://techorange.com/2026/03/24/tmts-2026-podcast/",
+      "summary": "工具機公會理事長陳紳騰揭示產業從單純賣機台走向一站式服務的 AI 轉型與生態系整合關鍵。",
+      "tags": [
+        "產業轉型",
+        "生態系",
+        "一站式服務"
+      ]
+    },
+    {
+      "source": "科技報橘",
+      "date": "3/31",
+      "title": "數據沒打通就談不上 AI 原生工廠：達梭與 NVIDIA 共推工業世界模型",
+      "url": "https://techorange.com/2026/03/31/dassault-systemes-nvidia-industry-world-model/",
+      "summary": "達梭系統與 NVIDIA 共推工業世界模型，指出「數據沒打通就談不上 AI 原生工廠」，點出台灣製造業關鍵痛點。",
+      "tags": [
+        "世界模型",
+        "AI原生工廠",
+        "數據治理"
+      ]
+    },
+    {
+      "source": "三立新聞網",
+      "date": "3/25",
+      "title": "AI EXPO Taiwan 2026 對接國家「AI 新十大建設」，台灣 AI 實力全公開",
+      "url": "https://tw.news.yahoo.com/ai-expo-taiwan-2026-%E5%B0%8D%E6%8E%A5%E5%9C%8B%E5%AE%B6-100800930.html",
+      "summary": "AI EXPO Taiwan 2026 對接國家「AI 新十大建設」，全面公開台灣 AI 實力。",
+      "tags": [
+        "展會",
+        "政策計畫",
+        "產業AI化"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "Microsoft",
+      "date": "3/24",
+      "title": "日本 ARUM 將職人技術轉化為精密製造用的可擴展 AI",
+      "url": "https://news.microsoft.com/source/asia/features/japans-arum-turns-craftsmanship-into-scalable-ai-for-precision-manufacturing/",
+      "summary": "日本 ARUM 公司將職人技術轉化為精密製造用的可擴展 AI，把師傅經驗變成可複製的數位能力。",
+      "tags": [
+        "知識管理",
+        "精密製造",
+        "技術傳承"
+      ]
+    },
+    {
+      "source": "Fraunhofer FIT",
+      "date": "3/31",
+      "title": "AI 的成功始於數據：Fraunhofer FIT 亮相漢諾威工業博覽會",
+      "url": "https://www.fit.fraunhofer.de/en/press/26-03-31_AI-success-starts-with-data-Fraunhofer-FIT-at-Hannover-Messe-2026.html",
+      "summary": "Fraunhofer FIT 於漢諾威工業博覽會展出，強調人工智慧的成功始於數據。",
+      "tags": [
+        "數據治理",
+        "工業AI",
+        "展會"
+      ]
+    },
+    {
+      "source": "PackagingDive",
+      "date": "3/20",
+      "title": "AI 平台旨在加快包裝聊天與銷售速度",
+      "url": "https://www.packagingdive.com/news/forest-ai-packaging-platform-launch-matthew-wright/814839/",
+      "summary": "新推出的 AI 平台以自然語言介面加快包裝業的詢問、報價與銷售流程。",
+      "tags": [
+        "生成式AI",
+        "包裝",
+        "銷售自動化"
+      ]
+    },
+    {
+      "source": "商傳媒",
+      "date": "3/30",
+      "title": "日本 IBM 強攻製造業 AI 轉型，鎖定材料研發與產線自動化",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%A5%E6%9C%ACibm%E5%BC%B7%E6%94%BB%E8%A3%BD%E9%80%A0%E6%A5%ADai%E8%BD%89%E5%9E%8B-%E9%8E%96%E5%AE%9A%E6%9D%90%E6%96%99%E7%A0%94%E7%99%BC%E8%88%87%E7%94%A2%E7%B7%9A%E8%87%AA%E5%8B%95%E5%8C%96-042704390.html",
+      "summary": "日本 IBM 強攻製造業 AI 轉型，鎖定材料研發與產線自動化兩大應用場景。",
+      "tags": [
+        "材料研發",
+        "產線自動化",
+        "AI轉型"
+      ]
+    },
+    {
+      "source": "海絲商報",
+      "date": "3/26",
+      "title": "數位化平台重建產業生態，石材產業加速擁抱 AI",
+      "url": "http://m.mnw.cn/nanan/tscy/3085453.html",
+      "summary": "數位化平台重建產業生態，帶動石材產業加速擁抱人工智慧。",
+      "tags": [
+        "數位平台",
+        "石材製造",
+        "AI賦能"
+      ]
+    },
+    {
+      "source": "Manufacturing Dive",
+      "date": "3/27",
+      "title": "SimScale 調查：隨 AI 普及，工程生產力顯著提升",
+      "url": "https://www.manufacturingdive.com/news/ai-improving-engineering-productivity-as-adoption-accelerates-simscale/815883/",
+      "summary": "SimScale 調查顯示，隨著人工智慧應用加速普及，工程生產力正顯著提升。",
+      "tags": [
+        "工程效率",
+        "模擬分析",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "3/30",
+      "title": "中國大陸將今年定為「數據要素價值釋放年」，引導 AI 創新",
+      "url": "https://www.ctee.com.tw/news/20260330700288-439904",
+      "summary": "中國大陸國家數據局將今年定為「數據要素價值釋放年」，數據要素的市場化與價值化將引導 AI 創新進入新境界。",
+      "tags": [
+        "政策計畫",
+        "數據要素",
+        "AI創新"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://news.microsoft.com/source/asia/features/japans-arum-turns-craftsmanship-into-scalable-ai-for-precision-manufacturing/": "Japan's ARUM turns craftsmanship into scalable AI for precision manufacturing",
+    "https://www.fit.fraunhofer.de/en/press/26-03-31_AI-success-starts-with-data-Fraunhofer-FIT-at-Hannover-Messe-2026.html": "AI success starts with data: Fraunhofer FIT at Hannover Messe",
+    "https://www.manufacturingdive.com/news/ai-improving-engineering-productivity-as-adoption-accelerates-simscale/815883/": "AI is boosting engineering productivity as adoption accelerates: SimScale survey"
+  }
+}

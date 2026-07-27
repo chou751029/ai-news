@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "news:apply": "node scripts/upsert-period.mjs",
-    "news:publish": "node scripts/publish-static.mjs"
+    "news:rebuild": "node scripts/rebuild-site-data.mjs",
+    "news:publish": "node scripts/rebuild-site-data.mjs",
+    "test": "node scripts/validate-site.mjs"
   }
 }

@@ -1,0 +1,316 @@
+{
+  "id": "p_0601",
+  "label": "06/01 - 06/15",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "工商時報",
+      "date": "6/5",
+      "title": "高科大展示可同步量測扭矩與夾緊力的 AI 螺栓鎖固工具",
+      "url": "https://www.ctee.com.tw/news/20260605701578-431204",
+      "summary": "高科大展示可同步量測扭矩與夾緊力的 AI 螺栓鎖固工具，以 AI、AIoT 優化南台灣金屬扣件製程與鎖固品質。",
+      "tags": [
+        "AIoT",
+        "智慧檢測",
+        "扣件製程"
+      ]
+    },
+    {
+      "source": "TechNews 科技新報",
+      "date": "6/1",
+      "title": "東台精機導入代理式 AI，現場人員以自然語言執行加工模擬與製程決策",
+      "url": "https://technews.tw/ai-agent/nvidias-future-market-value-will-be-much-higher-than-it-is-now/11362/",
+      "summary": "東台精機等工具機業者導入代理式 AI，讓現場人員透過自然語言執行虛擬加工模擬、產能分析與製程決策。",
+      "tags": [
+        "Agentic AI",
+        "工具機",
+        "製程決策"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "6/1",
+      "title": "鴻海創世紀專案導入 AI，智慧製造效能提升 5 成",
+      "url": "https://money.udn.com/money/story/5612/9538037",
+      "summary": "鴻海創世紀專案導入 AI，帶動智慧製造效能提升 5 成，展現大廠把 AI 導入自有產線的成效。",
+      "tags": [
+        "智慧製造",
+        "效能優化",
+        "鴻海"
+      ]
+    },
+    {
+      "source": "天下雜誌",
+      "date": "6/9",
+      "title": "大量科技跨入 AI 與先進封裝設備，2025 營收近乎倍增",
+      "url": "https://english.cw.com.tw/article/article.action?id=4820",
+      "summary": "設備製造商大量科技整合機械設計、軟體控制及視覺量測，跨入 AI 與先進封裝設備；2025 年營收近乎倍增、獲利成長 4.8 倍。",
+      "tags": [
+        "AI視覺",
+        "先進封裝",
+        "設備製造"
+      ]
+    },
+    {
+      "source": "Yahoo股市",
+      "date": "6/6",
+      "title": "華城關係企業投資 35 億於台中港設廠，導入 IoT、MES、能源管理與 AI 分析",
+      "url": "https://tw.stock.yahoo.com/news/%E5%9B%A0%E6%87%89%E9%9B%BB%E7%B6%B2%E5%8D%87%E7%B4%9A-ai%E7%94%A8%E9%9B%BB%E9%9C%80%E6%B1%82-%E9%87%8D%E9%9B%BB%E5%B7%A8%E9%A0%AD%E5%B0%8F%E9%87%91%E9%9B%9E-%E7%A0%B835%E5%84%84%E5%8F%B0%E4%B8%AD%E6%B8%AF%E8%A8%AD%E5%BB%A0-%E5%BC%B7%E5%8C%96%E9%AB%98%E9%9A%8E%E8%A3%BD%E9%80%A0%E8%88%87%E6%AA%A2%E6%B8%AC%E8%83%BD%E5%8A%9B-140000277.html",
+      "summary": "華城關係企業投資 35 億元於台中港設廠，導入 IoT 感測、MES、能源管理與 AI 分析，以提升製程穩定、品質一致性及產能。",
+      "tags": [
+        "IoT聯網",
+        "能源管理",
+        "MES"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "6/5",
+      "title": "聚典資訊以代理式 AI 打造跨國多廠智慧製造新典範",
+      "url": "https://money.udn.com/money/story/5950/9548650",
+      "summary": "聚典資訊引領代理式 AI 新浪潮，以台灣研發實力打造跨國多廠智慧製造新典範。",
+      "tags": [
+        "Agentic AI",
+        "跨廠複製",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "天下雜誌",
+      "date": "6/9",
+      "title": "杰倫智能以 Domain Twin 將老師傅製程經驗轉為數位資產",
+      "url": "https://www.cw.com.tw/article/5141499",
+      "summary": "杰倫智能以 Domain Twin 將老師傅的製程經驗與操作知識轉為數位資產，協助製造企業進行技術傳承及海外多廠複製。",
+      "tags": [
+        "數位孿生",
+        "技術傳承",
+        "知識管理"
+      ]
+    },
+    {
+      "source": "TechNews",
+      "date": "6/2",
+      "title": "研華攜手偲倢科技建立工業 AI 平台，打通模型與產線落差",
+      "url": "https://technews.tw/2026/06/02/advantech-spingence-partner-to-implement-industrial-closed-loop-ai/",
+      "summary": "研華攜手偲倢科技建立涵蓋 AI 訓練、模擬及邊緣部署的工業平台，解決製造業 AI 模型難以真正連接產線的問題。",
+      "tags": [
+        "Edge AI",
+        "模型部署",
+        "閉環AI"
+      ]
+    },
+    {
+      "source": "中央社",
+      "date": "6/10",
+      "title": "程泰與新代合作，串接 CNC 與機器手臂瞄準智慧製造",
+      "url": "https://www.cna.com.tw/news/afe/202606100175.aspx",
+      "summary": "工具機廠程泰與控制器廠新代合作，把 CNC 車床、車銑複合機、磨床與加工中心機串接自動化、機器手臂與模組化介面，瞄準智慧製造與機器人整合；程泰表示未來集團營收目標挑戰 200 億元。",
+      "tags": [
+        "工具機",
+        "自動化",
+        "機器人整合"
+      ]
+    },
+    {
+      "source": "數位時代",
+      "date": "6/11",
+      "title": "華夏玻璃建立 AI 知識庫，把老師傅手稿變「玻璃聖經」",
+      "url": "https://www.bnext.com.tw/article/91221/ai-knowledge-transfer-manufacturing",
+      "summary": "華夏玻璃把約 1,000 份老師傅手稿、製程與知識文件整理成 AI 知識庫，歷時 2 年建立內部「玻璃聖經」，讓新人查詢製程 know-how 時不必反覆碰壁。",
+      "tags": [
+        "知識管理",
+        "技術傳承",
+        "玻璃製造"
+      ]
+    },
+    {
+      "source": "緯創",
+      "date": "6/9",
+      "title": "緯創導入 NVIDIA Omniverse DSX，加速數位工廠建置",
+      "url": "https://www.wistron.com/ch/Newsroom/Omniverse-DSX-Optimization",
+      "summary": "緯創導入 NVIDIA Omniverse DSX 藍圖，加速數位工廠建置與營運優化。",
+      "tags": [
+        "數位孿生",
+        "數位工廠",
+        "Omniverse"
+      ]
+    },
+    {
+      "source": "聯合新聞網",
+      "date": "6/14",
+      "title": "AI 落地潮下，台廠隱形冠軍面臨五項轉型挑戰",
+      "url": "https://udn.com/news/story/7240/9564953",
+      "summary": "聯合新聞網指出 AI 落地潮下，台廠隱形冠軍面臨技術解讀、流程重整、資料治理、人才與投資報酬等五項轉型挑戰，反映製造業從導入到規模化仍有組織門檻。",
+      "tags": [
+        "數位轉型",
+        "資料治理",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "北美智權報",
+      "date": "6/1",
+      "title": "AI 轉型生存戰：全球十大工具機生產國的轉型概況",
+      "url": "https://naipnews.naipo.com/63173/",
+      "summary": "北美智權報盤點全球十大工具機生產國在 AI 浪潮下的轉型概況，比較各國製造業導入 AI 的策略與進度。",
+      "tags": [
+        "趨勢展望",
+        "工具機",
+        "產業報告"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "NVIDIA Blog",
+      "date": "6/9",
+      "title": "南韓 LG 集團與 NVIDIA 建置 AI Factory，推進實體 AI 與智慧製造",
+      "url": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
+      "summary": "南韓 LG 集團與 NVIDIA 建置 AI Factory，整合全球工廠製造數據、Physical AI、數位孿生與機器人技術，加速智慧製造轉型。",
+      "tags": [
+        "AI Factory",
+        "Physical AI",
+        "數位孿生"
+      ]
+    },
+    {
+      "source": "NVIDIA Blog",
+      "date": "6/8",
+      "title": "南韓斗山集團與 NVIDIA 合作發展 Physical AI 與 AI Factory",
+      "url": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/",
+      "summary": "南韓斗山集團與 NVIDIA 合作發展 Physical AI 與 AI Factory，將數位孿生、機器人及自主系統導入重工、能源與製造場域。",
+      "tags": [
+        "Physical AI",
+        "AI Factory",
+        "重工能源"
+      ]
+    },
+    {
+      "source": "GOV.UK",
+      "date": "6/9",
+      "title": "英國發布先進製造業 AI 導入計畫",
+      "url": "https://www.gov.uk/government/publications/ai-champions-ai-adoption-plans/ai-adoption-plan-advanced-manufacturing",
+      "summary": "英國發布先進製造業 AI 導入計畫，指出工業環境具有設備複雜、資料分散與安全要求高等特性，並提出協助企業規模化導入 AI 的策略。",
+      "tags": [
+        "政策計畫",
+        "規模化落地",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "KuCoin News",
+      "date": "6/7",
+      "title": "日立與英特爾擴大 AI 技術合作，涵蓋晶圓廠設備與工廠自動化",
+      "url": "https://www.kucoin.com/zh-hant/news/flash/hitachi-and-intel-partner-to-advance-ai-in-manufacturing-energy-and-mobility",
+      "summary": "日立與英特爾擴大 AI 技術合作，涵蓋晶圓廠設備、能源最佳化、邊緣 AI、客製晶片與工廠自動化，日立 HMAX Energy 也將導入英特爾晶圓廠。",
+      "tags": [
+        "Edge AI",
+        "晶圓廠",
+        "能源最佳化"
+      ]
+    },
+    {
+      "source": "TechNews 科技新報",
+      "date": "6/6",
+      "title": "南韓 Naver Cloud 與 NVIDIA 發展 Seoul World Model 訓練工業 AI",
+      "url": "https://technews.tw/ai-agent/naver-cloud-nvidia-expand-alliance-for-global-ai-factory-push/12532/",
+      "summary": "南韓 Naver Cloud 與 NVIDIA 發展 Seoul World Model，利用虛擬環境訓練工業 AI，降低製造企業蒐集實體資料、設備測試及研發驗證的成本。",
+      "tags": [
+        "世界模型",
+        "虛擬訓練",
+        "工業AI"
+      ]
+    },
+    {
+      "source": "TechNews 科技新報",
+      "date": "6/1",
+      "title": "中國智慧製造由設備自動化進入跨系統整合與機器人執行階段",
+      "url": "https://technews.tw/2026/06/01/2026-china-smart-manufacturing-accelerates-implementation-shifting-platform-construction-robotic-execution/",
+      "summary": "中國智慧製造由設備自動化進入跨系統整合與機器人執行階段，工廠升級重點轉向工業軟體、AI 決策及機器人協同。",
+      "tags": [
+        "系統整合",
+        "機器人協同",
+        "AI決策"
+      ]
+    },
+    {
+      "source": "TechNews 科技新報",
+      "date": "6/8",
+      "title": "全球電子協會：68% PCB 廠商已導入 AI，仍有五大障礙",
+      "url": "https://technews.tw/2026/06/08/global-electronics-association-2026-06-report/",
+      "summary": "全球電子協會調查顯示，68% PCB 廠商已導入 AI，但仍面臨資料品質、人才、系統整合、投資報酬與規模化等五大障礙。",
+      "tags": [
+        "PCB",
+        "導入障礙",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "6/2",
+      "title": "洛克威爾第 11 期《智慧製造現狀報告》調查逾 1,500 家企業",
+      "url": "https://www.ctee.com.tw/news/20260602700029-431202",
+      "summary": "洛克威爾第 11 期《智慧製造現狀報告》調查全球 17 個主要製造國家及地區、逾 1,500 家企業，分析 AI、自動化、資安、人才與投資回報趨勢。",
+      "tags": [
+        "產業報告",
+        "自動化",
+        "投資回報"
+      ]
+    },
+    {
+      "source": "TechOrange",
+      "date": "6/8",
+      "title": "工業 AI 分析老舊設備，使工廠現代化轉為可預測投資",
+      "url": "https://techorange.com/2026/06/08/old-manufacturing-equipment-ai-upgrade/",
+      "summary": "企業運用工業 AI 分析老舊設備與營運資料，使工廠現代化工程從高風險、難估算的改造案，轉為可預測成本與回報的投資。",
+      "tags": [
+        "工業AI",
+        "設備現代化",
+        "投資回報"
+      ]
+    },
+    {
+      "source": "鉅亨網",
+      "date": "6/7",
+      "title": "南韓 SK 海力士與 NVIDIA 合作，以數位孿生建置晶圓廠智慧製造平台",
+      "url": "https://news.cnyes.com/news/id/6487450",
+      "summary": "南韓 SK 海力士與 NVIDIA 展開多年技術合作，並利用 Omniverse、OpenUSD 及數位孿生建置晶圓廠智慧製造平台。",
+      "tags": [
+        "數位孿生",
+        "Omniverse",
+        "晶圓廠"
+      ]
+    },
+    {
+      "source": "Applied Materials",
+      "date": "6/10",
+      "title": "應材新加坡擴建 Tampines 園區，投資 5 億美元支援 AI 晶片設備需求",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-expands-singapore-manufacturing-support-ai",
+      "summary": "應材擴建新加坡 Tampines 製造園區，投資 5 億美元，導入 AMR、自主組裝與測試、AI 輔助品質檢測，以支援 AI 晶片設備需求；新廠已量產，潔淨室產能將倍增並新增約 1,000 個職缺。",
+      "tags": [
+        "AMR",
+        "AI檢測",
+        "半導體設備"
+      ]
+    },
+    {
+      "source": "今日亞洲",
+      "date": "6/12",
+      "title": "南韓政府啟動計畫，將大師指尖技能轉化為 AI 保護製造隱性知識",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260612010004392",
+      "summary": "南韓貿易、工業和能源部啟動計畫，把老師傅的指尖技能轉化為人工智慧，認真保護製造業的隱性知識與 know-how。",
+      "tags": [
+        "知識管理",
+        "技術傳承",
+        "政策計畫"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/": "NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure",
+    "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/": "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure",
+    "https://www.gov.uk/government/publications/ai-champions-ai-adoption-plans/ai-adoption-plan-advanced-manufacturing": "AI Adoption Plan: Advanced Manufacturing",
+    "https://www.kucoin.com/zh-hant/news/flash/hitachi-and-intel-partner-to-advance-ai-in-manufacturing-energy-and-mobility": "Hitachi and Intel Partner to Advance AI in Manufacturing, Energy and Mobility",
+    "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-expands-singapore-manufacturing-support-ai": "Applied Materials Expands Singapore Manufacturing to Support AI Chip Demand"
+  }
+}

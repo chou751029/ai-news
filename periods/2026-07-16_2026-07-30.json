@@ -1,0 +1,294 @@
+{
+  "id": "p_0716",
+  "label": "07/16 - 07/30",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "Taiwan News",
+      "date": "7/20",
+      "title": "Taiwan’s Global Tek begins AI server liquid cooling production",
+      "url": "https://www.taiwannews.com.tw/en/news/6404337",
+      "summary": "報導指出廣泰上半年合併營收 28.2 億元、年增 13.32%，並看好 AI 散熱與機器人應用到 2027 年可占營收約兩成。",
+      "tags": [
+        "液冷零件",
+        "金屬加工",
+        "AI伺服器",
+        "台灣"
+      ]
+    },
+    {
+      "source": "DIGITIMES",
+      "date": "7/20",
+      "title": "VSMC高層：晶圓代工廠智慧製造、MES不能忽視AI　陸廠相當積極",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&catId=40&id=762290&packageid=78260",
+      "summary": "報導並提到中國晶圓廠在智慧製造與 AI 結合上布局積極，讓製造系統升級的壓力同步升高。",
+      "tags": [
+        "半導體",
+        "智慧製造",
+        "MES",
+        "AI導入"
+      ]
+    },
+    {
+      "source": "信傳媒",
+      "date": "7/20",
+      "title": "台達電擬於坦米爾納德邦設立「ARIVAM」AI與綠能驗證中心",
+      "url": "https://www.cmmedia.com.tw/home/articles/61870",
+      "summary": "這代表台灣製造企業正把 AI 驗證、海外製造與工業自動化能力一起往海外場域延伸。",
+      "tags": [
+        "台達電",
+        "海外製造",
+        "智慧製造",
+        "工業自動化"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/19",
+      "title": "研揚全年業績挑戰百億",
+      "url": "https://money.udn.com/money/story/5710/9637620",
+      "summary": "報導看好其全年營收有機會首度突破百億元，顯示台灣工業電腦與製造現場 AI 應用需求同步升溫。",
+      "tags": [
+        "工業電腦",
+        "邊緣AI",
+        "機器視覺",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "CNBC",
+      "date": "7/20",
+      "title": "TSMC is accelerating Arizona factory build-out to capitalize on AI 'megatrend,' CFO says",
+      "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html",
+      "summary": "這則消息雖發生在美國廠區，但主體仍是台灣企業台積電，屬於台灣製造企業的 AI 擴產布局。",
+      "tags": [
+        "台積電",
+        "晶圓代工",
+        "海外擴產",
+        "AI晶片"
+      ]
+    },
+    {
+      "source": "中央社",
+      "date": "7/24",
+      "title": "AI效益漸外溢　中經院：近2成製造業切入半導體供應鏈",
+      "url": "https://www.cna.com.tw/news/afe/202607240188.aspx",
+      "summary": "這屬於具體的台灣產業調查數據，可直接反映 AI 對本地製造業接單與供應鏈結構的影響。",
+      "tags": [
+        "中經院",
+        "產業調查",
+        "半導體供應鏈",
+        "台灣製造業"
+      ]
+    },
+    {
+      "source": "Focus Taiwan",
+      "date": "7/25",
+      "title": "Industrial production hits new high in June on strong AI demand",
+      "url": "https://focustaiwan.tw/business/202607250006",
+      "summary": "這則屬於台灣官方統計面的 AI 製造業訊號，適合保留作為本期總體趨勢依據。",
+      "tags": [
+        "工業生產",
+        "官方統計",
+        "AI需求",
+        "台灣"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "7/26",
+      "title": "AI關鍵零件加速美國製造　勤誠、川湖美國廠接力啟動",
+      "url": "https://money.udn.com/money/story/11162/9649999",
+      "summary": "報導指出川湖上半年營收達 162.79 億元近翻倍，勤誠上半年營收 149.28 億元、年增 55.56%，具備明確營運成長數據。",
+      "tags": [
+        "勤誠",
+        "川湖",
+        "供應鏈",
+        "海外製造"
+      ]
+    },
+    {
+      "source": "ETtoday財經雲",
+      "date": "7/26",
+      "title": "NVIDIA加速將AI技術引入造船業　台船與達明已開始機器人焊接試作",
+      "url": "https://finance.ettoday.net/news/3207913",
+      "summary": "以台灣造船與焊接場景來看，這是少數直接落到製造工序的本地 AI 應用案例。",
+      "tags": [
+        "造船",
+        "焊接",
+        "機器人",
+        "製程應用"
+      ]
+    },
+    {
+      "source": "Manufacturing Dive",
+      "date": "7/24",
+      "title": "Wistron opens manufacturing plant for Nvidia AI systems",
+      "url": "https://www.manufacturingdive.com/news/wistron-opens-advanced-manufacturing-plant-nvidia-ai-systems/826042/",
+      "summary": "雖然報導來自國外媒體，但主體是台灣企業緯創，因此仍歸入國內類別，且具備投資額與廠區規模等量化資訊。",
+      "tags": [
+        "緯創",
+        "德州工廠",
+        "數位分身",
+        "品質檢測"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "CNBC",
+      "date": "7/16",
+      "title": "輝達發布新 AI 模型並擴大日本 Physical AI 生態系",
+      "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html",
+      "summary": "日本方面由富士通串連 Fanuc、安川電機與川崎重工等業者推進 physical AI，聚焦讓可自主行動的機器人在製造等真實場域安全運作，反映日本正把 AI 與機器人製造生態系加速整合。",
+      "tags": [
+        "Physical AI",
+        "機器人",
+        "智慧製造",
+        "日本"
+      ]
+    },
+    {
+      "source": "TechOrange",
+      "date": "7/16",
+      "title": "Apptronik 啟用「機器人樂園」，用資料工廠模式解決人形機器人訓練瓶頸",
+      "url": "https://techorange.com/2026/07/16/apptronik/",
+      "summary": "Apptronik 以近九萬平方英尺訓練場反覆收集真實作業資料，支援人形機器人在物流與製造場景的模型迭代；報導並指出賓士已在工廠使用 Apollo 執行零件搬運等任務。",
+      "tags": [
+        "人形機器人",
+        "資料工廠",
+        "物流搬運",
+        "製造試點"
+      ]
+    },
+    {
+      "source": "Manufacturing Digital",
+      "date": "7/20",
+      "title": "Omron 與 NVIDIA 打造免專業技能的 AI 檢測",
+      "url": "https://manufacturingdigital.com/news/how-omron-nvidia-are-creating-ai-skillless-inspection",
+      "summary": "這是少數直接對應電子製造品質檢測場景的 AI 落地案例，技術、設備與應用場域都相對明確。",
+      "tags": [
+        "品質檢測",
+        "AOI",
+        "3D-CT",
+        "日本"
+      ]
+    },
+    {
+      "source": "MarketScale",
+      "date": "7/24",
+      "title": "2026 製造商如何實際運用 IIoT：AI 改善、代理式系統與價格壓力",
+      "url": "https://www.marketscale.com/industries/industrial-iot/ai-kaizens-agentic-systems-and-pricing-pressure-what-manufacturers-are-actually-doing-with-iiot-in-2026",
+      "summary": "這則偏產業應用趨勢，但具體點到企業與工廠現場做法，仍屬合格的製造 AI 實務觀察。",
+      "tags": [
+        "IIoT",
+        "現場改善",
+        "異常偵測",
+        "製造流程"
+      ]
+    },
+    {
+      "source": "Chron",
+      "date": "7/25",
+      "title": "AI 製造公司將以 40 萬平方英尺 Pearland 園區擴張",
+      "url": "https://www.chron.com/news/article/texas-ai-manufacturing-expansion-22359091.php",
+      "summary": "這則具備明確企業、廠區規模與製造產品類型，符合本期對量化資訊與落地場域的優先標準。",
+      "tags": [
+        "光通訊",
+        "擴產",
+        "德州",
+        "零組件製造"
+      ]
+    },
+    {
+      "source": "MarketScale",
+      "date": "7/25",
+      "title": "代理式自動化邁向企業規模，工業 AI 出現新營運模式",
+      "url": "https://www.marketscale.com/industries/industrial-iot/agentic-automation-hits-enterprise-scale-automation-anywhere-yaskawa-and-kuka-signal-a-new-operating-model-for-industrial-ai",
+      "summary": "文章聚焦工業 AI 的企業實作與導入成熟度，雖偏綜述，但案例企業與製造場景都清楚。",
+      "tags": [
+        "Agentic AI",
+        "機器人",
+        "工廠自動化",
+        "日本"
+      ]
+    },
+    {
+      "source": "CNBC",
+      "date": "7/25",
+      "title": "三星電子取得價值 2,000 億美元的 Broadcom AI 晶片合作",
+      "url": "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
+      "summary": "這則雖偏供應鏈合作，但明確涉及晶圓代工、先進封裝與 AI 晶片製造投資規模，屬可保留的製造面新聞。",
+      "tags": [
+        "半導體",
+        "先進封裝",
+        "晶圓代工",
+        "韓國"
+      ]
+    },
+    {
+      "source": "Business Wire",
+      "date": "7/20",
+      "title": "CuspAI 推出 AI Materials Foundry 全球網路，加速突破性材料發現",
+      "url": "https://www.businesswire.com/news/home/20260716196996/en/CuspAI-Launches-AI-Materials-Foundry-a-Global-Network-to-Accelerate-Breakthrough-Discoveries",
+      "summary": "這則屬材料研發與製造前段整合案例，應用雖非產線優化，但仍清楚對應先進製造與工業材料開發。",
+      "tags": [
+        "材料研發",
+        "AI Materials Foundry",
+        "先進製造",
+        "英國"
+      ]
+    },
+    {
+      "source": "Autodesk",
+      "date": "7/20",
+      "title": "資料與 AI 如何改造製造工作流程",
+      "url": "https://adsknews.autodesk.com/en/stories/ai-in-manufacturing-connected-data-fusion/",
+      "summary": "這則偏工具平台，但明確描述 AI 如何介入製造資料流、工程協作與工作流自動化。",
+      "tags": [
+        "工程設計",
+        "資料串接",
+        "流程自動化",
+        "製造工作流"
+      ]
+    },
+    {
+      "source": "NHK WORLD-JAPAN",
+      "date": "7/26",
+      "title": "美韓企業簽署 9,500 億美元 AI 相關協議",
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/20260726_01/",
+      "summary": "這則屬跨國投資與供應鏈布局新聞，雖非單一工廠案例，但金額、企業合作與製造方向都相對明確。",
+      "tags": [
+        "晶片生產",
+        "跨國投資",
+        "供應鏈",
+        "美韓"
+      ]
+    },
+    {
+      "source": "China Daily",
+      "date": "7/20",
+      "title": "AI 與自動化推動廣東人口紅利轉型",
+      "url": "https://www.chinadailyasia.com/article/636723",
+      "summary": "雖然這則偏區域觀察，但直接對應智慧製造與工業自動化轉型，且具備明確地區與產業脈絡。",
+      "tags": [
+        "智慧製造",
+        "工業自動化",
+        "區域轉型",
+        "中國"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
+    "https://manufacturingdigital.com/news/how-omron-nvidia-are-creating-ai-skillless-inspection": "How Omron & NVIDIA are Creating AI 'Skillless' Inspection",
+    "https://www.marketscale.com/industries/industrial-iot/ai-kaizens-agentic-systems-and-pricing-pressure-what-manufacturers-are-actually-doing-with-iiot-in-2026": "AI kaizens, agentic systems, and pricing pressure: what manufacturers are actually doing with IIoT in 2026",
+    "https://www.chron.com/news/article/texas-ai-manufacturing-expansion-22359091.php": "AI manufacturing company expanding with 400,000-square-foot Pearland campus",
+    "https://www.marketscale.com/industries/industrial-iot/agentic-automation-hits-enterprise-scale-automation-anywhere-yaskawa-and-kuka-signal-a-new-operating-model-for-industrial-ai": "Agentic automation hits enterprise scale: Automation Anywhere, Yaskawa, and KUKA signal a new operating model for industrial AI",
+    "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html": "Samsung Electronics wins $200 billion Broadcom AI chip partnership",
+    "https://www.businesswire.com/news/home/20260716196996/en/CuspAI-Launches-AI-Materials-Foundry-a-Global-Network-to-Accelerate-Breakthrough-Discoveries": "CuspAI Launches 'AI Materials Foundry' a Global Network to Accelerate Breakthrough Discoveries",
+    "https://adsknews.autodesk.com/en/stories/ai-in-manufacturing-connected-data-fusion/": "How data and AI are transforming manufacturing workflows",
+    "https://www3.nhk.or.jp/nhkworld/en/news/20260726_01/": "US, South Korean firms sign $950 bil. in AI-related deals",
+    "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend"
+  }
+}

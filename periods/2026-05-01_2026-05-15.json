@@ -1,0 +1,160 @@
+{
+  "id": "p_0501",
+  "label": "05/01 - 05/15",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "經理人",
+      "date": "5/11",
+      "title": "李長榮化工導入智能財管系統 COMMEET，啟動後勤治理升級",
+      "url": "https://www.managertoday.com.tw/articles/view/72120",
+      "summary": "產線 AI 化的同時，李長榮化工導入智能財管系統 COMMEET，把收據與財務流程數位化，啟動後勤治理升級。",
+      "tags": [
+        "智能財管",
+        "後勤治理",
+        "數位轉型"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/1",
+      "title": "AI 實體革命引爆全球製造新局，洛克威爾自動化大學從自動化跨向自主化",
+      "url": "https://www.ctee.com.tw/news/20260430700227-439901",
+      "summary": "2026 洛克威爾自動化大學揭幕，主張 AI 實體革命正引爆全球製造新局，讓製造業從「自動化」跨向「自主化」。",
+      "tags": [
+        "自主化",
+        "自動化",
+        "Physical AI"
+      ]
+    },
+    {
+      "source": "知勢",
+      "date": "5/1",
+      "title": "AIF 攜手高通發布台灣產業 AI 化大調查，企業 AI 應用進入爆發期",
+      "url": "https://edge.aif.tw/2026-ai-research-news/",
+      "summary": "AIF 攜手高通發布台灣產業 AI 化大調查，指出企業 AI 應用今年進入爆發期。",
+      "tags": [
+        "產業報告",
+        "AI應用",
+        "產業AI化"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/15",
+      "title": "台南自動化展 146 家廠商較勁",
+      "url": "https://www.chinatimes.com/newspapers/20260515000202-260202",
+      "summary": "台南自動化展登場，146 家廠商同場較勁，展示智慧製造與自動化解決方案。",
+      "tags": [
+        "自動化",
+        "展會",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/15",
+      "title": "翰宸科技秀自動攻牙機、雷射疊焊機，成台南自動化展焦點",
+      "url": "https://www.ctee.com.tw/news/20260515700609-431203",
+      "summary": "翰宸科技以自動攻牙機、雷射疊焊機成為台南自動化展焦點。",
+      "tags": [
+        "自動化設備",
+        "雷射焊接",
+        "展會"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/15",
+      "title": "鎰寬推動「換頭行動」結合 AI 賦能，協助客戶換頭不換機、節能減碳",
+      "url": "https://www.ctee.com.tw/news/20260515701097-431203",
+      "summary": "鎰寬推動「換頭行動」並結合 AI 賦能，協助客戶換頭不換機、性能升級與節能減碳。",
+      "tags": [
+        "AI賦能",
+        "設備升級",
+        "節能減碳"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "CMoney",
+      "date": "5/9",
+      "title": "AI 製造革命點火：美國工廠靠雲端接單與晶片數據翻身",
+      "url": "https://cmnews.com.tw/article/cmoneyairesearcher-e545cfe8-4b8d-11f1-aaa5-65b06ff075b4",
+      "summary": "從 Xometry 到 PDF Solutions，美國工廠靠「雲端接單＋晶片數據」翻身，點燃 AI 製造革命。",
+      "tags": [
+        "雲端製造",
+        "晶片數據",
+        "數位轉型"
+      ]
+    },
+    {
+      "source": "36Kr",
+      "date": "5/9",
+      "title": "2026 年人工智慧基礎設施路線圖：五個前沿領域",
+      "url": "https://eu.36kr.com/en/p/3761091774366217",
+      "summary": "報告提出 2026 年 AI 基礎設施路線圖，盤點五個前沿領域與發展方向。",
+      "tags": [
+        "AI基礎設施",
+        "趨勢展望",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "The Brighter Side",
+      "date": "5/9",
+      "title": "KAIST SoulMate 晶片：全球首款能即時學習並適應的 AI",
+      "url": "https://www.thebrighterside.news/post/the-worlds-first-ai-soulmate-learns-and-adapts-to-you-in-real-time/",
+      "summary": "KAIST 發表 SoulMate 晶片，號稱全球首款人工智慧「靈魂伴侶」，能夠即時學習並適應使用者。",
+      "tags": [
+        "AI晶片",
+        "邊緣運算",
+        "研發"
+      ]
+    },
+    {
+      "source": "PR Newswire",
+      "date": "5/13",
+      "title": "康耐視 OneVision 採用率上升，製造商在全球擴大 AI 視覺應用",
+      "url": "https://www.prnewswire.com/news-releases/cognex-onevision-adoption-ramps-as-manufacturers-scale-ai-vision-globally-302768368.html",
+      "summary": "隨著製造商在全球擴大人工智慧視覺應用規模，康耐視 OneVision 的採用率正在上升。",
+      "tags": [
+        "AI視覺",
+        "智慧檢測",
+        "規模化落地"
+      ]
+    },
+    {
+      "source": "MVTec",
+      "date": "5/7",
+      "title": "MVTec 與蔡司宣布達成策略合作",
+      "url": "https://www.mvtec.com/application-areas/press-room/press-releases/article/mvtec-and-zeiss-collaborate",
+      "summary": "MVTec Software 與蔡司宣布達成策略合作，強化機器視覺與量測整合能力。",
+      "tags": [
+        "機器視覺",
+        "策略合作",
+        "智慧檢測"
+      ]
+    },
+    {
+      "source": "MSN",
+      "date": "5/2",
+      "title": "Proto Labs 運用 AI 技術的製造商業務蓬勃發展",
+      "url": "https://www.msn.com/en-us/money/topstocks/this-ai-enabled-manufacturer-s-business-is-booming-why-solid-earnings-aren-t-boosting-shares/ar-AA22aHKL",
+      "summary": "Proto Labs 運用人工智慧技術的製造商業務蓬勃發展，展現數位快速製造的成長動能。",
+      "tags": [
+        "AI製造",
+        "數位製造",
+        "快速製造"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://eu.36kr.com/en/p/3761091774366217": "2026 AI Infrastructure Roadmap: Five Frontiers",
+    "https://www.thebrighterside.news/post/the-worlds-first-ai-soulmate-learns-and-adapts-to-you-in-real-time/": "The world's first AI 'SoulMate' learns and adapts to you in real-time",
+    "https://www.prnewswire.com/news-releases/cognex-onevision-adoption-ramps-as-manufacturers-scale-ai-vision-globally-302768368.html": "Cognex OneVision Adoption Ramps as Manufacturers Scale AI Vision Globally",
+    "https://www.mvtec.com/application-areas/press-room/press-releases/article/mvtec-and-zeiss-collaborate": "MVTec and ZEISS collaborate",
+    "https://www.msn.com/en-us/money/topstocks/this-ai-enabled-manufacturer-s-business-is-booming-why-solid-earnings-aren-t-boosting-shares/ar-AA22aHKL": "This AI-enabled manufacturer's business is booming"
+  }
+}

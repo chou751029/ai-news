@@ -1,0 +1,224 @@
+{
+  "id": "p_0616",
+  "label": "06/16 - 06/30",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "網管人",
+      "date": "6/18",
+      "title": "杰倫智能助力業成 GIS 製造 AI 落地",
+      "url": "https://netadmin.com.tw/netadmin/zh-tw/snapshot/3C7FD42C808740B3BF63C231BF462CE6",
+      "summary": "報導指出雙方已完成逾百項 AI 專案、建立超過 1,500 個模型，並把良率、品質與效率改善經驗往跨製程、跨廠複製。",
+      "tags": [
+        "AutoML",
+        "規模化落地",
+        "良率優化"
+      ]
+    },
+    {
+      "source": "MoneyDJ理財網",
+      "date": "6/18",
+      "title": "達明攻東南亞智慧製造商機 秀 AI 包裝與檢測方案",
+      "url": "https://tw.stock.yahoo.com/news/%E9%81%94%E6%98%8E%E6%94%BB%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%99%BA%E6%85%A7%E8%A3%BD%E9%80%A0%E5%95%86%E6%A9%9F-%E7%A7%80ai%E5%8C%85%E8%A3%9D%E8%88%87%E6%AA%A2%E6%B8%AC%E6%96%B9%E6%A1%88-031600205.html",
+      "summary": "達明在泰國智慧製造展展示 AI 包裝與檢測方案，鎖定電子、汽車零件、食品飲料等場域，方案結合協作機器人、AI 視覺與靈巧手，可節省產線空間、縮短部署時間並提升包裝效率與穩定性。",
+      "tags": [
+        "AI 視覺",
+        "協作機器人",
+        "智慧檢測"
+      ]
+    },
+    {
+      "source": "iThome",
+      "date": "6/18",
+      "title": "AI 驅動 ESG 轉型，資誠：數據治理成製造業強化永續競爭力的關鍵",
+      "url": "https://www.ithome.com.tw/news/176720",
+      "summary": "資誠指出製造業 AI 驅動 ESG 轉型的三大應用為能源管理、碳盤查與供應鏈追溯，以及製程優化與資源效率提升，反映 AI 正從辦公室工具進一步走向工廠永續管理。",
+      "tags": [
+        "ESG 永續",
+        "數據治理",
+        "能源管理"
+      ]
+    },
+    {
+      "source": "台視財經",
+      "date": "6/15",
+      "title": "研華攻邊緣 AI，擴醫療 / 智慧製造等多元應用",
+      "url": "https://www.ttv.com.tw/finance/view/06202615095529E22FB2C83B4FD995D2C81DF8F9639DEA13/587",
+      "summary": "研華表示正以邊緣 AI 擴大醫療與智慧製造等應用，並提出 AI 原生工廠架構與 AI Agent 場景，顯示工業電腦廠正把 AI 能力往工廠端整合落地。",
+      "tags": [
+        "Edge AI",
+        "AI原生工廠",
+        "AI Agent"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "6/17",
+      "title": "鴻海首次參展法 VivaTech 秀 AI 智慧製造和電動車方案",
+      "url": "https://money.udn.com/money/story/11162/9571955",
+      "summary": "鴻海首次參展法國 VivaTech，展示 AI 基礎設施、AI Factory、智慧製造與工業人形機器人等方案，說明其正把 AI 製造解決方案帶向歐洲市場。",
+      "tags": [
+        "AI Factory",
+        "AI基礎設施",
+        "人形機器人"
+      ]
+    },
+    {
+      "source": "全球中央",
+      "date": "6/22",
+      "title": "廢棄物也是競爭力 AI 加速製造業綠色蛻變",
+      "url": "https://www.cna.com.tw/newsworld/article/20260526n002/",
+      "summary": "說明台灣製造業（如台灣鋼聯、立順興、明昌國際）如何透過導入 AI 與 IoT 等數位工具，加速碳盤查與廢棄物再利用，成功克服綠色轉型痛點並落實 ESG 永續發展。",
+      "tags": [
+        "ESG 永續",
+        "IoT 聯網",
+        "廢棄物再利用"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "AP News",
+      "date": "6/16",
+      "title": "黃仁勳承諾 AI 促進製造業就業，德州展開測試",
+      "url": "https://apnews.com/article/nvidia-artificial-intelligence-infrastructure-9bf560fa2365e4d6b57804438cda579e",
+      "summary": "美國 Nvidia 宣布與 Coherent 擴大合作，作為 20 億美元合作案的一部分升級 AI 基礎設施，並將德州視為檢驗 AI 能否帶動美國製造業與就業回流的重要場域。",
+      "tags": [
+        "AI基礎設施",
+        "製造回流",
+        "NVIDIA"
+      ]
+    },
+    {
+      "source": "Los Angeles Times",
+      "date": "6/21",
+      "title": "航空航太與國防製造業聚焦自動化",
+      "url": "https://www.latimes.com/b2b/ai-technology/story/2026-06-21/ai-defense-tech-manufacturing-automation",
+      "summary": "航太與國防製造正以 AI 工廠、機器人與軟體自動化壓縮製造時程，部分流程已從數月縮短到數日，反映高複雜製造的導入速度正在加快。",
+      "tags": [
+        "自動化",
+        "AI工廠",
+        "航太國防"
+      ]
+    },
+    {
+      "source": "Microsoft",
+      "date": "6/18",
+      "title": "面向工廠運作的智慧體 AI：從儀表板到決策",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/manufacturing/2026/06/18/agentic-ai-for-plant-operations-from-dashboards-to-decisions/",
+      "summary": "Microsoft 發布製造業案例文章，主打把代理式 AI 導入工廠營運決策，強調可改善現場判斷、降低停機時間，並擴大整體營運效率。",
+      "tags": [
+        "Agentic AI",
+        "工廠決策",
+        "停機優化"
+      ]
+    },
+    {
+      "source": "IOM3",
+      "date": "6/19",
+      "title": "AI 數位孿生技術革新玻璃製造工藝",
+      "url": "https://www.iom3.org/resource/ai-driven-digital-twin-innovates-glass-manufacturing.html",
+      "summary": "英國 Glass Futures 導入 AI 驅動的數位分身，為其多燃料試驗玻璃爐建立沉浸式模型，用於玻璃製造驗證與優化，屬於較具體的製程數位化落地案例。",
+      "tags": [
+        "數位孿生",
+        "製程優化",
+        "玻璃製造"
+      ]
+    },
+    {
+      "source": "Yahoo Finance",
+      "date": "6/19",
+      "title": "RebuilderAI 於 VivaTech 2026 推出設計到製造 AI 代理 VRING:ON，揭示人形機器人「黑燈工廠」願景",
+      "url": "https://finance.yahoo.com/technology/ai/articles/rebuilderai-debuts-design-manufacturing-ai-140000265.html",
+      "summary": "南韓新創 RebuilderAI 在 VivaTech 2026 發表 VRING:ON，主打把 AI 生成設計直接轉成可製造產品資料，並進一步提出以人形機器人驅動的「黑燈工廠」構想。",
+      "tags": [
+        "生成式設計",
+        "黑燈工廠",
+        "人形機器人"
+      ]
+    },
+    {
+      "source": "PR Newswire",
+      "date": "6/16",
+      "title": "Rockwell 與汽車研究中心白皮書：汽車產業智慧製造新階段",
+      "url": "https://www.prnewswire.com/apac/zh/news-releases/rockwell-automation---302801273.html",
+      "summary": "Rockwell Automation 與汽車研究中心白皮書指出，AI、機器學習與自動化已在汽車、輪胎與電池製造出現可量化成效，部分場景的非計畫停機最多減少 50%，整體設備效率提升約 5%，產出提高 5% 至 7%。",
+      "tags": [
+        "機器學習",
+        "設備效率",
+        "汽車製造"
+      ]
+    },
+    {
+      "source": "Asia Today",
+      "date": "6/15",
+      "title": "韓國造船廠導入 AI 焊接機器人",
+      "url": "https://www.upi.com/top_news/world-news/2026/06/15/hd-hyundai-heavy-industries-ai-powered-welding-robots/4781781567519",
+      "summary": "南韓造船巨頭 HD 現代重工全面導入 AI 自主焊接機器人以應對勞工短缺與中國競爭，成功讓日間產能大增 50% 並顯著提升作業安全性。",
+      "tags": [
+        "焊接機器人",
+        "自主作業",
+        "造船"
+      ]
+    },
+    {
+      "source": "Robotics & Automation INSIDER",
+      "date": "6/24",
+      "title": "NVIDIA 發布業界首個實體 AI 全端安全系統",
+      "url": "https://www.techbriefs.com/component/content/article/55408-nvidia-announces-industrys-first-full-stack-safety-system-for-physical-ai",
+      "summary": "NVIDIA 發布業界首個針對實體人工智慧（Physical AI）的全端安全系統 Halos for Robotics，統一 AI 運算與安全架構，並已由人形機器人公司 Agility 搶先導入工廠與物流作業。",
+      "tags": [
+        "實體AI",
+        "安全系統",
+        "人形機器人"
+      ]
+    },
+    {
+      "source": "Manufacturing Dive",
+      "date": "6/22",
+      "title": "智慧體 AI 在製造業大規模應用，基礎設施仍有落差",
+      "url": "https://www.manufacturingdive.com/news/agentic-ai-manufacturing-adoption-data-gaps-evolution/822789/",
+      "summary": "製造業正加速邁向能自主解決問題的 Agentic AI 時代，然而多數企業因數據基礎建設嚴重脫節（僅 20% 具備合格數據模型），正面臨專案高夭折率與高出錯風險的挑戰。",
+      "tags": [
+        "Agentic AI",
+        "數據治理",
+        "規模化落地"
+      ]
+    },
+    {
+      "source": "Interesting Engineering",
+      "date": "6/19",
+      "title": "美國公司部署漂浮式資料中心，用海浪發電",
+      "url": "https://interestingengineering.com/energy/us-firm-deploys-floating-data-centers-that-generate-electricity-using-ocean-waves",
+      "summary": "美國新創打造利用「海浪發電」與海水天然冷卻的 Panthalassa 漂浮式資料中心，直接在遠洋運行 AI 算力，藉此突破陸地電網與水資源短缺的限制。",
+      "tags": [
+        "資料中心",
+        "綠能",
+        "AI算力"
+      ]
+    },
+    {
+      "source": "Implementation Engineers",
+      "date": "6/24",
+      "title": "製造業 AI 趨勢展望（2026）",
+      "url": "https://www.implementation.com/manufacturing-ai-news-top-ai-trends-in-manufacturing-2026/",
+      "summary": "彙整 2026 年製造業 AI 發展的主要趨勢與觀察，可作為年度技術布局與導入方向的參考。",
+      "tags": [
+        "趨勢展望",
+        "產業報告"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://apnews.com/article/nvidia-artificial-intelligence-infrastructure-9bf560fa2365e4d6b57804438cda579e": "Nvidia announces major upgrade to its AI infrastructure",
+    "https://www.latimes.com/b2b/ai-technology/story/2026-06-21/ai-defense-tech-manufacturing-automation": "Aerospace and Defense Manufacturing Focus on Automation",
+    "https://www.microsoft.com/en-us/microsoft-cloud/blog/manufacturing/2026/06/18/agentic-ai-for-plant-operations-from-dashboards-to-decisions/": "Agentic AI for plant operations: From dashboards to decisions",
+    "https://www.iom3.org/resource/ai-driven-digital-twin-innovates-glass-manufacturing.html": "AI-driven digital twin innovates glass manufacturing",
+    "https://finance.yahoo.com/technology/ai/articles/rebuilderai-debuts-design-manufacturing-ai-140000265.html": "RebuilderAI Debuts Design-to-Manufacturing AI Agent VRING:ON at VivaTech 2026, Unveiling Humanoid-Powered 'Dark Factory' Vision",
+    "https://www.upi.com/top_news/world-news/2026/06/15/hd-hyundai-heavy-industries-ai-powered-welding-robots/4781781567519": "South Korean shipyard turns to AI-powered welding robots",
+    "https://www.techbriefs.com/component/content/article/55408-nvidia-announces-industrys-first-full-stack-safety-system-for-physical-ai": "NVIDIA Announces Industry's First Full-Stack Safety System for Physical AI",
+    "https://www.manufacturingdive.com/news/agentic-ai-manufacturing-adoption-data-gaps-evolution/822789/": "Agentic AI is scaling in manufacturing, but infrastructure gaps remain",
+    "https://interestingengineering.com/energy/us-firm-deploys-floating-data-centers-that-generate-electricity-using-ocean-waves": "US firm deploys floating data centers that generate electricity using ocean waves",
+    "https://www.implementation.com/manufacturing-ai-news-top-ai-trends-in-manufacturing-2026/": "Manufacturing AI News: Top AI Trends in Manufacturing (2026)"
+  }
+}

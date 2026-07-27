@@ -1,0 +1,134 @@
+{
+  "id": "p_0516",
+  "label": "05/16 - 05/31",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "PChome新聞",
+      "date": "5/16",
+      "title": "中市推動特登工廠 AI 轉型，助產業智慧升級",
+      "url": "https://news.pchome.com.tw/science/inews/20260516/index-77888971038020351005.html",
+      "summary": "台中市推動特登工廠 AI 轉型，以超正齒輪、東星機械、寬亮工業的 AI 導入經驗，協助在地製造業智慧升級。",
+      "tags": [
+        "數位轉型",
+        "智慧升級",
+        "AIoT"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/25",
+      "title": "從 AI 伺服器到 Edge AI，鴻海、廣達等代工廠 COMPUTEX 秀菜單",
+      "url": "https://www.ctee.com.tw/news/20260525700049-439901",
+      "summary": "鴻海、廣達等代工廠在 COMPUTEX 展出從 AI 伺服器到 Edge AI 的產品組合，搶食 AI 供應鏈商機。",
+      "tags": [
+        "Edge AI",
+        "AI伺服器",
+        "代工"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "5/27",
+      "title": "程泰亞崴攜手新代，強攻智慧製造與機器人",
+      "url": "https://money.udn.com/money/story/5612/9528891",
+      "summary": "程泰、亞崴攜手控制器廠新代，強攻智慧製造與機器人整合應用。",
+      "tags": [
+        "工具機",
+        "機器人整合",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "新電子",
+      "date": "5/29",
+      "title": "泓格科技於 COMPUTEX 2026 展出 AI 智慧賦能與 ESG 綠能應用",
+      "url": "https://www.mem.com.tw/%E6%B3%93%E6%A0%BC%E7%A7%91%E6%8A%80%E6%96%BCcomputex-2026%E5%B1%95%E5%87%BAai%E6%99%BA%E6%85%A7%E8%B3%A6%E8%83%BD%E8%88%87esg%E7%B6%A0%E8%83%BD%E6%87%89%E7%94%A8%E3%80%80%E5%8A%A9%E5%8A%9B%E8%A3%BD/",
+      "summary": "泓格科技於 COMPUTEX 2026 展出 AI 智慧賦能與 ESG 綠能應用，助力製造業轉型。",
+      "tags": [
+        "AI賦能",
+        "ESG永續",
+        "綠能"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "Plastics Today",
+      "date": "5/26",
+      "title": "奧地利 Engel 於 Plast 2026 推出首台自主化全電動射出成型機",
+      "url": "https://www.plasticstoday.com/injection-molding/engel-s-autonomous-injection-molding-debuts-at-plast-2026",
+      "summary": "奧地利 Engel 於 Plast 2026 推出首台自主化全電動射出成型機，整合 AI 智慧助理即時調整閉模力以保護模具並降低能耗。",
+      "tags": [
+        "自主化",
+        "射出成型",
+        "AI助理"
+      ]
+    },
+    {
+      "source": "Hainamould Insights",
+      "date": "5/26",
+      "title": "德國 SIMCON 發布塑料注塑模具工程大模型 Cadmould AI Solver，模擬速度提升千倍",
+      "url": "https://www.hainamould.com/News/InDetail/58",
+      "summary": "德國 SIMCON 發布全球首款針對塑料注塑模具的工程大模型 Cadmould AI Solver，使模具流道與壓力模擬速度提升達 1,000 倍。",
+      "tags": [
+        "工程大模型",
+        "模流模擬",
+        "射出成型"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "5/27",
+      "title": "洛克威爾發布第 11 期智慧製造現狀報告",
+      "url": "https://www.ctee.com.tw/news/20260527700337-439901",
+      "summary": "洛克威爾發布第 11 期智慧製造現狀報告，盤點全球製造業在 AI、自動化與投資回報上的最新趨勢。",
+      "tags": [
+        "產業報告",
+        "智慧製造",
+        "自動化"
+      ]
+    },
+    {
+      "source": "Hardware Retailing",
+      "date": "5/21",
+      "title": "勞氏 AI 工具加速建材報價",
+      "url": "https://hardwareretailing.com/lowes-ai-tool-speeds-material-quotes/",
+      "summary": "美國勞氏推出 AI 工具加速材料報價流程，縮短客戶取得建材估價的時間。",
+      "tags": [
+        "生成式AI",
+        "報價自動化",
+        "零售"
+      ]
+    },
+    {
+      "source": "Business Insider",
+      "date": "5/28",
+      "title": "Sciotex 以 AI 賦能邊緣系統協助製造商偵測與自動化現代化",
+      "url": "https://markets.businessinsider.com/news/stocks/sciotex-helps-manufacturers-modernize-inspection-and-automation-with-ai-enabled-edge-systems-1036203405",
+      "summary": "Sciotex 協助製造商利用人工智慧賦能的邊緣系統來偵測與自動化現代化，強化產線檢測能力。",
+      "tags": [
+        "Edge AI",
+        "智慧檢測",
+        "自動化"
+      ]
+    },
+    {
+      "source": "MarketersMEDIA",
+      "date": "5/19",
+      "title": "YPMFG 擴展五軸加工能力，為全球製造商提供高精度客製金屬零件",
+      "url": "https://aijourn.com/ypmfg-expands-advanced-5-axis-machining-capabilities-to-deliver-faster-higher-precision-custom-metal-parts-to-global-manufacturers/",
+      "summary": "YPMFG 擴展先進的五軸加工能力，為全球製造商提供更快、更高精度的客製化金屬零件。",
+      "tags": [
+        "五軸加工",
+        "客製零件",
+        "精密製造"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://www.plasticstoday.com/injection-molding/engel-s-autonomous-injection-molding-debuts-at-plast-2026": "Engel's Autonomous Injection Molding Debuts at Plast 2026",
+    "https://www.hainamould.com/News/InDetail/58": "From \"hours\" to \"seconds\": The implementation of AI simulation technology in China's injection molding industry",
+    "https://markets.businessinsider.com/news/stocks/sciotex-helps-manufacturers-modernize-inspection-and-automation-with-ai-enabled-edge-systems-1036203405": "Sciotex Helps Manufacturers Modernize Inspection and Automation with AI-Enabled Edge Systems"
+  }
+}

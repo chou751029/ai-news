@@ -1,0 +1,190 @@
+{
+  "id": "p_0410",
+  "label": "04/10 - 04/30",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "中央社",
+      "date": "4/29",
+      "title": "2026「台灣國際扣件展」開展，創新扣件解決方案吸引全球買主",
+      "url": "https://www.cna.com.tw/business/chinese/432143",
+      "summary": "2026 年「台灣國際扣件展」盛大開展，以創新扣件解決方案吸引全球買主目光。",
+      "tags": [
+        "展會",
+        "扣件製程",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "工商時報",
+      "date": "4/10",
+      "title": "2026 TiTE x IHT 展建構「五金智造生態系」，AI 與淨零驅動高值共創",
+      "url": "https://www.ctee.com.tw/news/20260409701783-431203",
+      "summary": "五金工業生態系展覽（2026 TiTE x IHT 展）預熱，以 AI 與淨零驅動高值共創，建構五金智造生態系。",
+      "tags": [
+        "生態系",
+        "淨零永續",
+        "AI賦能"
+      ]
+    },
+    {
+      "source": "網管人",
+      "date": "4/13",
+      "title": "廠端私有 AI 閉環優化，三軸布局搶攻智慧製造",
+      "url": "https://www.netadmin.com.tw/netadmin/zh-tw/trend/6ACE9346C16B447DB62AC2770FC03834",
+      "summary": "以廠端私有 AI 閉環優化為核心，透過三軸布局搶攻智慧製造市場。",
+      "tags": [
+        "閉環AI",
+        "私有AI",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "4/13",
+      "title": "精湛光學 AI 大腦領航扣件展，智慧檢測技術成焦點",
+      "url": "https://money.udn.com/money/story/5635/9434245",
+      "summary": "精湛光學以 AI 大腦領航扣件展，智慧檢測技術成為現場焦點。",
+      "tags": [
+        "AI視覺",
+        "智慧檢測",
+        "扣件製程"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "4/27",
+      "title": "第二屆「智慧創新大賞」百大贏家出爐，代理式與邊緣 AI 雙箭齊發",
+      "url": "https://money.udn.com/money/story/11799/9464242",
+      "summary": "第二屆「智慧創新大賞」百大贏家出爐，代理式與邊緣 AI 雙箭齊發，全面帶動產業升級。",
+      "tags": [
+        "Agentic AI",
+        "Edge AI",
+        "產業升級"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "聯合新聞網",
+      "date": "4/30",
+      "title": "AI + 製造，中國大陸啟動「模數共振行動」",
+      "url": "https://udn.com/news/story/7333/9472992",
+      "summary": "中國大陸啟動「模數共振行動」，推動 AI 與製造業結合，強化模型與算力的協同發展。",
+      "tags": [
+        "政策計畫",
+        "模型算力",
+        "智慧製造"
+      ]
+    },
+    {
+      "source": "PR TIMES",
+      "date": "4/10",
+      "title": "LegalTech 的 AI IPGenius 首度應用於半導體設備製程開發",
+      "url": "https://prtimes.jp/main/html/rd/p/000000466.000042056.html",
+      "summary": "LegalTech 的 AI IPGenius 平台透過交叉分析生產線改進日誌實現「可重複的生產力改進」，首次應用於半導體製造設備製造商的製程開發領域。",
+      "tags": [
+        "生成式AI",
+        "半導體",
+        "製程開發"
+      ]
+    },
+    {
+      "source": "亞洲日報",
+      "date": "4/9",
+      "title": "AutoForm 引領 AI 智慧模具革新，推動韓國製造業變革",
+      "url": "https://www.ajudaily.com/view/20260407201270231",
+      "summary": "AutoForm 引領 AI 智慧模具革新，推動韓國製造業變革與模具開發數位化。",
+      "tags": [
+        "AI模具",
+        "模流模擬",
+        "生成式設計"
+      ]
+    },
+    {
+      "source": "經濟部國貿署",
+      "date": "4/14",
+      "title": "日本推動 AI 國產化戰略，建構國家經濟韌性與關鍵技術自主權",
+      "url": "https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=45&pid=813845",
+      "summary": "日本推動 AI 國產化戰略，積極建構國家經濟韌性與關鍵技術自主權。",
+      "tags": [
+        "政策計畫",
+        "技術自主",
+        "AI基礎設施"
+      ]
+    },
+    {
+      "source": "GlobeNewswire",
+      "date": "4/14",
+      "title": "PIA Automation 推出具身 AI 與人形機器人新業務板塊",
+      "url": "https://www.globenewswire.com/news-release/2026/04/14/3273318/0/en/PIA-Automation-Launches-New-Business-Segment-for-Embodied-AI-and-Humanoid-Robotics.html",
+      "summary": "PIA Automation 推出具身人工智慧和人形機器人的新業務板塊，切入自動化與機器人整合市場。",
+      "tags": [
+        "具身AI",
+        "人形機器人",
+        "自動化"
+      ]
+    },
+    {
+      "source": "PolyformNext",
+      "date": "4/21",
+      "title": "Meusburger 推出用於模具製造的數位設計工具",
+      "url": "https://www.polyformnext.de/tooling/construction-at-the-touch-of-a-button-meusburger-launches-digital-design-tools-for-toolmaking.htm",
+      "summary": "Meusburger 推出用於模具製造的數位設計工具，讓模具設計朝一鍵化、數位化邁進。",
+      "tags": [
+        "數位設計",
+        "模具製造",
+        "工程軟體"
+      ]
+    },
+    {
+      "source": "Interesting Engineering",
+      "date": "4/27",
+      "title": "波士頓動力 Spot 機器狗獲得 AI，可不間斷巡邏與資產追蹤",
+      "url": "https://interestingengineering.com/ai-robotics/robot-guard-dogs-patrols",
+      "summary": "波士頓動力公司的 Spot 機器狗獲得人工智慧，可進行不間斷巡邏和資產追蹤。",
+      "tags": [
+        "巡檢機器人",
+        "資產追蹤",
+        "Physical AI"
+      ]
+    },
+    {
+      "source": "汽車日報",
+      "date": "4/29",
+      "title": "BMW 將人形機器人整合到萊比錫新工廠，AI 讓產能倍增",
+      "url": "https://www.cio.de/article/4162442/bmw-trimmt-batteriefertigung-ki-halbiert-zeit-und-kosten.html",
+      "summary": "BMW 將人形機器人整合到萊比錫新工廠生產新車，AI 機器人可望讓汽車工廠產能倍增。",
+      "tags": [
+        "人形機器人",
+        "汽車製造",
+        "產能提升"
+      ]
+    },
+    {
+      "source": "財訊快報",
+      "date": "4/29",
+      "title": "韓國投入 530 億韓元推動 AI 工廠建設，加速製造業數位轉型",
+      "url": "https://tw.stock.yahoo.com/news/%E9%9F%93%E5%9C%8B%E6%8A%95%E5%85%A5530%E5%84%84%E9%9F%93%E5%85%83%E6%8E%A8%E5%8B%95ai%E5%B7%A5%E5%BB%A0%E5%BB%BA%E8%A8%AD-%E5%8A%A0%E9%80%9F%E8%A3%BD%E9%80%A0%E6%A5%AD%E6%95%B8%E4%BD%8D%E8%BD%89%E5%9E%8B-073139498.html",
+      "summary": "韓國投入 530 億韓元推動 AI 工廠建設，加速製造業數位轉型。",
+      "tags": [
+        "政策計畫",
+        "AI Factory",
+        "數位轉型"
+      ]
+    },
+    {
+      "source": "StoneTrades",
+      "date": "4/30",
+      "title": "2026 石材加工中的 AI 與自動化：CNC 視覺品控、機器人拋光與未來工廠",
+      "url": "https://stonetrades.com/insights/ai-stone-fabrication-2026",
+      "summary": "盤點 2026 年石材加工中的人工智慧與自動化，包含 CNC 視覺品質控制、機器人拋光與未來工廠車間。",
+      "tags": [
+        "AI視覺",
+        "機器人加工",
+        "石材製造"
+      ]
+    }
+  ],
+  "origTitles": {}
+}

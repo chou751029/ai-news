@@ -1,0 +1,163 @@
+{
+  "id": "p_0401",
+  "label": "04/01 - 04/09",
+  "year": 2026,
+  "domestic": [
+    {
+      "source": "CIO Taiwan",
+      "date": "4/2",
+      "title": "資策會 MIC 發布 2026 年十大重點科技趨勢",
+      "url": "https://www.cio.com.tw/104387/",
+      "summary": "資策會 MIC 發布 2026 年十大重點科技趨勢，勾勒 AI 與製造業相關的年度技術走向。",
+      "tags": [
+        "趨勢展望",
+        "產業報告",
+        "科技趨勢"
+      ]
+    },
+    {
+      "source": "中路社區",
+      "date": "4/4",
+      "title": "義守大學與精誠資訊共建 AI 人才培育體系，打造金屬產業智慧升級新典範",
+      "url": "https://g15.village.tw/uninews_view.php?new_sn=123839",
+      "summary": "義守大學與精誠資訊共建 AI 人才培育體系，啟動 AI 計畫打造金屬產業智慧升級新典範。",
+      "tags": [
+        "人才培育",
+        "金屬製造",
+        "智慧升級"
+      ]
+    },
+    {
+      "source": "青年日報",
+      "date": "4/4",
+      "title": "經濟部多管齊下，協助傳統產業提升競爭力",
+      "url": "https://tw.news.yahoo.com/%E7%B6%93%E6%BF%9F%E9%83%A8%E5%A4%9A%E7%AE%A1%E9%BD%8A%E4%B8%8B-%E5%8D%94%E5%8A%A9%E5%82%B3%E7%B5%B1%E7%94%A2%E6%A5%AD%E6%8F%90%E5%8D%87%E7%AB%B6%E7%88%AD%E5%8A%9B-043400136.html",
+      "summary": "經濟部多管齊下，透過補助與輔導協助傳統產業導入 AI 與數位工具、提升競爭力。",
+      "tags": [
+        "政策計畫",
+        "傳產轉型",
+        "競爭力"
+      ]
+    },
+    {
+      "source": "經濟日報",
+      "date": "4/8",
+      "title": "掌握 AI 智造，台商布局美國的重要挑戰",
+      "url": "https://money.udn.com/money/story/11799/9427476",
+      "summary": "在掌握 AI 智造的前提下，台商布局美國市場面臨供應鏈、人才與在地製造等重要挑戰。",
+      "tags": [
+        "AI智造",
+        "海外布局",
+        "智慧製造"
+      ]
+    }
+  ],
+  "international": [
+    {
+      "source": "SMBtech",
+      "date": "4/2",
+      "title": "查爾斯達爾文大學與 Civiltech Solutions 合作，利用機器人修復道路",
+      "url": "https://smbtech.au/news/charles-darwin-university-partners-with-civiltech-solutions-to-make-robots-fix-roads/",
+      "summary": "查爾斯達爾文大學與 Civiltech Solutions 公司合作，利用機器人修復道路，展現營建自動化的應用。",
+      "tags": [
+        "機器人施工",
+        "道路修復",
+        "自動化"
+      ]
+    },
+    {
+      "source": "中國科學院",
+      "date": "4/5",
+      "title": "AI 驅動模型提升鑄造葉片製造精度",
+      "url": "https://english.cas.cn/newsroom/research-news/202604/t20260403_1155144.shtml",
+      "summary": "人工智慧驅動的模型提升鑄造葉片製造精度，屬於較前沿的製程優化研究。",
+      "tags": [
+        "AI模型",
+        "精密製造",
+        "鑄造"
+      ]
+    },
+    {
+      "source": "MONOist",
+      "date": "4/7",
+      "title": "荏原製作所與匠和會以 AI 挑戰製造業，把隱性知識數位化",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2604/08/news035.html",
+      "summary": "隱性知識存在於「潛意識」中，荏原製作所與匠和會利用人工智慧挑戰製造業的技術底蘊提升。",
+      "tags": [
+        "知識管理",
+        "技術傳承",
+        "隱性知識"
+      ]
+    },
+    {
+      "source": "Cisco News",
+      "date": "4/7",
+      "title": "思科研究：工業 AI 進軍實體營運，準備差距決定規模",
+      "url": "https://investor.cisco.com/news/news-details/2026/Cisco-Research-Industrial-AI-Moves-into-Physical-Operations-Readiness-Gaps-Determine-Scale/default.aspx",
+      "summary": "思科研究指出，工業人工智慧正進軍物理營運領域，企業的準備差距將決定其能否規模化。",
+      "tags": [
+        "工業AI",
+        "實體營運",
+        "產業報告"
+      ]
+    },
+    {
+      "source": "Manufacturing Dive",
+      "date": "4/6",
+      "title": "製造商測試 AI 翻譯技術以改善員工溝通",
+      "url": "https://www.manufacturingdive.com/news/manufacturers-leverage-ai-translation-technology-to-improve-worker-communication/816695/",
+      "summary": "製造商測試人工智慧翻譯技術以改善多語員工之間的溝通與現場協作。",
+      "tags": [
+        "生成式AI",
+        "員工溝通",
+        "AI翻譯"
+      ]
+    },
+    {
+      "source": "Stockmark",
+      "date": "4/9",
+      "title": "Stockmark 發布製造業特化型中型 AI 模型",
+      "url": "https://prtimes.jp/main/html/rd/p/000000377.000024407.html",
+      "summary": "Stockmark 發布製造業特化型中型 AI 模型，主打低成本地端運用、最佳化社會實裝的文件讀解 AI 基盤。",
+      "tags": [
+        "產業大模型",
+        "文件讀解",
+        "地端部署"
+      ]
+    },
+    {
+      "source": "馬尼拉時報",
+      "date": "4/9",
+      "title": "Tuurny 以實體 AI 解決美國記憶體短缺並減少電子垃圾出口",
+      "url": "https://www.manilatimes.net/2026/04/09/tmt-newswire/globenewswire/tuurny-deploys-physical-ai-to-address-us-ram-shortage-and-reduce-export-of-rare-earth-rich-e-waste/2316875",
+      "summary": "Tuurny 公司利用實體人工智慧技術解決美國記憶體短缺問題，並減少富含稀土的電子垃圾出口。",
+      "tags": [
+        "Physical AI",
+        "記憶體",
+        "循環經濟"
+      ]
+    },
+    {
+      "source": "PLC ERA",
+      "date": "4/7",
+      "title": "從數位化到智慧化：重塑 2026 年製造業的 8 大科技趨勢",
+      "url": "https://plcera.com/en-am/blogs/plc-knowledge-center/manufacturing-technology-trends-2026-agentic-ai",
+      "summary": "盤點從數位化到 Agentic 智慧化、重塑 2026 年製造業的 8 大科技趨勢。",
+      "tags": [
+        "Agentic AI",
+        "趨勢展望",
+        "產業報告"
+      ]
+    }
+  ],
+  "origTitles": {
+    "https://smbtech.au/news/charles-darwin-university-partners-with-civiltech-solutions-to-make-robots-fix-roads/": "Charles Darwin University Partners With Civiltech Solutions To Make Robots Fix Roads",
+    "https://english.cas.cn/newsroom/research-news/202604/t20260403_1155144.shtml": "AI-Driven Model Enhances Precision in Cast Blade Manufacturing",
+    "https://monoist.itmedia.co.jp/mn/articles/2604/08/news035.html": "暗黙知は「潜在意識」に宿る　荏原製作所と匠和会がAIで挑む製造業の底上げ",
+    "https://investor.cisco.com/news/news-details/2026/Cisco-Research-Industrial-AI-Moves-into-Physical-Operations-Readiness-Gaps-Determine-Scale/default.aspx": "Cisco Research: Industrial AI Moves into Physical Operations, Readiness Gaps Determine Scale",
+    "https://www.manufacturingdive.com/news/manufacturers-leverage-ai-translation-technology-to-improve-worker-communication/816695/": "Manufacturers test AI-translation tech to improve worker communications",
+    "https://prtimes.jp/main/html/rd/p/000000377.000024407.html": "高速で高精度な特化AIのオンプレミス運用を低コストで実現可能　社会実装に最適化されたドキュメント読解AI基盤を公開",
+    "https://www.manilatimes.net/2026/04/09/tmt-newswire/globenewswire/tuurny-deploys-physical-ai-to-address-us-ram-shortage-and-reduce-export-of-rare-earth-rich-e-waste/2316875": "Tuurny Deploys Physical AI to Address U.S. RAM Shortage and Reduce Export of Rare Earth-Rich E-Waste",
+    "https://plcera.com/en-am/blogs/plc-knowledge-center/manufacturing-technology-trends-2026-agentic-ai": "From Digital to Agentic: The 8 Technology Trends Reshaping Manufacturing in 2026"
+  }
+}
