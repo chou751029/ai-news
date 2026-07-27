@@ -321,7 +321,7 @@
     {
       "source": "36氪品牌",
       "date": "7/24",
-      "title": "中小企业用不起大模型？联想在佛山打造城市超级智能体首批产业样板",
+      "title": "中小企業用不起大模型？聯想在佛山打造城市超級智能體首批產業樣板",
       "url": "https://36kr.com/p/3909238955103361",
       "summary": "聯想與佛山市建置傳統製造業數智服務平台，已推出 20 多個 AI 智能體，應用於模具故障辨識、機械售後診斷、程式碼除錯與預測維護；報導稱平台可把 Token 接入效率提升 80%、使用成本降低 15% 以上。",
       "tags": [
@@ -410,6 +410,7 @@
     "https://adsknews.autodesk.com/en/stories/ai-in-manufacturing-connected-data-fusion/": "How data and AI are transforming manufacturing workflows",
     "https://www3.nhk.or.jp/nhkworld/en/news/20260726_01/": "US, South Korean firms sign $950 bil. in AI-related deals",
     "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend",
+    "https://36kr.com/p/3909238955103361": "中小企业用不起大模型？联想在佛山打造城市超级智能体首批产业样板",
     "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/": "Xometry updates AI models for custom manufacturing",
     "https://prtimes.jp/main/html/rd/p/000000198.000039886.html": "古河産機システムズ、製造業AIデータプラットフォームCADDiで設計・調達データの一元化を推進——創業150年超の技術継承をデータで支える"
   }

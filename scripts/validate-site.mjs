@@ -21,12 +21,19 @@ assert.ok(current, "missing p_0716");
 assert.equal(current.label, "07/16 - 07/30");
 assert.equal(current.domestic.length, 12);
 assert.equal(current.international.length, 15);
-assert.equal(Object.keys(current.origTitles).length, 12);
+assert.equal(Object.keys(current.origTitles).length, 13);
 assert.equal(
   current.origTitles[current.international[0].url],
   "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
 );
 assert.notEqual(current.international[0].title, current.origTitles[current.international[0].url]);
+const kr36 = current.international.find((item) => item.url === "https://36kr.com/p/3909238955103361");
+assert.ok(kr36, "missing 36Kr article");
+assert.equal(kr36.title, "中小企業用不起大模型？聯想在佛山打造城市超級智能體首批產業樣板");
+assert.equal(
+  current.origTitles[kr36.url],
+  "中小企业用不起大模型？联想在佛山打造城市超级智能体首批产业样板",
+);
 
 const upcoming = periods.find((period) => period.id === "p_0731");
 assert.ok(upcoming, "missing p_0731");
