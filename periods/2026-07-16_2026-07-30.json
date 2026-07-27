@@ -132,6 +132,46 @@
         "數位分身",
         "品質檢測"
       ]
+    },
+    {
+      "source": "聯合新聞網／經濟日報",
+      "date": "7/26",
+      "title": "OCP 亞太峰會下月登場 指標 AI 大廠輪番秀新品",
+      "url": "https://udn.com/news/story/7240/9651145?from=udn-catebreaknews_ch2",
+      "summary": "2026 OCP 亞太峰會將於 8 月 11、12 日在台灣舉行，議題涵蓋 AI 叢集、先進封裝、散熱、電力、網路光學及伺服器；報導亦提到緯創與 NVIDIA 在美國德州打造 GB300 運算基板。原文未提供製造改善成效。",
+      "tags": [
+        "OCP",
+        "AI資料中心",
+        "伺服器",
+        "開放運算"
+      ],
+      "country": "台灣",
+      "company": "台積電、鴻海、廣達、緯創、緯穎等 OCP 供應鏈業者",
+      "aiTechnology": "AI 叢集、開放運算、先進封裝、散熱與網路光學",
+      "application": "AI 資料中心硬體、伺服器與運算基板供應鏈",
+      "quantifiedResults": "峰會日期為 2026-08-11 至 2026-08-12；原文未揭露改善成效",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；因活動與主要台灣供應鏈企業均在台灣，依分類規則歸國內"
+    },
+    {
+      "source": "仁寶電腦",
+      "date": "7/24",
+      "title": "Compal Builds AI-Ready Infrastructure with 6th Gen AMD EPYC™ Server CPUs at AMD Advancing AI 2026",
+      "url": "https://www.compal.com/en-us/media/340/ren-bao-yu-amd-advancing-ai-2026-zhan-shi-cai-yong",
+      "summary": "仁寶在 AMD Advancing AI 2026 展示 SR231-1A 與 SG520-2A-L1 伺服器平台，整合第六代 AMD EPYC、Instinct MI350P／MI355X、PCIe Gen 6 與直接液冷，鎖定企業 AI、雲端及 HPC 工作負載。",
+      "tags": [
+        "AI伺服器",
+        "AMD EPYC",
+        "直接液冷",
+        "HPC"
+      ],
+      "country": "台灣",
+      "company": "仁寶電腦、AMD",
+      "aiTechnology": "第六代 AMD EPYC、AMD Instinct MI350P／MI355X、PCIe Gen 6、直接液冷",
+      "application": "企業 AI、雲端、HPC 與高密度資料中心伺服器",
+      "quantifiedResults": "SR231-1A 最高 256 核心／512 執行緒；PCIe Gen 6 單鏈路頻寬最高為前代 2 倍；SG520-2A-L1 機箱深度 850 mm",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；原文未揭露實際成本節省或製造良率改善"
     }
   ],
   "international": [

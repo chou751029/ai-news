@@ -28,6 +28,7 @@ function canonicalUrl(value) {
 }
 
 function countryFor(item, category) {
+  if (item.country) return item.country;
   if (category === "國內") return "台灣";
   const text = `${item.title} ${item.summary} ${(item.tags || []).join(" ")}`;
   const rules = [
@@ -65,16 +66,16 @@ for (const period of periods) {
         item.summary,
         item.url,
         (item.tags || []).join("、"),
-        "",
-        "",
-        "",
-        "",
-        "既有網站",
-        "已發布",
+        item.company || "",
+        item.aiTechnology || "",
+        item.application || "",
+        item.quantifiedResults || "",
+        item.sourceMechanism || "既有網站",
+        item.reviewStatus || "已發布",
         index + 1,
         canonicalUrl(item.url),
         "2026-07-27",
-        "由網站期別 JSON 同步",
+        item.note || "由網站期別 JSON 同步",
       ]);
     });
   }
