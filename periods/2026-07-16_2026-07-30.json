@@ -317,6 +317,66 @@
         "區域轉型",
         "中國"
       ]
+    },
+    {
+      "source": "36氪品牌",
+      "date": "7/24",
+      "title": "中小企业用不起大模型？联想在佛山打造城市超级智能体首批产业样板",
+      "url": "https://36kr.com/p/3909238955103361",
+      "summary": "聯想與佛山市建置傳統製造業數智服務平台，已推出 20 多個 AI 智能體，應用於模具故障辨識、機械售後診斷、程式碼除錯與預測維護；報導稱平台可把 Token 接入效率提升 80%、使用成本降低 15% 以上。",
+      "tags": [
+        "AI智能體",
+        "模具",
+        "預測維護",
+        "中小製造業"
+      ],
+      "country": "中國",
+      "company": "聯想、佛山市人工智能賦能傳統製造業數智服務平台",
+      "aiTechnology": "城市超級智能體、混合式 AI、Token Hub、多模態辨識、預測維護",
+      "application": "模具測試、機械售後診斷、嵌入式程式碼除錯與設備預測維護",
+      "quantifiedResults": "首批 20 多個智能體；Token 接入效率提升 80%、使用成本降低 15% 以上；場景開發成本降低 70%、模型訓練維護成本降低 90%",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；36氪品牌內容，量化數據採原文表述"
+    },
+    {
+      "source": "民視新聞網／LINE TODAY",
+      "date": "7/23",
+      "title": "AI數位分身會說16語　中國緊固件之都智慧轉型搶外銷",
+      "url": "https://today.line.me/tw/v3/article/GgwDDGY",
+      "summary": "中國河北永年區的五金製造商在 500 多台核心設備裝設智慧工業控制終端，整合生產線資料與訂單產能；跨境電商園區另以支援 16 種語言的 AI 數位分身進行跨時區直播。",
+      "tags": [
+        "緊固件",
+        "智慧工控",
+        "AI數位分身",
+        "跨境電商"
+      ],
+      "country": "中國",
+      "company": "河北省邯鄲市永年區五金製造業者、永年跨境電商孵化園",
+      "aiTechnology": "智慧工業控制終端、AI 數位分身、多語言生成式 AI",
+      "application": "緊固件生產資料共享、訂單產能調度與跨境行銷",
+      "quantifiedResults": "500 多台核心設備聯網；AI 分身支援 16 種語言；產品銷往 30 多國；2026 年上半年跨境數據達人民幣 1.94 億元",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；跨境數據為原文用語，未將其改寫為營收"
+    },
+    {
+      "source": "Engineering.com",
+      "date": "7/22",
+      "title": "Xometry 更新客製化製造 AI 模型",
+      "url": "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/",
+      "summary": "Xometry 更新客製化製造平台的製程推薦、成本預測與供應商媒合模型，會依零件幾何、材料、用途與供應商設備能力，在 20 種製程中提出建議並改善 CNC 報價準確度。",
+      "tags": [
+        "CNC加工",
+        "成本預測",
+        "製程推薦",
+        "供應商媒合"
+      ],
+      "country": "美國",
+      "company": "Xometry",
+      "aiTechnology": "情境感知製程推薦、CNC 成本預測、自適應供應商媒合模型",
+      "application": "客製化零件製程選擇、CNC 即時報價與供應商媒合",
+      "quantifiedResults": "支援 20 種製程；AI 建議採納率逾 85%；CNC 成本預測準確度提升約 15%",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；量化數據與技術內容另以 Xometry 2026-07-20 官方公告交叉核對"
     }
   ],
   "origTitles": {
@@ -329,6 +389,7 @@
     "https://www.businesswire.com/news/home/20260716196996/en/CuspAI-Launches-AI-Materials-Foundry-a-Global-Network-to-Accelerate-Breakthrough-Discoveries": "CuspAI Launches 'AI Materials Foundry' a Global Network to Accelerate Breakthrough Discoveries",
     "https://adsknews.autodesk.com/en/stories/ai-in-manufacturing-connected-data-fusion/": "How data and AI are transforming manufacturing workflows",
     "https://www3.nhk.or.jp/nhkworld/en/news/20260726_01/": "US, South Korean firms sign $950 bil. in AI-related deals",
-    "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend"
+    "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend",
+    "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/": "Xometry updates AI models for custom manufacturing"
   }
 }
