@@ -184,7 +184,29 @@
         "機器人加工",
         "石材製造"
       ]
+    },
+    {
+      "source": "株式会社Lib",
+      "date": "4/22",
+      "title": "小型工廠導入 AI：製造業出身者找到的現場實用方法",
+      "url": "https://lib-inc.co.jp/factory-ai-introduction-manufacturing/",
+      "summary": "Lib 建議 5 至 10 人規模的小型工廠先以生成式 AI 處理報價草稿、交期判斷與材料採購等後勤工作，讓技術人員集中於加工與組裝；文中時間縮短數字屬導入情境示意，並非具名企業實績。",
+      "tags": [
+        "小型工廠",
+        "生成式AI",
+        "報價",
+        "生產排程"
+      ],
+      "country": "日本",
+      "company": "株式会社Lib",
+      "aiTechnology": "ChatGPT、生成式 AI、歷史資料分析",
+      "application": "金屬加工等小型工廠的報價、交期排程與材料採購管理",
+      "quantifiedResults": "原文示意報價作業可由 30 分鐘縮至 5 分鐘、交期回答由 30 分鐘以上縮至數分鐘；非具名導入案例實績",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；原始發布日 2026-04-22，2026-07-22 為修改日，因此歸入 04/10 - 04/30"
     }
   ],
-  "origTitles": {}
+  "origTitles": {
+    "https://lib-inc.co.jp/factory-ai-introduction-manufacturing/": "町工場のAI導入｜元製造業の僕が見つけた、現場で本当に使える活用法"
+  }
 }

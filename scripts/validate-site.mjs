@@ -14,14 +14,14 @@ const articleCount = periods.reduce(
 );
 
 assert.equal(periods.length, 11, "expected all 11 historical and upcoming periods");
-assert.equal(articleCount, 171, "historical article count changed unexpectedly");
+assert.equal(articleCount, 173, "historical article count changed unexpectedly");
 
 const current = periods.find((period) => period.id === "p_0716");
 assert.ok(current, "missing p_0716");
 assert.equal(current.label, "07/16 - 07/30");
 assert.equal(current.domestic.length, 12);
-assert.equal(current.international.length, 14);
-assert.equal(Object.keys(current.origTitles).length, 11);
+assert.equal(current.international.length, 15);
+assert.equal(Object.keys(current.origTitles).length, 12);
 assert.equal(
   current.origTitles[current.international[0].url],
   "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",

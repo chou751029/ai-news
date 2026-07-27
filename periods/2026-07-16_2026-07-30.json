@@ -377,6 +377,26 @@
       "quantifiedResults": "支援 20 種製程；AI 建議採納率逾 85%；CNC 成本預測準確度提升約 15%",
       "sourceMechanism": "手動新增",
       "note": "使用者提供；量化數據與技術內容另以 Xometry 2026-07-20 官方公告交叉核對"
+    },
+    {
+      "source": "PR TIMES／キャディ株式会社",
+      "date": "7/23",
+      "title": "古河產機系統以 CADDi 統一設計與採購資料，支援逾 150 年技術傳承",
+      "url": "https://prtimes.jp/main/html/rd/p/000000198.000039886.html",
+      "summary": "古河產機系統導入製造業 AI 資料平台 CADDi，統一管理設計、採購、生產管理的圖面、不適合、成本與設計變更資料；名稱與尺寸搜尋讓圖面存取時間由最長半日縮短至 2 小時內。",
+      "tags": [
+        "產業機械",
+        "技術傳承",
+        "圖面搜尋",
+        "AI報價"
+      ],
+      "country": "日本",
+      "company": "古河產機系統、キャディ株式会社",
+      "aiTechnology": "CADDi 製造業 AI 資料平台、自然語言圖面搜尋、CADDi Quote",
+      "application": "產業機械的設計、採購、生產管理資料整合與見積作業",
+      "quantifiedResults": "圖面存取時間由最長半日縮至 2 小時內；見積交期減少 50% 為推動目標，並非已完成成效",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；PR TIMES 企業新聞稿，已實現成效與未來目標分開記錄"
     }
   ],
   "origTitles": {
@@ -390,6 +410,7 @@
     "https://adsknews.autodesk.com/en/stories/ai-in-manufacturing-connected-data-fusion/": "How data and AI are transforming manufacturing workflows",
     "https://www3.nhk.or.jp/nhkworld/en/news/20260726_01/": "US, South Korean firms sign $950 bil. in AI-related deals",
     "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend",
-    "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/": "Xometry updates AI models for custom manufacturing"
+    "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/": "Xometry updates AI models for custom manufacturing",
+    "https://prtimes.jp/main/html/rd/p/000000198.000039886.html": "古河産機システムズ、製造業AIデータプラットフォームCADDiで設計・調達データの一元化を推進——創業150年超の技術継承をデータで支える"
   }
 }
