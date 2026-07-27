@@ -41,7 +41,7 @@ const componentScript = scriptMatch[1].replace(
   "globalThis.Component = class Component extends DCLogic",
 );
 
-function initialPeriodAt(isoDate) {
+function componentAt(isoDate) {
   const RealDate = Date;
   class FixedDate extends RealDate {
     constructor(...args) {
@@ -55,10 +55,25 @@ function initialPeriodAt(isoDate) {
   };
   vm.createContext(context);
   vm.runInContext(componentScript, context);
-  return new context.Component({}).state.periodId;
+  return new context.Component({});
 }
 
-assert.equal(initialPeriodAt("2026-07-27T04:00:00Z"), "p_0716");
-assert.equal(initialPeriodAt("2026-08-01T04:00:00Z"), "p_0731");
+const currentComponent = componentAt("2026-07-27T04:00:00Z");
+assert.equal(currentComponent.state.periodId, "p_0716");
+assert.equal(componentAt("2026-08-01T04:00:00Z").state.periodId, "p_0731");
+
+function assertNewestFirst(items) {
+  const keys = items.map((item) => {
+    const [month, day] = item.date.split("/").map(Number);
+    return item.periodYear * 10000 + month * 100 + day;
+  });
+  assert.deepEqual(keys, keys.slice().sort((a, b) => b - a));
+}
+
+assertNewestFirst(currentComponent.scopedItems());
+currentComponent.state.region = "international";
+assertNewestFirst(currentComponent.scopedItems());
+currentComponent.state.view = "database";
+assertNewestFirst(currentComponent.scopedItems());
 
 console.log(`Validated ${periods.length} periods and ${articleCount} articles`);
