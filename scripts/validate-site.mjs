@@ -14,14 +14,14 @@ const articleCount = periods.reduce(
 );
 
 assert.equal(periods.length, 11, "expected all 11 historical and upcoming periods");
-assert.equal(articleCount, 173, "historical article count changed unexpectedly");
+assert.equal(articleCount, 183, "historical article count changed unexpectedly");
 
 const current = periods.find((period) => period.id === "p_0716");
 assert.ok(current, "missing p_0716");
 assert.equal(current.label, "07/16 - 07/30");
-assert.equal(current.domestic.length, 12);
-assert.equal(current.international.length, 15);
-assert.equal(Object.keys(current.origTitles).length, 13);
+assert.equal(current.domestic.length, 16);
+assert.equal(current.international.length, 21);
+assert.equal(Object.keys(current.origTitles).length, 17);
 assert.equal(
   current.origTitles[current.international[0].url],
   "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
@@ -41,6 +41,7 @@ assert.equal(upcoming.label, "07/31 - 08/15");
 assert.equal(upcoming.domestic.length + upcoming.international.length, 0);
 
 const html = fs.readFileSync(path.join(repoRoot, "index.html"), "utf8");
+assert.ok(!html.includes("新聞主表"), "News Master button should not be rendered");
 const scriptMatch = html.match(/<script type="text\/x-dc"[^>]*>([\s\S]*?)<\/script>/);
 assert.ok(scriptMatch, "component script not found");
 const componentScript = scriptMatch[1].replace(

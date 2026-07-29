@@ -69,30 +69,44 @@
       ]
     },
     {
-      "source": "中央社",
+      "source": "經濟日報",
       "date": "7/24",
       "title": "AI效益漸外溢　中經院：近2成製造業切入半導體供應鏈",
-      "url": "https://www.cna.com.tw/news/afe/202607240188.aspx",
-      "summary": "這屬於具體的台灣產業調查數據，可直接反映 AI 對本地製造業接單與供應鏈結構的影響。",
+      "url": "https://money.udn.com/money/story/7307/9648875?from=edn_search_tag_result",
+      "summary": "中經院調查顯示，台灣製造業已有 17.6% 切入台積電或半導體供應鏈，另有 10.6% 規劃加入；已有 69% 處於導入、評估或規劃 AI 狀態，反映 AI 外溢正擴散到更多製造環節。",
       "tags": [
         "中經院",
         "產業調查",
         "半導體供應鏈",
         "台灣製造業"
-      ]
+      ],
+      "country": "台灣",
+      "company": "中華經濟研究院、台灣製造業受訪企業",
+      "aiTechnology": "製造業 AI 導入與半導體供應鏈數位轉型",
+      "application": "台灣製造業 AI 導入率與半導體供應鏈參與調查",
+      "quantifiedResults": "17.6% 已切入台積電或半導體供應鏈、10.6% 規劃加入；69% 處於導入、評估或規劃 AI 狀態",
+      "sourceMechanism": "手動新增",
+      "note": "使用者指定來源；取代同事件的中央社版本，避免重複"
     },
     {
-      "source": "Focus Taiwan",
-      "date": "7/25",
-      "title": "Industrial production hits new high in June on strong AI demand",
-      "url": "https://focustaiwan.tw/business/202607250006",
-      "summary": "這則屬於台灣官方統計面的 AI 製造業訊號，適合保留作為本期總體趨勢依據。",
+      "source": "鉅亨網",
+      "date": "7/23",
+      "title": "〈工業生產指數〉迎AI超級浪潮！6月工業與製造業生產指數雙創新高 寫下連28紅",
+      "url": "https://news.cnyes.com/news/id/6543960",
+      "summary": "經濟部 6 月統計顯示，受 AI 與高效能運算需求帶動，工業生產指數達 139.44、製造業生產指數達 142.00，雙創單月新高；機械設備業年增 17.24%，基本金屬業年增 7.43%。",
       "tags": [
         "工業生產",
         "官方統計",
         "AI需求",
         "台灣"
-      ]
+      ],
+      "country": "台灣",
+      "company": "經濟部、台灣製造業",
+      "aiTechnology": "AI 與高效能運算相關製造需求",
+      "application": "工業與製造業生產統計、機械設備及基本金屬產業趨勢",
+      "quantifiedResults": "工業生產指數 139.44、製造業生產指數 142.00；機械設備業年增 17.24%，基本金屬業年增 7.43%",
+      "sourceMechanism": "手動新增",
+      "note": "使用者指定來源；取代同事件的 Focus Taiwan 版本，避免重複"
     },
     {
       "source": "經濟日報",
@@ -121,17 +135,24 @@
       ]
     },
     {
-      "source": "Manufacturing Dive",
-      "date": "7/24",
-      "title": "Wistron opens manufacturing plant for Nvidia AI systems",
-      "url": "https://www.manufacturingdive.com/news/wistron-opens-advanced-manufacturing-plant-nvidia-ai-systems/826042/",
-      "summary": "雖然報導來自國外媒體，但主體是台灣企業緯創，因此仍歸入國內類別，且具備投資額與廠區規模等量化資訊。",
+      "source": "經濟日報",
+      "date": "7/22",
+      "title": "緯創全球智慧製造布局再獻新猷 首座美國智慧工廠盛大開幕",
+      "url": "https://money.udn.com/money/story/5612/9644304",
+      "summary": "緯創德州 D1 AI 智慧工廠於 7 月 22 日開幕，投資近 7 億美元、面積約 32.4 萬平方英尺，已量產 NVIDIA GB300 運算基板，並以 Omniverse、Metropolis 與數位孿生優化廠房設計、生產流程與營運效率。",
       "tags": [
         "緯創",
         "德州工廠",
-        "數位分身",
-        "品質檢測"
-      ]
+        "數位孿生",
+        "GB300"
+      ],
+      "country": "台灣／美國",
+      "company": "緯創、NVIDIA",
+      "aiTechnology": "NVIDIA Omniverse、Metropolis、數位孿生",
+      "application": "德州 D1 AI 智慧工廠的建廠驗證、生產流程與營運優化",
+      "quantifiedResults": "投資近 7 億美元、面積約 32.4 萬平方英尺；已量產 NVIDIA GB300 運算基板",
+      "sourceMechanism": "手動新增",
+      "note": "使用者指定來源；取代同事件的 Manufacturing Dive 版本，依企業主體歸國內"
     },
     {
       "source": "聯合新聞網／經濟日報",
@@ -172,6 +193,66 @@
       "quantifiedResults": "SR231-1A 最高 256 核心／512 執行緒；PCIe Gen 6 單鏈路頻寬最高為前代 2 倍；SG520-2A-L1 機箱深度 850 mm",
       "sourceMechanism": "手動新增",
       "note": "使用者提供；原文未揭露實際成本節省或製造良率改善"
+    },
+    {
+      "source": "TechOrange 科技報橘",
+      "date": "7/28",
+      "title": "鴻海、新漢、所羅門實戰分享：AI 如何真正落地製造產線",
+      "url": "https://techorange.com/2026/07/28/2026aifactory-foxconn-nexcom-solomon-digihua-itri/",
+      "summary": "鴻海以 Omniverse 數位孿生先在虛擬環境完成建廠與設備驗證，新漢主打中小企業 Edge AI 導入、所羅門結合 AI 視覺與機械手臂；工研院並指出 AI 數位雙生可把設備編程時間由 30 分鐘縮至 3 分鐘。",
+      "tags": ["數位孿生", "Edge AI", "AI視覺", "智慧工廠"],
+      "country": "台灣",
+      "company": "鴻海、新漢、所羅門、工研院",
+      "aiTechnology": "NVIDIA Omniverse、Edge AI、AI 視覺、機械手臂與 AI 數位雙生",
+      "application": "建廠與設備驗證、中小企業產線 AI、視覺辨識及設備編程",
+      "quantifiedResults": "工研院案例的設備編程時間由 30 分鐘縮短至 3 分鐘",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；量化成效依原文引述工研院案例"
+    },
+    {
+      "source": "Yahoo新聞",
+      "date": "7/28",
+      "title": "AI＋低碳雙引擎啟動！義守大學攜手經濟部、工研院助攻扣件產業升級",
+      "url": "https://tw.news.yahoo.com/ai-%E4%BD%8E%E7%A2%B3%E9%9B%99%E5%BC%95%E6%93%8E%E5%95%9F%E5%8B%95-%E7%BE%A9%E5%AE%88%E5%A4%A7%E5%AD%B8%E6%94%9C%E6%89%8B%E7%B6%93%E6%BF%9F%E9%83%A8-%E5%B7%A5%E7%A0%94%E9%99%A2%E5%8A%A9%E6%94%BB%E6%89%A3%E4%BB%B6%E7%94%A2%E6%A5%AD%E5%8D%87%E7%B4%9A-015413186.html",
+      "summary": "義守大學、經濟部產發署與工研院在高雄扣件聚落推動 AI 與低碳雙軸轉型；報導指出今年已有 627 家金屬機電企業參與，導入重點涵蓋 AI 排程、品質檢測、能源管理與供應鏈整合。",
+      "tags": ["扣件", "AI排程", "品質檢測", "低碳轉型"],
+      "country": "台灣",
+      "company": "義守大學、經濟部產業發展署、工研院、高雄扣件聚落",
+      "aiTechnology": "AI 排程、AI 品質檢測、能源管理與供應鏈整合",
+      "application": "扣件與金屬機電產業的製程、品管、能源及供應鏈轉型",
+      "quantifiedResults": "報導指出 2026 年已有 627 家金屬機電企業參與；未揭露單一企業改善幅度",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；參與家數不等同已完成導入或改善成效"
+    },
+    {
+      "source": "Yahoo股市",
+      "date": "7/27",
+      "title": "統一資訊倉儲管理系統導入磐儀智慧工廠，助力製造業加速數位轉型",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B5%B1-%E8%B3%87%E8%A8%8A%E5%80%89%E5%84%B2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1%E5%B0%8E%E5%85%A5%E7%A3%90%E5%84%80%E6%99%BA%E6%85%A7%E5%B7%A5%E5%BB%A0-%E5%8A%A9%E5%8A%9B%E8%A3%BD%E9%80%A0%E6%A5%AD%E5%8A%A0%E9%80%9F%E6%95%B8%E4%BD%8D%E8%BD%89%E5%9E%8B-031429525.html",
+      "summary": "統一資訊把 LumineOne WMS 與磐儀工業 PDA 導入磐儀智慧工廠，落地急件驗收看板、入出庫與庫存管理並串接 ERP、MES；報導稱庫存正確率已穩定維持在 99% 以上。",
+      "tags": ["智慧倉儲", "WMS", "ERP/MES", "庫存管理"],
+      "country": "台灣",
+      "company": "統一資訊、磐儀科技",
+      "aiTechnology": "LumineOne WMS、工業 PDA、ERP 與 MES 系統整合",
+      "application": "智慧工廠的急件驗收、入出庫及庫存管理",
+      "quantifiedResults": "庫存正確率穩定維持在 99% 以上",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供日期為 7/26；依網頁發稿時間換算台北時間後記為 7/27"
+    },
+    {
+      "source": "DIGITIMES",
+      "date": "7/24",
+      "title": "漢翔AI轉型十年磨一劍　智慧製造經驗拚輸出商業模式",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762787_W7V6KXB09W18Y96J53C0S",
+      "summary": "漢翔自 2015 年布局智慧製造、到 2024 年全面推進生成式 AI，正把多年航太製造 know-how 轉成可複用的企業數位資產，並規劃進一步輸出為供應鏈可採用的商業模式。",
+      "tags": ["航太製造", "生成式AI", "知識管理", "智慧製造"],
+      "country": "台灣",
+      "company": "漢翔航空工業",
+      "aiTechnology": "智慧製造、生成式 AI 與製造知識數位資產化",
+      "application": "航太製造 know-how 傳承、企業數位資產與供應鏈服務",
+      "quantifiedResults": "2015 年開始布局智慧製造、2024 年全面推進生成式 AI；原文未提供成本或效率改善幅度",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；商業模式仍屬規劃方向"
     }
   ],
   "international": [
@@ -397,6 +478,96 @@
       "quantifiedResults": "圖面存取時間由最長半日縮至 2 小時內；見積交期減少 50% 為推動目標，並非已完成成效",
       "sourceMechanism": "手動新增",
       "note": "使用者提供；PR TIMES 企業新聞稿，已實現成效與未來目標分開記錄"
+    },
+    {
+      "source": "MoneyDJ理財網",
+      "date": "7/27",
+      "title": "德國重組「工業4.0平臺」，冀2030年前將資料驅動及AI應用普及至製造業",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9c28741b-346d-4367-aff9-902cfbdd4b7c",
+      "summary": "德國聯邦經濟暨能源部與研究部重組「工業4.0平臺」，由 Siemens Digital Industries 與 Trumpf Machine Tools 共同擔任產業主席，目標在 2030 年前把資料驅動與工業 AI 應用擴散到德國製造業，並延伸 Catena-X、Manufacturing-X 等資料生態系。",
+      "tags": ["工業4.0", "工業AI", "Manufacturing-X", "德國"],
+      "country": "德國",
+      "company": "德國聯邦經濟暨能源部、德國聯邦研究部、Siemens Digital Industries、Trumpf Machine Tools",
+      "aiTechnology": "資料驅動製造、工業 AI 與製造資料空間",
+      "application": "德國製造業資料生態系與中小企業工業 AI 擴散",
+      "quantifiedResults": "目標於 2030 年前擴大資料驅動與工業 AI 應用；原文未提供已實現成效",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；標題與日期已依原始頁面確認"
+    },
+    {
+      "source": "Yahoo股市",
+      "date": "7/28",
+      "title": "日本政府聯手44企業發展實體AI 盼藉製造數據優勢突圍",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%A5%E6%9C%AC%E6%94%BF%E5%BA%9C%E8%81%AF%E6%89%8B44%E4%BC%81%E6%A5%AD%E7%99%BC%E5%B1%95%E5%AF%A6%E9%AB%94ai-%E7%9B%BC%E8%97%89%E8%A3%BD%E9%80%A0%E6%95%B8%E6%93%9A%E5%84%AA%E5%8B%A2%E7%AA%81%E5%9C%8D-022126890.html",
+      "summary": "日本政府把 Physical AI 列為國家戰略，由索尼、軟銀、NEC、本田等 44 家企業共同出資的 Noetra 已提出國產基礎模型計畫，主打把製造現場累積的感測與作業數據轉成機器人與設備可用的 AI 能力。",
+      "tags": ["Physical AI", "基礎模型", "機器人", "日本"],
+      "country": "日本",
+      "company": "Noetra、索尼、軟銀、NEC、本田等 44 家企業",
+      "aiTechnology": "Physical AI、國產基礎模型、感測與作業數據訓練",
+      "application": "製造現場機器人與設備的自主作業能力",
+      "quantifiedResults": "44 家企業共同出資；計畫仍在推進，原文未提供已實現製造成效",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；標題與日期已依原始頁面確認"
+    },
+    {
+      "source": "The Asia Business Daily",
+      "date": "7/27",
+      "title": "AI「蝴蝶效應」：韓國央行新版地圖顯示南韓製造業三年內已轉型",
+      "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026072710093762374",
+      "summary": "南韓央行更新製造與供應鏈地圖指出，AI 晶片需求正重塑韓國半導體製造結構，GPU、先進封裝與 HBM 供應鏈更緊密連結美國、台灣與韓國，並推高對 EUV 等關鍵設備的特定國家依賴。",
+      "tags": ["半導體", "HBM", "先進封裝", "南韓"],
+      "country": "南韓",
+      "company": "韓國銀行、南韓半導體供應鏈",
+      "aiTechnology": "GPU、HBM、先進封裝與 EUV 製造設備",
+      "application": "AI 晶片製造結構與跨國半導體供應鏈分析",
+      "quantifiedResults": "比較三年內的供應鏈結構變化；原文未提供單一企業改善成效",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；主標題為繁體中文翻譯，另保留英文原標題"
+    },
+    {
+      "source": "N24",
+      "date": "7/28",
+      "title": "LS Manufacturing 加速硬體生產週期",
+      "url": "https://n24.com.tr/en/technology/ls-manufacturing-accelerates-hardware-production-cycles-350",
+      "summary": "LS Manufacturing 以數位 DFM 系統串接 CNC 加工與鈑金製造，讓歐洲硬體新創可在 72 小時內拿到可測試原型，並宣稱可做到 ±0.005 mm 公差，縮短精密零件與外殼同步開發週期。",
+      "tags": ["數位DFM", "CNC加工", "鈑金", "快速打樣"],
+      "country": "中國／歐洲市場",
+      "company": "LS Manufacturing",
+      "aiTechnology": "數位 DFM、CNC 與鈑金製造流程整合",
+      "application": "歐洲硬體新創的精密零件、外殼與可測試原型生產",
+      "quantifiedResults": "可在 72 小時內取得可測試原型；原文宣稱加工公差可達 ±0.005 mm",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；主標題為繁體中文翻譯，另保留英文原標題；數據採原文宣稱"
+    },
+    {
+      "source": "Automation World",
+      "date": "7/23",
+      "title": "超越炒作：現代製造業掌握 Agentic AI 的策略",
+      "url": "https://www.automationworld.com/sponsored/whitepaper/55389416/beyond-the-hype-strategies-to-capitalize-on-agentic-ai-in-modern-manufacturing",
+      "summary": "一份涵蓋北美與歐洲 740 位 AI 與商業主管的研究指出，78% 製造業高階主管以為自家已有 agent 在生產環境運作，但實際達成者僅 28%，反映導入仍卡在資料串接、治理與 ROI 驗證。",
+      "tags": ["Agentic AI", "產業調查", "資料治理", "ROI"],
+      "country": "北美／歐洲",
+      "company": "Automation World、研究受訪製造企業",
+      "aiTechnology": "Agentic AI、企業資料整合與 AI 治理",
+      "application": "製造業生產環境中的 AI agent 導入與規模化",
+      "quantifiedResults": "研究涵蓋 740 位主管；78% 認為已有 agent 在生產環境運作，實際達成者為 28%",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；贊助白皮書，主標題為繁體中文翻譯並保留英文原標題"
+    },
+    {
+      "source": "Precedence Research",
+      "date": "7/24",
+      "title": "Xometry 推出製造商 AI 原生平台",
+      "url": "https://www.precedenceresearch.com/news/xometry-ai-native-platform-manufacturers",
+      "summary": "Xometry 推出 AI 原生製造平台，將射出成型等流程的 DFM 回饋、即時報價與一鍵再下單整合到同一介面，目標是縮短採購與打樣決策時間並降低生產錯誤。",
+      "tags": ["AI原生平台", "DFM", "射出成型", "即時報價"],
+      "country": "美國",
+      "company": "Xometry",
+      "aiTechnology": "AI 原生製造平台、DFM 回饋、即時報價與一鍵再下單",
+      "application": "射出成型與客製化製造的採購、打樣及再下單流程",
+      "quantifiedResults": "原文未提供已實現的時間、成本或錯誤率改善數據",
+      "sourceMechanism": "手動新增",
+      "note": "使用者提供；次級報導，主標題為繁體中文翻譯並保留英文原標題"
     }
   ],
   "origTitles": {
@@ -412,6 +583,10 @@
     "https://www.chinadailyasia.com/article/636723": "AI, automation drive evolution of Guangdong's demographic dividend",
     "https://36kr.com/p/3909238955103361": "中小企业用不起大模型？联想在佛山打造城市超级智能体首批产业样板",
     "https://www.engineering.com/xometry-updates-ai-models-for-custom-manufacturing/": "Xometry updates AI models for custom manufacturing",
-    "https://prtimes.jp/main/html/rd/p/000000198.000039886.html": "古河産機システムズ、製造業AIデータプラットフォームCADDiで設計・調達データの一元化を推進——創業150年超の技術継承をデータで支える"
+    "https://prtimes.jp/main/html/rd/p/000000198.000039886.html": "古河産機システムズ、製造業AIデータプラットフォームCADDiで設計・調達データの一元化を推進——創業150年超の技術継承をデータで支える",
+    "https://www.asiae.co.kr/en/article/enterprise-CEO/2026072710093762374": "The \"Butterfly Effect of AI\": The Bank of Korea's Updated Map Reveals South Korea's Manufacturing Has Transformed in Just Three Years",
+    "https://n24.com.tr/en/technology/ls-manufacturing-accelerates-hardware-production-cycles-350": "LS Manufacturing accelerates hardware production cycles",
+    "https://www.automationworld.com/sponsored/whitepaper/55389416/beyond-the-hype-strategies-to-capitalize-on-agentic-ai-in-modern-manufacturing": "Beyond the Hype: Strategies to Capitalize on Agentic AI in Modern Manufacturing",
+    "https://www.precedenceresearch.com/news/xometry-ai-native-platform-manufacturers": "Xometry Launches AI-Native Platform for Manufacturers"
   }
 }
