@@ -14,7 +14,7 @@ const articleCount = periods.reduce(
 );
 
 assert.equal(periods.length, 11, "expected all 11 historical and upcoming periods");
-assert.equal(articleCount, 183, "historical article count changed unexpectedly");
+assert.equal(articleCount, 212, "historical article count changed unexpectedly");
 
 const current = periods.find((period) => period.id === "p_0716");
 assert.ok(current, "missing p_0716");
@@ -38,7 +38,13 @@ assert.equal(
 const upcoming = periods.find((period) => period.id === "p_0731");
 assert.ok(upcoming, "missing p_0731");
 assert.equal(upcoming.label, "07/31 - 08/15");
-assert.equal(upcoming.domestic.length + upcoming.international.length, 0);
+assert.equal(upcoming.domestic.length, 10);
+assert.equal(upcoming.international.length, 19);
+assert.equal(Object.keys(upcoming.origTitles).length, 16);
+assert.equal(
+  upcoming.origTitles["https://www.wsj.com/tech/ai/inside-the-long-ai-powered-quest-to-perfect-pringle-making-ab37a231"],
+  "Inside the Long, AI-Powered Quest to Perfect Pringle-Making",
+);
 
 const html = fs.readFileSync(path.join(repoRoot, "index.html"), "utf8");
 assert.ok(!html.includes("新聞主表"), "News Master button should not be rendered");
@@ -69,6 +75,11 @@ function componentAt(isoDate) {
 const currentComponent = componentAt("2026-07-27T04:00:00Z");
 assert.equal(currentComponent.state.periodId, "p_0716");
 assert.equal(componentAt("2026-08-01T04:00:00Z").state.periodId, "p_0731");
+const upcomingComponent = componentAt("2026-08-11T04:00:00Z");
+assert.equal(upcomingComponent.state.periodId, "p_0731");
+assert.equal(upcomingComponent.scopedItems().length, 10);
+upcomingComponent.state.region = "international";
+assert.equal(upcomingComponent.scopedItems().length, 19);
 
 function assertNewestFirst(items) {
   const keys = items.map((item) => {
